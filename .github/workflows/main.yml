@@ -99,10 +99,6 @@ jobs: # FUCK MY LIFE BROOOOO
               run: |
                 haxelib remove lime
                 haxelib git lime https://github.com/Psych-Slice/lime-mobile
-                LIME_GIT_PATH=$(haxelib path lime | head -n 1)
-                mkdir -p "$LIME_GIT_PATH/ndll"
-                cp -R "$RUNNER_TEMP/lime-ndll/." "$LIME_GIT_PATH/ndll"
-                haxelib run lime rebuild macos
             - name: Compile build
               run: haxelib run lime build Project.xml mac -D ${{inputs.buildFlags}}
             - name: Publish artifact
@@ -141,10 +137,6 @@ jobs: # FUCK MY LIFE BROOOOO
               run: |
                 haxelib remove lime
                 haxelib git lime https://github.com/Psych-Slice/lime-mobile
-                LIME_GIT_PATH=$(haxelib path lime | head -n 1)
-                mkdir -p "$LIME_GIT_PATH/ndll"
-                cp -R "$RUNNER_TEMP/lime-ndll/." "$LIME_GIT_PATH/ndll"
-                haxelib run lime rebuild android
             - name: Compile build
               run: haxelib run lime build Project.xml android -D ${{inputs.buildFlags}}
             - name: Publish artifact
@@ -172,10 +164,6 @@ jobs: # FUCK MY LIFE BROOOOO
               run: |
                 haxelib remove lime
                 haxelib git lime https://github.com/Psych-Slice/lime-mobile
-                LIME_GIT_PATH=$(haxelib path lime | head -n 1)
-                mkdir -p "$LIME_GIT_PATH/ndll"
-                cp -R "$RUNNER_TEMP/lime-ndll/." "$LIME_GIT_PATH/ndll"
-                haxelib run lime rebuild ios
             - name: Compile build
               run: haxelib run lime build Project.xml ios -simulator -D ${{inputs.buildFlags}}
             - name: Publish artifact
