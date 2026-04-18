@@ -31,16 +31,15 @@ jobs:
         run: |
           sudo apt-get install libvlc-dev libvlccore-dev glibc-source libidn-dev libidn12
           haxelib setup ~/haxelib
-
           haxelib git hxcpp https://github.com/HaxeFoundation/hxcpp
           haxelib install thx.core
           haxelib install thx.semver
           haxelib install lime
           haxelib install openfl
-          haxelib install flixel 5.2.2
+          haxelib install flixel 6.0.0 
           haxelib install flixel-tools 1.5.1
-          haxelib install flixel-ui 2.5.0
-          haxelib install flixel-addons 2.11.0
+          haxelib install flixel-ui 2.6.4
+          haxelib install flixel-addons 3.3.2
           haxelib install flxanimate
           haxelib install json2object
           haxelib git polymod https://github.com/PabloelproxD210/Polymod.git
@@ -55,17 +54,18 @@ jobs:
           haxelib install thx.core
           haxelib install thx.semver
           haxelib install lime
-          haxelib git openfl https://github.com/innogames/openfl
-          haxelib install flixel 5.2.2
+          haxelib install openfl
+          haxelib install flixel 6.0.0 
           haxelib install flixel-tools 1.5.1
-          haxelib install flixel-ui 2.5.0
-          haxelib install flixel-addons 2.11.0
+          haxelib install flixel-ui 2.6.4
+          haxelib install flixel-addons 3.3.2
           haxelib install flxanimate
           haxelib install json2object
           haxelib git polymod https://github.com/PabloelproxD210/Polymod.git
           haxelib git hscript https://github.com/T5mpler/hscript-dnb
           haxelib install hxvlc 2.2.5
           haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
+          haxelib list
       - name: Create Version Tag
         run: echo "${{github.run_id}}" > VERSION
       - name: Compile
@@ -93,9 +93,40 @@ jobs:
       - name: Install Haxelib
         run: |
           haxelib setup C:/haxelib
-          haxelib install hmm
-          haxelib run hmm setup
-          hmm install
+          haxelib git hxcpp https://github.com/HaxeFoundation/hxcpp
+          haxelib install thx.core
+          haxelib install thx.semver
+          haxelib install lime
+          haxelib install openfl
+          haxelib install flixel 6.0.0 
+          haxelib install flixel-tools 1.5.1
+          haxelib install flixel-ui 2.6.4
+          haxelib install flixel-addons 3.3.2
+          haxelib install flxanimate
+          haxelib install json2object
+          haxelib git polymod https://github.com/PabloelproxD210/Polymod.git
+          haxelib git hscript https://github.com/T5mpler/hscript-dnb
+          haxelib install hxvlc 2.2.5
+          haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
+          haxelib install hxpkg --global
+          haxelib run hxpkg setup --global
+          haxelib run hxpkg install
+          haxelib run lime rebuild hxcpp
+          haxelib git hxcpp https://github.com/HaxeFoundation/hxcpp
+          haxelib install thx.core
+          haxelib install thx.semver
+          haxelib install lime
+          haxelib install openfl
+          haxelib install flixel 6.0.0 
+          haxelib install flixel-tools 1.5.1
+          haxelib install flixel-ui 2.6.4
+          haxelib install flixel-addons 3.3.2
+          haxelib install flxanimate
+          haxelib install json2object
+          haxelib git polymod https://github.com/PabloelproxD210/Polymod.git
+          haxelib git hscript https://github.com/T5mpler/hscript-dnb
+          haxelib install hxvlc 2.2.5
+          haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
           haxelib list
       - name: Create Version Tag
         run: echo "${{github.run_id}}" > VERSION
@@ -125,10 +156,10 @@ jobs:
           haxelib install thx.semver
           haxelib install lime
           haxelib install openfl
-          haxelib install flixel 5.2.2
+          haxelib install flixel 6.0.0 
           haxelib install flixel-tools 1.5.1
-          haxelib install flixel-ui 2.5.0
-          haxelib install flixel-addons 2.11.0
+          haxelib install flixel-ui 2.6.4
+          haxelib install flixel-addons 3.3.2
           haxelib install flxanimate
           haxelib install json2object
           haxelib git polymod https://github.com/PabloelproxD210/Polymod.git
@@ -144,10 +175,10 @@ jobs:
           haxelib install thx.semver
           haxelib install lime
           haxelib install openfl
-          haxelib install flixel 5.2.2
+          haxelib install flixel 6.0.0 
           haxelib install flixel-tools 1.5.1
-          haxelib install flixel-ui 2.5.0
-          haxelib install flixel-addons 2.11.0
+          haxelib install flixel-ui 2.6.4
+          haxelib install flixel-addons 3.3.2
           haxelib install flxanimate
           haxelib install json2object
           haxelib git polymod https://github.com/PabloelproxD210/Polymod.git
