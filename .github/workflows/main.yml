@@ -1,5 +1,3 @@
-# THE FOLLOWING ACTIONS CODE IS FROM THE PSYCH ENGINE REPO: https://github.com/ShadowMario/FNF-PsychEngine/blob/main/.github/workflows/main.yml
-
 name: Build
 
 # Controls when the action will run.
@@ -198,3 +196,197 @@ jobs:
         with:
           name: macBuild
           path: export/release/macos/bin
+  buildAndroid:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - uses: actions/checkout@v4.1.7
+
+      - name: Setup Android NDK
+        uses: nttld/setup-ndk@v1
+        id: setup-ndk
+        with:
+          ndk-version: r21e
+
+      - name: Setup Java JDK
+        uses: actions/setup-java@main
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v2.0.2
+
+      - uses: krdlab/setup-haxe@master
+        with:
+          haxe-version: 4.3.4
+
+      - name: Install Haxelib
+        run: |
+          haxelib setup ~/haxelib
+          haxelib git hxcpp https://github.com/HaxeFoundation/hxcpp
+          haxelib install thx.core
+          haxelib install thx.semver
+          haxelib install lime
+          haxelib install openfl
+          haxelib install flixel 5.2.2
+          haxelib install flixel-tools 1.5.1
+          haxelib install flixel-ui 2.5.0
+          haxelib install flixel-addons 3.3.2
+          haxelib install flxanimate
+          haxelib install json2object
+          haxelib git polymod https://github.com/PabloelproxD210/Polymod.git
+          haxelib git hscript https://github.com/T5mpler/hscript-dnb
+          haxelib install hxvlc 2.2.5
+          haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
+          haxelib install hxpkg --global
+          haxelib run hxpkg setup --global
+          haxelib run hxpkg install
+          haxelib run lime rebuild hxcpp
+          haxelib git hxcpp https://github.com/HaxeFoundation/hxcpp
+          haxelib install thx.core
+          haxelib install thx.semver
+          haxelib install lime
+          haxelib git openfl https://github.com/innogames/openfl
+          haxelib install flixel 5.2.2
+          haxelib install flixel-tools 1.5.1
+          haxelib install flixel-ui 2.5.0
+          haxelib install flixel-addons 3.3.2
+          haxelib install flxanimate
+          haxelib install json2object
+          haxelib git polymod https://github.com/PabloelproxD210/Polymod.git
+          haxelib git hscript https://github.com/T5mpler/hscript-dnb
+          haxelib install hxvlc 2.2.5
+          haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
+          haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
+          haxelib git extension-androidtools https://github.com/LimeExtensions/extension-androidtools
+          haxelib list
+
+      - name: Configure Android
+        run: |
+          haxelib run lime setup -alias -y
+          haxelib run lime config ANDROID_SDK $ANDROID_HOME
+          haxelib run lime config ANDROID_NDK_ROOT $ANDROID_NDK_HOME
+          haxelib run lime config JAVA_HOME $JAVA_HOME
+          haxelib run lime config ANDROID_SETUP true
+        env:
+          ANDROID_NDK_HOME: ${{ steps.setup-ndk.outputs.ndk-path }}
+
+      - name: Run Gradle
+        working-directory: project
+        run: gradle
+
+      - name: Create Version Tag
+        run: echo "${{github.run_id}}" > VERSION
+
+      - name: Compile
+        run: haxelib run lime build android --app-version="4.0.0-${{ github.run_id}}"
+
+      - name: Publish Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: androidBuild
+          path: export/release/android/bin/app/build/outputs/apk/debug
+
+  buildIOS:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Determine Version
+        id: ver
+        run: |
+          if git describe --tags --exact-match >/dev/null 2>&1; then
+            echo "version=$(git describe --tags --exact-match)" >> $GITHUB_OUTPUT
+          else
+            echo "version=dev-$(date +'%Y%m%d-%H%M')" >> $GITHUB_OUTPUT
+          fi
+
+      - uses: krdlab/setup-haxe@master
+        with:
+          haxe-version: 4.3.6
+
+      - name: Install Haxelib Dependencies
+        run: |
+          haxelib git hxcpp https://github.com/HaxeFoundation/hxcpp
+          haxelib install thx.core
+          haxelib install thx.semver
+          haxelib install lime
+          haxelib install openfl
+          haxelib install flixel 5.2.2
+          haxelib install flixel-tools 1.5.1
+          haxelib install flixel-ui 2.6.4
+          haxelib install flixel-addons 3.3.2
+          haxelib install flxanimate
+          haxelib install json2object
+          haxelib git polymod https://github.com/PabloelproxD210/Polymod.git
+          haxelib git hscript https://github.com/T5mpler/hscript-dnb
+          haxelib install hxvlc 2.2.5
+          haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
+          haxelib install hxpkg --global
+          haxelib run hxpkg setup --global
+          haxelib run hxpkg install
+          haxelib run lime rebuild hxcpp
+          haxelib git hxcpp https://github.com/HaxeFoundation/hxcpp
+          haxelib install thx.core
+          haxelib install thx.semver
+          haxelib install lime
+          haxelib git openfl https://github.com/innogames/openfl
+          haxelib install flixel 5.2.2
+          haxelib install flixel-tools 1.5.1
+          haxelib install flixel-ui 2.6.4
+          haxelib install flixel-addons 3.3.2
+          haxelib install flxanimate
+          haxelib install json2object
+          haxelib git polymod https://github.com/PabloelproxD210/Polymod.git
+          haxelib git hscript https://github.com/T5mpler/hscript-dnb
+          haxelib install hxvlc 2.2.5
+          haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
+
+      - name: Generate iOS C++
+        run: |
+          haxelib run lime build ios -nosign -DofficialBuild -DMOBILE_BUILD -D HXCPP_CPP11 || true
+
+      - name: Patch thx.Nil automatically
+        run: |
+          echo "=== Running UNIVERSAL thx.Nil PATCHER ==="
+
+          ROOTS=(
+            "./export/ios/obj"
+            "./bin/ios/D-Side Redux/haxe/build"
+            "./bin/ios/D-Side Redux/haxe/build/Release-iphoneos-64"
+          )
+
+          patched=0
+
+          for root in "${ROOTS[@]}"; do
+            if [ ! -d "$root" ]; then
+              continue
+            fi
+
+            while IFS= read -r -d '' file; do
+              perl -pi -e 's/\bNil\b/ThxNil/g; s/thx::Nil/thx::ThxNil/g' "$file" && patched=$((patched+1))
+            done < <(find "$root" -type f \( -name "*.h" -o -name "*.hpp" -o -name "*.cpp" -o -name "*.mm" \) -print0)
+          done
+
+          echo "Patched ${patched} file(s)."
+          echo "=== Patch Completed ==="
+
+      - name: Build iOS (Final)
+        run: |
+          haxelib run lime build ios -nosign -DofficialBuild -DMOBILE_BUILD -D HXCPP_CPP11
+
+      - name: Package IPA
+        run: |
+          cd export/release/ios/build/*-iphoneos
+          mkdir Payload
+          mv *.app Payload/
+          zip -r ~/ios-${{ steps.ver.outputs.version }}.ipa Payload
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ios-ipa
+          path: ~/ios-*.ipa
