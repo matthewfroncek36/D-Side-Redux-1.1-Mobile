@@ -1,284 +1,77 @@
-name: Build
+# FUCK MY LIFE BROOOOOOOOO.
+name: Binaries
 
-# Controls when the action will run.
-on:
-  # Triggers the workflow on push or pull request events but only for the master branch
-  push:
-    branches: [ main ]
-  # Triggers the workflow on push or pull request events but only for the master branch
-  pull_request:
-    branches: [ main ]
+on: # Workflow triggers on both when a commit is pushed, or when a pull request is made.
+    push:
+        branches: 
+            - main 
+            - dev
+    pull_request:
+        branches:
+            - main
+            - dev
+    
+    workflow_dispatch: # Run workflow manually from the actions tab.
+    workflow_call: #For release builds
+        inputs:
+            buildFlags:
+                required: false
+                type: string
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
-jobs:
-  # This workflow contains a single job called "build"
-  buildLinux:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+jobs: # FUCK MY LIFE BROOOOO
+    Windows:
+        runs-on: windows-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4.1.7
+        steps:
+            - uses: actions/checkout@v6.0.2
+            - uses: krdlab/setup-haxe@master
 
-      - uses: krdlab/setup-haxe@master
-        with:
-          haxe-version: 4.3.4
-      # Runs a set of commands using the runners shell
-      - name: Install Haxelib
-        run: |
-          sudo apt-get install libvlc-dev libvlccore-dev glibc-source libidn-dev libidn12
-          haxelib setup ~/haxelib
-          haxelib git hxpkg https://github.com/ADA-Funni/hxpkg add-hmm-compatibility
-          haxelib run hxpkg to-hmm
+              with: 
+                haxe-version: 4.3.7
 
-          cargo install --git https://github.com/ninjamuffin99/hmm-rs hmm-rs
-          hmm-rs clean
-          hmm-rs install
+            - name: Install libs
+              run: |
+                haxelib setup C:/haxelib
+                haxelib install hxcpp > nul --quiet
+                haxelib install hxpkg --quiet
+                haxelib run hxpkg install
+            - name: Installing a newer lime branch
+              run: |
+                haxelib remove lime
+                haxelib git lime https://github.com/FunkinCrew/lime ee20b5ab4eb01a5e6037c72aa8c840f5c32825cb
+                haxelib run lime rebuild cpp 
+            - name: Compile build
+              run: haxelib run lime build windows -D ${{inputs.buildFlags}}
+            - name: Publish artifact
+              uses: actions/upload-artifact@v7.0.0
+              with:
+                name: NightmareVision (Windows)
+                path: export/release/windows/bin
+    #
+    Linux:
+        runs-on: ubuntu-22.04
 
-          haxelib fixrepo
+        steps:
+            - uses: actions/checkout@v6.0.2
+            - uses: krdlab/setup-haxe@master
 
-          haxelib install hmm
-          haxelib remove grig.audio
-          haxelib run hmm reinstall grig.audio
-
-          haxelib fixrepo
-          haxelib list
-      - name: Create Version Tag
-        run: echo "${{github.run_id}}" > VERSION
-      - name: Compile
-        run: haxelib run lime build Project.xml linux --app-version="4.0.0-${{ github.run_id}}"
-      - name: Publish Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: linuxBuild
-          path: 'export/release/linux/bin'
-  buildWindows:
-    runs-on: windows-latest
-
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4.1.7
-
-      - uses: krdlab/setup-haxe@master
-        with:
-          haxe-version: 4.3.4
-      - name: Setup Haxe Path
-        run: |
-          setx HAXEPATH "C:\HaxeToolkit\haxe"
-          setx PATH "%HAXEPATH%;%PATH%"
-      # Runs a set of commands using the runners shell
-      - name: Install Haxelib
-        run: |
-          haxelib setup C:/haxelib          haxelib git hxpkg https://github.com/ADA-Funni/hxpkg add-hmm-compatibility
-          haxelib run hxpkg to-hmm
-
-          cargo install --git https://github.com/ninjamuffin99/hmm-rs hmm-rs
-          hmm-rs clean
-          hmm-rs install
-
-          haxelib fixrepo
-
-          haxelib install hmm
-          haxelib remove grig.audio
-          haxelib run hmm reinstall grig.audio
-
-          haxelib fixrepo
-      - name: Create Version Tag
-        run: echo "${{github.run_id}}" > VERSION
-      - name: Compile
-        run: haxelib run lime build windows --app-version="4.0.0-${{ github.run_id}}"
-      - name: Publish Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: windowsBuild
-          path: export/release/windows/bin
-  buildMac:
-    runs-on: macos-12
-
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4.1.7
-
-      - uses: krdlab/setup-haxe@master
-        with:
-          haxe-version: 4.3.4
-      # Runs a set of commands using the runners shell
-      - name: Install Haxelib
-        run: |
-          haxelib setup ~/haxelib          haxelib git hxpkg https://github.com/ADA-Funni/hxpkg add-hmm-compatibility
-          haxelib run hxpkg to-hmm
-
-          cargo install --git https://github.com/ninjamuffin99/hmm-rs hmm-rs
-          hmm-rs clean
-          hmm-rs install
-
-          haxelib fixrepo
-
-          haxelib install hmm
-          haxelib remove grig.audio
-          haxelib run hmm reinstall grig.audio
-
-          haxelib fixrepo
-      - name: Create Version Tag
-        run: echo "${{github.run_id}}" > VERSION
-      - name: Compile
-        run: haxelib run lime build mac --app-version="4.0.0-${{ github.run_id}}"
-      - name: Publish Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: macBuild
-          path: export/release/macos/bin
-  buildAndroid:
-    runs-on: ubuntu-24.04
-
-    steps:
-      - uses: actions/checkout@v4.1.7
-
-      - name: Setup Android NDK
-        uses: nttld/setup-ndk@v1
-        id: setup-ndk
-        with:
-          ndk-version: r21e
-
-      - name: Setup Java JDK
-        uses: actions/setup-java@main
-        with:
-          distribution: 'temurin'
-          java-version: '17'
-
-      - name: Setup Android SDK
-        uses: android-actions/setup-android@v2.0.2
-
-      - uses: krdlab/setup-haxe@master
-        with:
-          haxe-version: 4.3.4
-
-      - name: Install Haxelib
-        run: |
-          haxelib setup ~/haxelib          haxelib git hxpkg https://github.com/ADA-Funni/hxpkg add-hmm-compatibility
-          haxelib run hxpkg to-hmm
-
-          cargo install --git https://github.com/ninjamuffin99/hmm-rs hmm-rs
-          hmm-rs clean
-          hmm-rs install
-
-          haxelib fixrepo
-
-          haxelib install hmm
-          haxelib remove grig.audio
-          haxelib run hmm reinstall grig.audio
-
-          haxelib fixrepo
-
-      - name: Configure Android
-        run: |
-          haxelib run lime setup -alias -y
-          haxelib run lime config ANDROID_SDK $ANDROID_HOME
-          haxelib run lime config ANDROID_NDK_ROOT $ANDROID_NDK_HOME
-          haxelib run lime config JAVA_HOME $JAVA_HOME
-          haxelib run lime config ANDROID_SETUP true
-        env:
-          ANDROID_NDK_HOME: ${{ steps.setup-ndk.outputs.ndk-path }}
-
-      - name: Run Gradle
-        working-directory: project
-        run: gradle
-
-      - name: Create Version Tag
-        run: echo "${{github.run_id}}" > VERSION
-
-      - name: Compile
-        run: haxelib run lime build android --app-version="4.0.0-${{ github.run_id}}"
-
-      - name: Publish Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: androidBuild
-          path: export/release/android/bin/app/build/outputs/apk/debug
-
-  buildIOS:
-    runs-on: macos-latest
-
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Determine Version
-        id: ver
-        run: |
-          if git describe --tags --exact-match >/dev/null 2>&1; then
-            echo "version=$(git describe --tags --exact-match)" >> $GITHUB_OUTPUT
-          else
-            echo "version=dev-$(date +'%Y%m%d-%H%M')" >> $GITHUB_OUTPUT
-          fi
-
-      - uses: krdlab/setup-haxe@master
-        with:
-          haxe-version: 4.3.6
-
-      - name: Install Haxelib Dependencies
-        run: |
-          haxelib git hxpkg https://github.com/ADA-Funni/hxpkg add-hmm-compatibility
-          haxelib run hxpkg to-hmm
-
-          cargo install --git https://github.com/ninjamuffin99/hmm-rs hmm-rs
-          hmm-rs clean
-          hmm-rs install
-
-          haxelib fixrepo
-
-          haxelib install hmm
-          haxelib remove grig.audio
-          haxelib run hmm reinstall grig.audio
-
-          haxelib fixrepo
-
-      - name: Generate iOS C++
-        run: |
-          haxelib run lime build ios -nosign -DofficialBuild -DMOBILE_BUILD -D HXCPP_CPP11 || true
-
-      - name: Patch thx.Nil automatically
-        run: |
-          echo "=== Running UNIVERSAL thx.Nil PATCHER ==="
-
-          ROOTS=(
-            "./export/ios/obj"
-            "./bin/ios/D-Side Redux/haxe/build"
-            "./bin/ios/D-Side Redux/haxe/build/Release-iphoneos-64"
-          )
-
-          patched=0
-
-          for root in "${ROOTS[@]}"; do
-            if [ ! -d "$root" ]; then
-              continue
-            fi
-
-            while IFS= read -r -d '' file; do
-              perl -pi -e 's/\bNil\b/ThxNil/g; s/thx::Nil/thx::ThxNil/g' "$file" && patched=$((patched+1))
-            done < <(find "$root" -type f \( -name "*.h" -o -name "*.hpp" -o -name "*.cpp" -o -name "*.mm" \) -print0)
-          done
-
-          echo "Patched ${patched} file(s)."
-          echo "=== Patch Completed ==="
-
-      - name: Build iOS (Final)
-        run: |
-          haxelib run lime build ios -nosign -DofficialBuild -DMOBILE_BUILD -D HXCPP_CPP11
-
-      - name: Package IPA
-        run: |
-          cd export/release/ios/build/*-iphoneos
-          mkdir Payload
-          mv *.app Payload/
-          zip -r ~/ios-${{ steps.ver.outputs.version }}.ipa Payload
-
-      - uses: actions/upload-artifact@v4
-        with:
-          name: ios-ipa
-          path: ~/ios-*.ipa
+              with:
+                haxe-version: 4.3.7
+            
+            - name: Install LibVLC
+              run: |
+                sudo apt-get install vlc libvlc-dev libvlccore-dev vlc-bin
+            - name: Install libs
+              run: |
+                haxelib setup ~/haxelib
+                haxelib install hxcpp > /dev/null --quiet
+                haxelib install hxpkg --quiet
+                haxelib run hxpkg install
+            - name: Compile build
+              run: haxelib run lime build Project.xml linux -D ${{inputs.buildFlags}}
+            - name: Publish artifact
+              uses: actions/upload-artifact@v7.0.0
+              with:
+                name: NightmareVision (Linux)
+                path: 'export/release/linux/bin'
