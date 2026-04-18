@@ -75,3 +75,96 @@ jobs: # FUCK MY LIFE BROOOOO
               with:
                 name: NightmareVision (Linux)
                 path: 'export/release/linux/bin'
+    macOS:
+        runs-on: macos-latest
+
+        steps:
+            - uses: actions/checkout@v6.0.2
+            - uses: krdlab/setup-haxe@master
+
+              with:
+                haxe-version: 4.3.7
+
+            - name: Install libs
+              run: |
+                haxelib setup ~/haxelib
+                haxelib install hxcpp > /dev/null --quiet
+                haxelib install hxpkg --quiet
+                haxelib run hxpkg install
+            - name: Installing a newer lime branch
+              run: |
+                haxelib remove lime
+                haxelib git lime https://github.com/FunkinCrew/lime ee20b5ab4eb01a5e6037c72aa8c840f5c32825cb
+                haxelib run lime rebuild cpp
+            - name: Compile build
+              run: haxelib run lime build Project.xml mac -D ${{inputs.buildFlags}}
+            - name: Publish artifact
+              uses: actions/upload-artifact@v7.0.0
+              with:
+                name: NightmareVision (macOS)
+                path: export/release/macos/bin
+    Android:
+        runs-on: ubuntu-22.04
+
+        steps:
+            - uses: actions/checkout@v6.0.2
+            - uses: actions/setup-java@v4
+              with:
+                distribution: temurin
+                java-version: '17'
+            - uses: android-actions/setup-android@v3
+            - uses: krdlab/setup-haxe@master
+
+              with:
+                haxe-version: 4.3.7
+
+            - name: Install Android SDK and NDK
+              run: |
+                yes | sdkmanager --licenses > /dev/null
+                sdkmanager "platform-tools" "platforms;android-34" "build-tools;34.0.0" "ndk;25.2.9519653"
+                echo "ANDROID_NDK_ROOT=$ANDROID_SDK_ROOT/ndk/25.2.9519653" >> $GITHUB_ENV
+                echo "ANDROID_NDK_HOME=$ANDROID_SDK_ROOT/ndk/25.2.9519653" >> $GITHUB_ENV
+            - name: Install libs
+              run: |
+                haxelib setup ~/haxelib
+                haxelib install hxcpp > /dev/null --quiet
+                haxelib install hxpkg --quiet
+                haxelib run hxpkg install
+            - name: Installing a newer lime branch
+              run: |
+                haxelib remove lime
+                haxelib git lime https://github.com/FunkinCrew/lime ee20b5ab4eb01a5e6037c72aa8c840f5c32825cb
+            - name: Compile build
+              run: haxelib run lime build Project.xml android -D ${{inputs.buildFlags}}
+            - name: Publish artifact
+              uses: actions/upload-artifact@v7.0.0
+              with:
+                name: NightmareVision (Android)
+                path: export/release/android/bin/app/build/outputs/**/*.apk
+    iOS:
+        runs-on: macos-latest
+
+        steps:
+            - uses: actions/checkout@v6.0.2
+            - uses: krdlab/setup-haxe@master
+
+              with:
+                haxe-version: 4.3.7
+
+            - name: Install libs
+              run: |
+                haxelib setup ~/haxelib
+                haxelib install hxcpp > /dev/null --quiet
+                haxelib install hxpkg --quiet
+                haxelib run hxpkg install
+            - name: Installing a newer lime branch
+              run: |
+                haxelib remove lime
+                haxelib git lime https://github.com/FunkinCrew/lime ee20b5ab4eb01a5e6037c72aa8c840f5c32825cb
+            - name: Compile build
+              run: haxelib run lime build Project.xml ios -simulator -D ${{inputs.buildFlags}}
+            - name: Publish artifact
+              uses: actions/upload-artifact@v7.0.0
+              with:
+                name: NightmareVision (iOS Simulator)
+                path: export/release/ios
