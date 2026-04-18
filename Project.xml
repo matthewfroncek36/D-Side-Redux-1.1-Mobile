@@ -199,4 +199,21 @@
     <icon path="projFiles/icon/icon64.png" size='64'/>
     <icon path="projFiles/icon/icon128.png" size='128'/>
     <icon path="projFiles/icon/iconOG.png" />
+	
+	<section unless="PROFILE_BUILD">
+		<section if="mobile">
+			<config type="android" pslice-mono-icon="art/mobile/iconMono.png" />
+
+			<config type="ios" pslice-icon-dir="art/mobile/PSlice.appiconset" />
+			<icon path="art/mobile/iconAdaptive.png" if="android" />
+			<icon path="art/mobile/iconMobile.png" unless="android" />
+		</section>
+		<section unless="mobile">
+			<assets path='art/desktop/iconOG.png' rename='icon.png' if="linux" />
+			<icon path="art/desktop/icon16.png" size='16' />
+			<icon path="art/desktop//icon32.png" size='32' />
+			<icon path="art/desktop//icon64.png" size='64' />
+			<icon path="art/desktop//iconOG.png" />
+		</section>
+	</section>
 </project>
