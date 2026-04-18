@@ -1,7 +1,8 @@
 package extensions.flixel;
 
 import flixel.system.FlxAssets.FlxSoundAsset;
-import flixel.sound.FlxSoundGroup;
+import flixel.system.FlxSound;
+import flixel.system.FlxSoundGroup;
 
 class FlxSoundEx extends FlxSound
 {

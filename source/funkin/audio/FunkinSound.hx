@@ -1,6 +1,6 @@
 package funkin.audio;
 
-import flixel.sound.FlxSoundGroup;
+import flixel.system.FlxSoundGroup;
 import flixel.system.FlxAssets.FlxSoundAsset;
 
 import openfl.media.Sound;
@@ -9,7 +9,7 @@ import openfl.media.Sound;
  * just a copy paste for now 
  */
 @:access(flixel.system.frontEnds.SoundFrontEnd)
-@:access(flixel.sound.FlxSound)
+@:access(flixel.system.FlxSound)
 class FunkinSound
 {
 	@:inheritDoc(flixel.system.frontEnds.SoundFrontEnd.playMusic)

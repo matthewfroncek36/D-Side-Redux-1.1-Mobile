@@ -117,7 +117,7 @@ class OurLittleFriend extends FlxSprite
 	}
 }
 
-@:access(flixel.sound.FlxSound._sound)
+@:access(flixel.system.FlxSound._sound)
 @:access(openfl.media.Sound.__buffer)
 class ChartEditorState extends MusicBeatState
 {

@@ -13,7 +13,7 @@ import flixel.tweens.FlxEase;
 import flixel.util.FlxTimer;
 import flixel.FlxBasic;
 import flixel.math.FlxPoint;
-import flixel.sound.FlxSound;
+import flixel.system.FlxSound;
 
 #if sys
 import sys.*;

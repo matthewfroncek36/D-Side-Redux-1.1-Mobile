@@ -241,7 +241,7 @@ class FunkinScript extends IrisEx implements IFlxDestroyable
 		set("FlxTimer", flixel.util.FlxTimer);
 		set("FlxTween", flixel.tweens.FlxTween);
 		set("FlxEase", flixel.tweens.FlxEase);
-		set("FlxSound", flixel.sound.FlxSound);
+		set("FlxSound", flixel.system.FlxSound);
 		set("FlxRuntimeShader", funkin.backend.FunkinShader.FunkinRuntimeShader);
 		set("FlxFlicker", flixel.effects.FlxFlicker);
 		set('FlxSpriteUtil', flixel.util.FlxSpriteUtil);

@@ -9,7 +9,7 @@ class WaveformDataParser
 	static final INT8_MAX:Int = 127;
 	static final INT8_MIN:Int = -128;
 	
-	public static function interpretFlxSound(sound:Null<flixel.sound.FlxSound>):Null<WaveformData>
+	public static function interpretFlxSound(sound:Null<flixel.system.FlxSound>):Null<WaveformData>
 	{
 		if (sound == null) return null;
 		
