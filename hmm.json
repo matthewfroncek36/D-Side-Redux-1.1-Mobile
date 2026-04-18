@@ -1,0 +1,131 @@
+{
+	"dependencies": [
+		{
+			"name": "flixel",
+			"version": "6.0.0",
+			"type": "haxelib"
+		},
+		{
+			"name": "flixel-addons",
+			"version": "3.3.2",
+			"type": "haxelib"
+		},
+		{
+			"name": "flixel-ui",
+			"version": "2.6.4",
+			"type": "haxelib"
+		},
+		{
+			"name": "flixel-animate",
+			"url": "https://github.com/MaybeMaru/flixel-animate",
+			"ref": "5decd2e91dfdb62c235aaa344303d9b2d77c83d5",
+			"type": "git",
+			"dir": null
+		},
+		{
+			"name": "hscript",
+			"version": "2.6.0",
+			"type": "haxelib"
+		},
+		{
+			"name": "hscript-iris",
+			"version": "1.1.3",
+			"type": "haxelib"
+		},
+		{
+			"name": "hxcpp-debug-server",
+			"version": "1.2.4",
+			"type": "haxelib"
+		},
+		{
+			"name": "hxcpp",
+			"url": "https://github.com/HaxeFoundation/hxcpp",
+			"ref": "8268ef2d518b1e7c8e8494114d0bdf6b5bc4147d",
+			"type": "git",
+			"dir": null
+		},
+		{
+			"name": "hxvlc",
+			"url": "https://github.com/MAJigsaw77/hxvlc",
+			"ref": "a1ac9900248209a91a9a9c1ebc1ae8af5dfdfb86",
+			"type": "git",
+			"dir": null
+		},
+		{
+			"name": "lime",
+			"version": "8.1.3",
+			"type": "haxelib"
+		},
+		{
+			"name": "openfl",
+			"url": "https://github.com/DeveloperPorting-Stuff/openfl",
+			"ref": "main",
+			"type": "git",
+			"dir": null
+		},
+		{
+			"name": "hxdiscord_rpc",
+			"version": "1.2.4",
+			"type": "haxelib"
+		},
+		{
+			"name": "haxeui-flixel",
+			"url": "https://github.com/haxeui/haxeui-flixel",
+			"ref": "b899a4c7d7318c5ff2b1bb645fbc73728fad1ac9",
+			"type": "git",
+			"dir": null
+		},
+		{
+			"name": "haxeui-core",
+			"url": "https://github.com/haxeui/haxeui-core",
+			"ref": "99d5d035e7120ce027256b117a25625c53b488dc",
+			"type": "git",
+			"dir": null
+		},
+		{
+			"name": "moonchart",
+			"url": "https://github.com/MaybeMaru/moonchart",
+			"ref": "8c9d7cfe3280588fa71a8f3c4444c97bc7b63714",
+			"type": "git",
+			"dir": null
+		},
+		{
+			"name": "funkin.vis",
+			"url": "https://github.com/FunkinCrew/funkVis",
+			"ref": "1966f8fbbbc509ed90d4b520f3c49c084fc92fd6",
+			"type": "git",
+			"dir": null
+		},
+		{
+			"name": "grig.audio",
+			"url": "https://github.com/FunkinCrew/grig.audio",
+			"ref": "8567c4dad34cfeaf2ff23fe12c3796f5db80685e",
+			"type": "git",
+			"dir": null
+		},
+		{
+			"name": "json2object",
+			"url": "https://github.com/FunkinCrew/json2object",
+			"ref": "a8c26f18463c98da32f744c214fe02273e1823fa",
+			"type": "git",
+			"dir": null
+		},
+		{
+			"name": "hxjsonast",
+			"version": "1.1.0",
+			"type": "haxelib"
+		},
+		{
+			"name": "json5hx",
+			"version": "1.0.2",
+			"type": "haxelib"
+		},
+		{
+			"name": "extension-androidtools",
+			"url": "https://github.com/MAJigsaw77/extension-androidtools",
+			"ref": "main",
+			"type": "git",
+			"dir": null
+		}
+	]
+}
