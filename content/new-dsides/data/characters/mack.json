@@ -1,101 +1,101 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				-1,
 				-28
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "idle",
-			"indices": [],
-			"name": "matpat idle"
+			"fps": 24,
+			"name": "matpat idle",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				433,
 				-167
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "matpat left"
+			"fps": 24,
+			"name": "matpat left",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-101,
 				-66
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "matpat right"
+			"fps": 24,
+			"name": "matpat right",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				70,
 				-346
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "matpat down"
+			"fps": 24,
+			"name": "matpat down",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				79,
 				190
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUP",
-			"indices": [],
-			"name": "matpat up"
+			"fps": 24,
+			"name": "matpat up",
+			"indices": []
 		},
 		{
-			"loop": true,
 			"offsets": [
 				-1,
 				-28
 			],
-			"anim": "idle-loop",
+			"loop": true,
 			"fps": 24,
-			"name": "matpat idle",
+			"anim": "idle-loop",
 			"indices": [
 				10,
 				11,
 				12,
 				13
-			]
+			],
+			"name": "matpat idle"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				0,
 				-30
 			],
-			"anim": "idle-alt",
+			"flipY": false,
+			"loop": false,
 			"fps": 24,
-			"name": "matpat confus",
+			"anim": "idle-alt",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "matpat confus"
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				158,
 				-118
 			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
 			"anim": "shock",
-			"loop": false,
-			"name": "mat scaredshit"
+			"fps": 24,
+			"name": "mat scaredshit",
+			"indices": [],
+			"flipX": false
 		}
 	],
 	"no_antialiasing": false,
@@ -114,8 +114,8 @@
 	"flip_x": false,
 	"healthbar_colour": -13190524,
 	"camera_position": [
-		-65,
-		-69
+		-280,
+		-398
 	],
 	"gameover_loop_sound": null,
 	"sing_duration": 4,

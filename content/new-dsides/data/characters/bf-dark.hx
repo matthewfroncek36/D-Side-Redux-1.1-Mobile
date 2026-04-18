@@ -3,7 +3,7 @@ import funkin.game.shaders.DropShadowShader;
 var i = boyfriend;
 
 function onLoad() {
-	if (ClientPrefs.inDevMode && FlxG.save.data.completionPercent >= 100)
+	if (ClientPrefs.inDevMode)
 		initScript('data/scripts/bf');
 
 	i.color = getColor(Paths.sanitize(PlayState.SONG.song));

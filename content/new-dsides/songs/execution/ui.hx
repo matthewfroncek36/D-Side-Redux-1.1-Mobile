@@ -1,5 +1,4 @@
-import funkin.data.NoteSkinHelper;
-
+// import funkin.data.NoteSkinHelper;
 import flixel.text.FlxText;
 // import funkin.RatingInfo;
 import funkin.utils.MathUtil;
@@ -17,7 +16,8 @@ var bro:Float;
 var totalElapsed:Float = 0;
 var fucked_up:Bool = true;
 var fucked_up_icons:Bool = true;
-//var illegal:FlxSprite;
+
+// var illegal:FlxSprite;
 var cameraState:Int = 0;
 
 function onLoad() {
@@ -27,20 +27,21 @@ function onLoad() {
 	songStartCallback = () -> {
 		new FlxTimer().start(1.2, (t:FlxTimer) -> {
 			startCountdown();
-			opponentStrums.playAnims = false;
+			getFieldFromID(1).playAnims = false;
 			modManager.setValue("transformX", -50);
 		});
 	}
 
-	illegal = new FlxSprite(0,0).makeGraphic(4980, 4020, FlxColor.BLUE);
+	illegal = new FlxSprite(0, 0).makeGraphic(4980, 4020, FlxColor.BLUE);
 	illegal.alpha = 0.001;
 	illegal.zIndex = 998;
 	illegal.blend = BlendMode.MULTIPLY;
 	illegal.cameras = [camHUD];
-	//illegal.visible = false;
+	// illegal.visible = false;
 	add(illegal);
 
-	if(ClientPrefs.lowQuality) return;
+	if (ClientPrefs.lowQuality)
+		return;
 
 	illegaltext = new FlxSprite(700, 600);
 	illegaltext.loadGraphic(Paths.image("backgrounds/exe/execution/illegalinstruction"));
@@ -50,9 +51,8 @@ function onLoad() {
 	illegaltext.antialiasing = false;
 	illegaltext.alpha = 0.001;
 	illegaltext.blend = BlendMode.ADD;
-	//illegaltext.visible = false;
+	// illegaltext.visible = false;
 	add(illegaltext);
-
 }
 
 function onCreatePost() {
@@ -65,7 +65,7 @@ function onCreatePost() {
 	playHUD.showRatingNum = false;
 
 	var poop = [playHUD.scoreTxt];
-	if(ClientPrefs.timeBarType != 'Disabled'){
+	if (ClientPrefs.timeBarType != 'Disabled') {
 		poop.push(playHUD.timeTxt);
 		poop.push(playHUD.timeBar);
 	}
@@ -96,21 +96,20 @@ function onCreatePost() {
 	scoreText.cameras = [camHUD];
 	add(scoreText);
 
-
 	for (m in [boyfriendGroup, dadGroup]) {
-		for (f in m.members) 
-			f.camDisplacement = 0;		
+		for (f in m.members)
+			f.camDisplacement = 0;
 	}
 
-	for (i in 0...4) 
-		script_SUSTAINENDOffsets[i].y += 50;
-	
+	// for (i in 0...4) {}
+	// script_SUSTAINENDOffsets[i].y += 50;
 
-	addCharacterToList('mobian_bf', 0);
-	addCharacterToList('LordX', 1);
-	addCharacterToList('mobian_gf', 2);
+	boyfriendGroup.addToList('mobian_bf', 0);
+	dadGroup.addToList('LordX', 1);
+	gfGroup.addToList('mobian_gf', 2);
 
-	if(ClientPrefs.lowQuality) return;
+	if (ClientPrefs.lowQuality)
+		return;
 
 	executionBG = new FlxSprite().makeGraphic(1280, 720, FlxColor.BLACK);
 	executionBG.cameras = [camOther];
@@ -134,6 +133,11 @@ function onCreatePost() {
 			FlxTween.tween(item, {alpha: 0}, 1.25);
 	});
 
+	for(field in playFields.members)
+	{
+		for(i in 0...4)
+			field._skin.susEndOffsets[i].y += 40;
+	}
 }
 
 function onDestroy() {
@@ -158,15 +162,15 @@ function onEvent(eventName, value1, value2) {
 				case 'aura':
 					cameraState = 2;
 					bro = 4;
-					defaultCamZoom= 0.55;
+					defaultCamZoom = 0.55;
 
 				case 'aura loss':
-					cameraState= 0;
+					cameraState = 0;
 					bro = 0;
 
 				case 'bg':
 					modManager.setValue("transformX", 0);
-					opponentStrums.playAnims = true;
+					getFieldFromID(1).playAnims = true;
 
 					for (m in [playHUD.timeBar, playHUD.timeTxt, playHUD.scoreTxt])
 						m.visible = true;
@@ -182,45 +186,42 @@ function onEvent(eventName, value1, value2) {
 
 					kadeEngineWatermark.visible = false;
 					scoreText.visible = false;
-				
-					//resetHUD();
+
+				// resetHUD();
 
 				case 'lord x transforms':
 					bro = 5;
 					cameraState = 2;
-					defaultCamZoom= 0.66;
+					defaultCamZoom = 0.66;
 					camZoomingMult = 0;
 					cameraSpeed = 1.4;
 
 				case 'error':
-					for(i in [dad, gf, boyfriend])
-					{
+					for (i in [dad, gf, boyfriend]) {
 						i.canDance = false;
 						i.pauseAnim();
 					}
-					//snapCamToPos(326, 375, true);
+					// snapCamToPos(326, 375, true);
 
 					illegal.alpha = 1;
-					if(!ClientPrefs.lowQuality)
-						illegaltext.alpha = 1;
-					
+					if (!ClientPrefs.lowQuality) illegaltext.alpha = 1;
+
 				case 'real intro':
 					fucked_up_icons = false;
 					bro = 2;
 					cameraState = 2;
-	
+
 					illegal.color = FlxColor.BLACK;
-					if(!ClientPrefs.lowQuality)
-						illegaltext.visible = false;
+					if (!ClientPrefs.lowQuality) illegaltext.visible = false;
 
 				case 'real intro fade':
 					camZooming = true;
-					defaultCamZoom= 2.4;
-					FlxTween.tween(game,{defaultCamZoom:0.6}, 12.5, {ease:FlxEase.quadOut});
+					defaultCamZoom = 2.4;
+					FlxTween.tween(game, {defaultCamZoom: 0.6}, 12.5, {ease: FlxEase.quadOut});
 
 					FlxTween.color(illegal, 8, illegal.color, FlxColor.BLUE);
-					FlxTween.tween(illegal,{alpha:0}, 16, {ease:FlxEase.quintInOut});
-					
+					FlxTween.tween(illegal, {alpha: 0}, 16, {ease: FlxEase.quintInOut});
+
 				case 'real start':
 					FlxTween.cancelTweensOf(game);
 					bro = 1;
@@ -230,7 +231,7 @@ function onEvent(eventName, value1, value2) {
 				case 'epic thing':
 					cameraState = 2;
 					defaultCamZoom = 0.6;
-					FlxTween.tween(game,{defaultCamZoom:0.57}, 5, {ease:FlxEase.quadInOut});
+					FlxTween.tween(game, {defaultCamZoom: 0.57}, 5, {ease: FlxEase.quadInOut});
 					bro = 3;
 
 				case 'end':
@@ -241,13 +242,12 @@ function onEvent(eventName, value1, value2) {
 
 var iconScale:Float = 1;
 
-function onUpdate(elapsed) {	
-	if (!fucked_up){		
+function onUpdate(elapsed) {
+	if (!fucked_up) {
 		return;
 	}
 
-
-	if(fucked_up_icons){
+	if (fucked_up_icons) {
 		for (icon in [playHUD.iconP1, playHUD.iconP2]) {
 			icon.setGraphicSize(Std.int(FlxMath.lerp(150, icon.width, 0.50)));
 			icon.updateHitbox();
@@ -261,49 +261,48 @@ function onUpdate(elapsed) {
 
 	totalElapsed += elapsed * -1;
 
-	var displacementx = ((2.5 * Math.sin(totalElapsed * 0.45)) + (FlxG.random.float(-5, 5) * 0.07))*(elapsed*60);
-	var displacementy = ((2.5 * Math.sin(totalElapsed * 0.25)) + (FlxG.random.float(-5, 5) * 0.07))*(elapsed*60);
-	var displacementcam = (0.4 * Math.sin(totalElapsed * 0.55))*(elapsed*60);
+	var displacementx = ((2.5 * Math.sin(totalElapsed * 0.45)) + (FlxG.random.float(-5, 5) * 0.07)) * (elapsed * 60);
+	var displacementy = ((2.5 * Math.sin(totalElapsed * 0.25)) + (FlxG.random.float(-5, 5) * 0.07)) * (elapsed * 60);
+	var displacementcam = (0.4 * Math.sin(totalElapsed * 0.55)) * (elapsed * 60);
 
 	switch (bro) {
 		case 0:
-			//nothing ever happens
+			// nothing ever happens
 			isCameraOnForcedPos = false;
-		
+
 		case 1:
-			//real part
+			// real part
 			camGame.scroll.x = camGame.scroll.x + displacementx;
 			camGame.scroll.y = camGame.scroll.y - displacementy;
 			camGame.angle = displacementcam;
 			isCameraOnForcedPos = false;
 
 		case 2:
-			//real part intro
+			// real part intro
 			isCameraOnForcedPos = true;
-    		camFollow.x = 830;
-    		camFollow.y = 475;
-		
+			camFollow.x = 830;
+			camFollow.y = 475;
+
 		case 3:
-			//real part ending
-			camGame.scroll.x = camGame.scroll.x + displacementx*0.1;
-			camGame.scroll.y = camGame.scroll.y - displacementy*0.1;
+			// real part ending
+			camGame.scroll.x = camGame.scroll.x + displacementx * 0.1;
+			camGame.scroll.y = camGame.scroll.y - displacementy * 0.1;
 			camGame.angle = displacementcam;
 			isCameraOnForcedPos = true;
 			camFollow.x = 830;
-    		camFollow.y = 475;
+			camFollow.y = 475;
 
 		case 4:
-			//aura
+			// aura
 			isCameraOnForcedPos = true;
-    		camFollow.x = 626;
-    		camFollow.y = 375;
+			camFollow.x = 626;
+			camFollow.y = 375;
 
 		case 5:
-			//pibby
+			// pibby
 			isCameraOnForcedPos = true;
-    		camFollow.x = 326;
-    		camFollow.y = 375;
-
+			camFollow.x = 326;
+			camFollow.y = 375;
 	}
 }
 

@@ -4019,7 +4019,7 @@
 				"mustHitSection": true
 			}
 		],
-		"arrowSkin": "pixel",
+		"arrowSkins": ["pixel", "pixel"],
 		"player3": null,
 		"song": "Thorns",
 		"stage": "school",

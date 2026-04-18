@@ -5,7 +5,11 @@
     "sex": "Male",
     "charScale": 0.18,
     "cData": [
-        {"dir": "misc/concepts/", "path": "ved1", "desc": "First ever Ved Concept by kiwiquest", "scale": 0.500},
+        {"dir": "misc/concepts/", "path": "spaget0", "desc": "Leslie Serafimini Sketch by EllisBros", "scale": 0.500},
+		{"dir": "misc/concepts/", "path": "spaget1", "desc": "Initial Pitch for D-Spaghetti by FifLeo", "scale": 0.800},
+		{"dir": "misc/concepts/", "path": "spaget2", "desc": "D-Peppino Event Concept by SKL", "scale": 0.800},
+		{"dir": "misc/concepts/", "path": "spaget3", "desc": "LE SSERAFIM's D-Spaghetti Fits by FifLeo", "scale": 0.600},
+		{"dir": "misc/concepts/", "path": "ved1", "desc": "First ever Ved Concept by kiwiquest", "scale": 0.500},
         {"dir": "misc/concepts/", "path": "guy", "desc": "Dguy Concept by EllisBros", "scale": 0.500},
         {"dir": "misc/concepts/", "path": "chica", "desc": "First ever Performance Concept by MewMarissa", "scale": 0.640},
         {"dir": "misc/concepts/", "path": "ved2", "desc": "Matpat Sprite Sketches by EllisBros & Offbi", "scale": 0.570},

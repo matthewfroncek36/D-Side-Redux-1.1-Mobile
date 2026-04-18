@@ -1,5 +1,6 @@
 {
 	"song": {
+		"arrowSkins": ["exe", "exe"],
 		"player1": "mobian_bf",
 		"events": [],
 		"gfVersion": "mobian_gf",

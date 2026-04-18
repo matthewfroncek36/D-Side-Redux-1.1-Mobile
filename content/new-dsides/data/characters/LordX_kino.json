@@ -1,67 +1,67 @@
 {
 	"animations": [
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				252,
 				-35
 			],
-			"flipY": false,
-			"loop": false,
-			"fps": 24,
 			"anim": "singDOWN",
-			"flipX": false,
+			"fps": 24,
+			"name": "Down",
 			"indices": [],
-			"name": "Down"
+			"flipX": false
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				342,
 				58
 			],
-			"flipY": false,
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFT",
-			"flipX": false,
+			"fps": 24,
+			"name": "Left",
 			"indices": [],
-			"name": "Left"
+			"flipX": false
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				90,
 				-11
 			],
-			"flipY": false,
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHT",
-			"flipX": false,
+			"fps": 24,
+			"name": "Right",
 			"indices": [],
-			"name": "Right"
+			"flipX": false
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				170,
 				145
 			],
-			"flipY": false,
-			"loop": false,
-			"fps": 24,
 			"anim": "singUP",
-			"flipX": false,
+			"fps": 24,
+			"name": "Up",
 			"indices": [],
-			"name": "Up"
+			"flipX": false
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				178,
 				9
 			],
-			"flipY": false,
-			"loop": false,
-			"fps": 24,
 			"anim": "danceLeft",
-			"flipX": false,
+			"fps": 24,
+			"name": "Idle",
 			"indices": [
 				0,
 				1,
@@ -75,18 +75,18 @@
 				9,
 				10
 			],
-			"name": "Idle"
+			"flipX": false
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				178,
 				9
 			],
-			"flipY": false,
-			"loop": false,
-			"fps": 24,
 			"anim": "danceRight",
-			"flipX": false,
+			"fps": 24,
+			"name": "Idle",
 			"indices": [
 				0,
 				1,
@@ -100,98 +100,98 @@
 				9,
 				10
 			],
-			"name": "Idle"
+			"flipX": false
 		},
 		{
-			"loop": true,
-			"flipY": false,
 			"offsets": [
 				344,
 				-119
 			],
-			"anim": "singLEFT-alt",
+			"flipY": false,
+			"loop": true,
 			"fps": 24,
-			"name": "ALTLeft",
+			"anim": "singLEFT-alt",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "ALTLeft"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				25,
 				85
 			],
-			"anim": "singRIGHT-alt",
+			"flipY": false,
+			"loop": false,
 			"fps": 24,
-			"name": "ALTRight",
+			"anim": "singRIGHT-alt",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "ALTRight"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				215,
 				306
 			],
-			"anim": "singUP-alt",
+			"flipY": false,
+			"loop": false,
 			"fps": 24,
-			"name": "ALTUp",
+			"anim": "singUP-alt",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "ALTUp"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				192,
 				-124
 			],
-			"anim": "singDOWN-alt",
+			"flipY": false,
+			"loop": false,
 			"fps": 24,
-			"name": "ALTDown",
+			"anim": "singDOWN-alt",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "ALTDown"
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				297,
 				153
 			],
-			"flipY": false,
-			"loop": false,
-			"fps": 24,
 			"anim": "Transform1",
-			"flipX": false,
+			"fps": 24,
+			"name": "Transform1",
 			"indices": [],
-			"name": "Transform1"
+			"flipX": false
 		},
 		{
+			"loop": true,
+			"flipY": false,
 			"offsets": [
 				248,
 				65
 			],
-			"flipY": false,
-			"loop": true,
-			"fps": 24,
 			"anim": "Transform2",
-			"flipX": false,
+			"fps": 24,
+			"name": "Transform2",
 			"indices": [],
-			"name": "Transform2"
+			"flipX": false
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				-343,
 				-355
 			],
-			"flipY": false,
-			"loop": false,
-			"fps": 24,
 			"anim": "Transform3",
-			"flipX": false,
+			"fps": 24,
+			"name": "Transform3",
 			"indices": [],
-			"name": "Transform3"
+			"flipX": false
 		}
 	],
 	"no_antialiasing": false,
@@ -210,8 +210,8 @@
 	"flip_x": false,
 	"healthbar_colour": -10859152,
 	"camera_position": [
-		-359,
-		-103
+		-423,
+		-300
 	],
 	"gameover_loop_sound": null,
 	"sing_duration": 6.1,

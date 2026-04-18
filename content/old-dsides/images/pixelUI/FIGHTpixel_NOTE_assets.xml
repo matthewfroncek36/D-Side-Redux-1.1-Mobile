@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="pixel_NOTE_assets.png">
+	<SubTexture name="arrowDOWN0000" x="23" y="0" width="23" height="23"/>
+	<SubTexture name="arrowLEFT0000" x="0" y="0" width="23" height="23"/>
+	<SubTexture name="arrowRIGHT0000" x="69" y="0" width="23" height="23"/>
+	<SubTexture name="arrowUP0000" x="46" y="0" width="23" height="23"/>
+	<SubTexture name="purple0000" x="0" y="23" width="23" height="23"/>
+	<SubTexture name="purple hold piece0000" x="92" y="0" width="7" height="69"/>
+	<SubTexture name="purple hold end0000" x="92" y="69" width="7" height="46"/>
+	<SubTexture name="left confirm0000" x="0" y="69" width="23" height="23"/>
+	<SubTexture name="left confirm0001" x="0" y="92" width="23" height="23"/>
+	<SubTexture name="left press0000" x="0" y="46" width="23" height="23"/>
+	<SubTexture name="blue0000" x="23" y="23" width="23" height="23"/>
+	<SubTexture name="blue hold piece0000" x="99" y="0" width="7" height="69"/>
+	<SubTexture name="blue hold end0000" x="99" y="69" width="7" height="46"/>
+	<SubTexture name="down confirm0000" x="23" y="92" width="23" height="23"/>
+	<SubTexture name="down confirm0001" x="23" y="69" width="23" height="23"/>
+	<SubTexture name="down press0000" x="23" y="46" width="23" height="23"/>
+	<SubTexture name="green0000" x="46" y="23" width="23" height="23"/>
+	<SubTexture name="green hold piece0000" x="106" y="0" width="7" height="69"/>
+	<SubTexture name="green hold end0000" x="106" y="69" width="7" height="46"/>
+	<SubTexture name="up confirm0000" x="46" y="69" width="23" height="23"/>
+	<SubTexture name="up confirm0001" x="46" y="92" width="23" height="23"/>
+	<SubTexture name="up press0000" x="46" y="46" width="23" height="23"/>
+	<SubTexture name="red0000" x="69" y="23" width="23" height="23"/>
+	<SubTexture name="red hold piece0000" x="113" y="0" width="7" height="69"/>
+	<SubTexture name="red hold end0000" x="113" y="69" width="7" height="46"/>
+	<SubTexture name="right confirm0000" x="69" y="69" width="23" height="23"/>
+	<SubTexture name="right confirm0001" x="69" y="92" width="23" height="23"/>
+	<SubTexture name="right press0000" x="69" y="46" width="23" height="23"/>
+</TextureAtlas>

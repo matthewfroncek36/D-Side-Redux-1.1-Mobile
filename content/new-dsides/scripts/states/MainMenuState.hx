@@ -39,6 +39,8 @@ var clicksOnChars = 0;
 
 var colorcorrection = newShader('colorcorrection');
 
+var v1percent = PluginsManager.callPluginFunc('Utils', 'getV1Percent', []);
+
 /**
  * [onLoad()]
  * Runs on loading of the script.
@@ -138,10 +140,10 @@ function onLoad() {
 
 	var font = FlxBitmapFont.fromMonospace(Paths.image("menus/main/numbers"), "0123456789%.", new FlxPoint(65, 77));
 
-	var color = FlxG.save.data.completionPercent >= 100 ? 0xFFd119e3 :0xFFF58FFF;
+	var color = v1percent >= 100 ? 0xFFd119e3 :0xFFF58FFF;
 
 	compText = new FlxBitmapText(40, 670, '', font);
-	compText.text = Std.string(FlxG.save.data.completionPercent) + '%';
+	compText.text = Std.string(v1percent) + '%';
 	compText.scale.set(0.3, 0.3);
 	compText.updateHitbox();
 	compText.color = color;
@@ -220,6 +222,9 @@ function onLoad() {
 	}
 	clicksOnChars = FlxG.save.data.charClicks;
 
+	
+
+
 	FlxG.camera.follow(null);
 	PluginsManager.callPluginFunc('Utils', 'setMouseGraphic', [false]);
 	FlxG.mouse.visible = true;
@@ -231,8 +236,6 @@ function onLoad() {
 	var save = FlxG.save.data.completedMenuShit.get('main');
     if(save == false || save == null){
         FlxG.save.data.completedMenuShit.set('main', true);
-        FlxG.save.data.completionPercent += 1.4;
-
         FlxG.save.flush();
     }
 
@@ -287,7 +290,6 @@ function onUpdate(elapsed) {
 			FlxG.resetState();
 
 			PluginsManager.callPluginFunc('Utils', 'fullSave', [true]);
-			FlxG.save.data.completionPercent = 100;
 			FlxG.save.flush();
 		});
 		vid.play();
@@ -750,11 +752,11 @@ function giveTrophy(trophyColor, skipAnim) {
 	var compsave = FlxG.save.data.trophyCompletion.get(char);
     if((compsave == false || compsave == null)){
         FlxG.save.data.trophyCompletion.set(char, true);
-        FlxG.save.data.completionPercent += 2;
 
         FlxG.save.flush();
+		v1percent = PluginsManager.callPluginFunc('Utils', 'getV1Percent', []);
 
-		compText.text = Std.string(FlxG.save.data.completionPercent) + '%';
+		compText.text = Std.string(v1percent) + '%';
 		completion.x = compText.x + compText.width + 14;
     }
 }

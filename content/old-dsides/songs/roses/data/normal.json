@@ -4949,7 +4949,7 @@
 		"player3": null,
 		"song": "roses",
 		"stage": "school",
-		"arrowSkin": "pixel",
+		"arrowSkins": ["pixel", "pixel"],
 		"validScore": true,
 		"needsVoices": true,
 		"speed": 1.4,

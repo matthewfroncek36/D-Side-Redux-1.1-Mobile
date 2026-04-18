@@ -1,127 +1,179 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				-59,
 				-110
 			],
-			"anim": "idle",
+			"loop": false,
 			"fps": 24,
-			"name": "Idle",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "Idle"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-54,
 				-109
 			],
-			"anim": "singDOWN",
+			"loop": false,
 			"fps": 24,
-			"name": "Down",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Down"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-54,
 				-110
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"name": "Up",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "Up"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-67,
 				-105
 			],
-			"anim": "singLEFT",
+			"loop": false,
 			"fps": 24,
-			"name": "Left",
-			"indices": []
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Left"
+		},
+		{
+			"offsets": [
+				-59,
+				-109
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Right"
 		},
 		{
 			"loop": false,
-			"offsets": [
-				-71,
-				-114
-			],
-			"anim": "singRIGHT",
-			"fps": 24,
-			"name": "Right",
-			"indices": []
-		},
-		{
+			"flipY": false,
 			"offsets": [
 				-61,
 				-108
 			],
-			"flipY": false,
-			"loop": false,
-			"fps": 24,
 			"anim": "firstDeath",
-			"flipX": false,
+			"fps": 24,
+			"name": "Pie",
 			"indices": [],
-			"name": "Pie"
+			"flipX": false
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				-60,
 				-108
 			],
-			"flipY": false,
-			"loop": false,
-			"fps": 24,
 			"anim": "deathConfirm",
-			"flipX": false,
+			"fps": 24,
+			"name": "Retry Confirm",
 			"indices": [],
-			"name": "Retry Confirm"
+			"flipX": false
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				-61,
 				-108
 			],
-			"flipY": false,
-			"loop": false,
-			"fps": 24,
 			"anim": "deathLoop",
-			"flipX": false,
+			"fps": 24,
+			"name": "Retry",
 			"indices": [
 				8,
 				9
 			],
-			"name": "Retry"
+			"flipX": false
 		},
 		{
+			"offsets": [
+				-57,
+				-109
+			],
+			"flipY": false,
 			"loop": false,
-			"flipY": false,
-			"offsets": [
-				-57,
-				-109
-			],
-			"anim": "shock",
 			"fps": 24,
-			"name": "Shocked",
+			"anim": "shock",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "Shocked"
 		},
 		{
-			"loop": true,
-			"flipY": false,
 			"offsets": [
 				-57,
 				-109
 			],
-			"anim": "shake",
+			"flipY": false,
+			"loop": true,
 			"fps": 24,
-			"name": "Shake",
+			"anim": "shake",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "Shake"
+		},
+		{
+			"offsets": [
+				-67,
+				-105
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singLEFTmiss",
+			"loop": false,
+			"name": "MissL"
+		},
+		{
+			"offsets": [
+				-59,
+				-109
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singRIGHTmiss",
+			"loop": false,
+			"name": "MissR"
+		},
+		{
+			"offsets": [
+				-54,
+				-110
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singUPmiss",
+			"loop": false,
+			"name": "MissU"
+		},
+		{
+			"offsets": [
+				-54,
+				-109
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singDOWNmiss",
+			"loop": false,
+			"name": "MissD"
 		}
 	],
 	"no_antialiasing": true,

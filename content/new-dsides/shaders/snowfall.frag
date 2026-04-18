@@ -1,49 +1,30 @@
 #pragma header
 
-precision highp float;
-
 uniform float intensity;
 uniform int amount;
 uniform float time;
 
-float hash(float n) 
-{
-    return fract(sin(n) * 43758.5453123);
+vec2 uv;
+
+float rnd(float x) {
+    return fract(sin(dot(vec2(x + 48, 38 / (x + 2.5)), vec2(13, 78))) * (43758));
+}
+
+float drawCircle(vec2 center, float radius) {
+    return 1.0 - smoothstep(0.0, radius, length(uv - center));
 }
 
 void main()
 {
-    vec4 baseColor = flixel_texture2D(bitmap, openfl_TextureCoordv);
-    vec2 uv = vec2(openfl_TextureCoordv.x * 2.0, openfl_TextureCoordv.y);
+    uv = vec2(openfl_TextureCoordv.x * 2.0, openfl_TextureCoordv.y);
+    // gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);
+    gl_FragColor = texture2D(bitmap, openfl_TextureCoordv);
     
-    float fAmount = float(amount);
-    
-    float timeFactor = time * 1.5 * (0.1 + intensity);
-    float radScale = (intensity / 0.1333) * 0.012;
-    float accum = 0.0;
-
-    for(int i = 0; i < 30; i++) 
-    {
-        if (i >= amount) break;
-
-        float fI = float(i);
-        float j = fI * 2.0;
-        
-        float r = hash(j);
-        float sj = sin(j);
-        float cj = cos(j);
-        
-        float speed = 0.3 + r * (0.7 + 0.5 * cos(j / (fAmount * 0.25)));
-        
-        vec2 centerPos;
-        centerPos.x = ((0.5 - uv.y) * intensity + hash(j + 5.0) + 0.1 * cos(time + sj)) * 2.0;
-        centerPos.y = mod(sj + speed * timeFactor, 1.0);
-        
-        float radius = 0.001 + speed * radScale;
-        float dist = length(uv - centerPos);
-        
-        accum += 0.45 * (1.0 - smoothstep(0.0, radius, dist));
+    for(int i=0; i<amount; i++) {
+        float j = float(i) * 2.0;
+        float realIntensity = intensity * 1.0;
+        float speed = (0.3+rnd(cos(j))*(0.7+0.5*cos(j/(float(amount)*0.25))));
+        vec2 center = vec2(((0.5-uv.y)*realIntensity+rnd(j)+0.1*(cos(time+sin(j)))) * 2.0, mod(sin(j)+speed*(time*1.5*(0.1+realIntensity)), 1.0));
+        gl_FragColor += vec4(0.45*drawCircle(center, 0.001+speed*(intensity/(0.2 / 1.5))*0.012));
     }
-
-    gl_FragColor = vec4(baseColor.rgb + accum, baseColor.a);
 }

@@ -4,7 +4,7 @@
  * State that provides some character info, alongside providing a way to view some concepts.
  */
 import haxe.Json;
-import funkin.FunkinAssets;
+import sys.io.File;
 import flixel.FlxObject;
 import flixel.text.FlxText;
 import funkin.states.MainMenuState;
@@ -173,8 +173,6 @@ function onLoad() {
 	var save = FlxG.save.data.completedMenuShit.get('gallery');
     if(save == false || save == null){
         FlxG.save.data.completedMenuShit.set('gallery', true);
-        FlxG.save.data.completionPercent += 1.4;
-
         FlxG.save.flush();
     }
 }
@@ -208,7 +206,7 @@ function centerButtons(sprites) {
  * String value of the character being loaded
  */
 function loadCharJSON(char) {
-	var rawJson = FunkinAssets.getContent(Paths.modFolders('images/menus/gallery/characters/' + char + '/data.json'));
+	var rawJson = File.getContent(Paths.modFolders('images/menus/gallery/characters/' + char + '/data.json'));
 	var data:CharacterData = Json.parse(rawJson);
 	return data;
 }

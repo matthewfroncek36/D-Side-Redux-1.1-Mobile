@@ -1,8 +1,8 @@
-
 /**
  * [TitleState.hx]
  * State that shows the mod's name and YADDA YADDA DO I HAVE TO EXPLAIN WHAT THE TITLESTATE IS
  */
+
 import funkin.Mods;
 import funkin.FunkinAssets;
 import funkin.audio.FunkinSound;
@@ -11,10 +11,14 @@ import funkin.states.TitleState;
 import funkin.states.MainMenuState;
 import funkin.utils.MathUtil;
 import funkin.scripting.PluginsManager;
+
 import flixel.addons.display.FlxBackdrop;
 import flixel.text.FlxText;
+
 import funkin.backend.PlayerSettings;
+
 import flixel.addons.transition.FlxTransitionableState;
+
 import funkin.states.transitions.ScriptedTransition;
 import funkin.audio.visualize.PolygonSpectogram;
 import funkin.audio.visualize.PolygonSpectogram.VISTYPE;
@@ -96,8 +100,8 @@ var flavorText:Array<Array<String>> = [
 	['spongebob', 'patrick'],
 	['huggy wuggy seek scary blue..', '....zumbo zauce'],
 	['bro got tricked', 'by bob burger'],
-        ['rest in peace trixie', 'the dsides token cat'],
-        ['rest in peace buddy', 'best dog lowkey']
+	['rest in peace trixie', 'the dsides token cat'],
+	['rest in peace buddy', 'best dog lowkey']
 ];
 
 var randChoice = ['test', 'test'];
@@ -109,36 +113,41 @@ var randChoice = ['test', 'test'];
  * In this script:
  *  Creates all graphics shown in the menu.
  *  Changes the discord status. 
-*/
-function onLoad() {
+ */
+function onLoad()
+{
 	PluginsManager.populate();
 	PluginsManager.callPluginFunc('Utils', 'setMouseGraphic', [false]);
 	DiscordClient.changePresence('Viewing the Title Screen');
-
-	FlxG.sound.music.stop();
+	
+	if (FlxG.sound.music != null) FlxG.sound.music.stop();
+	
 	FlxTimer.wait(1, () -> {
 		FunkinSound.playMusic(Paths.music('freakyMenu'), 0.45);
 		Conductor.bpm = 102;
-		beatHit();
+		onBeatHit();
+		
+		viz = new PolygonSpectogram(FlxG.sound.music, FlxColor.WHITE, 1280, 2, SPECDIRECTION.HORIZONTAL);
+		viz.waveAmplitude = 720 / 4;
+		viz.thickness = 4;
+		viz.y = 720 / 2;
+		viz.color = 0xFF525252;
+		viz.alpha = 0.6;
+		viz.zIndex = 1;
+		add(viz);
+		
+		refreshZ();
 	});
-
+	
 	randChoice = flavorText[FlxG.random.int(0, flavorText.length - 1)];
-
+	
 	bg = new FlxBackdrop(Paths.image("menus/checker"), FlxAxes.XY, 0, 0);
 	bg.scale.set(4, 4);
 	bg.color = 0xFFaa11fc;
 	bg.visible = false;
 	bg.antialiasing = false;
 	add(bg);
-
-	viz = new PolygonSpectogram(FlxG.sound.music, FlxColor.WHITE, 1280, 2, SPECDIRECTION.HORIZONTAL);
-	viz.waveAmplitude = 720 / 4;
-	viz.thickness = 4;
-	viz.y = 720 / 2;
-	viz.color = 0xFF525252;
-	viz.alpha = 0.6;
-	add(viz);
-
+	
 	dance = new FlxSprite(600);
 	dance.frames = Paths.getSparrowAtlas('menus/titlebump');
 	dance.animation.addByPrefix('bump', 'Title', 24, false);
@@ -147,16 +156,18 @@ function onLoad() {
 	dance.scale.set(0.45, 0.45);
 	dance.updateHitbox();
 	dance.antialiasing = true;
+	dance.zIndex = 2;
 	add(dance);
-
+	
 	logo = new FlxSprite().loadGraphic(Paths.image('menus/logo'));
 	logo.scale.set(0.325, 0.325);
 	logo.updateHitbox();
 	logo.screenCenter(FlxAxes.Y);
 	logo.visible = false;
 	logo.antialiasing = true;
+	logo.zIndex = 3;
 	add(logo);
-
+	
 	titleText = new FlxSprite();
 	titleText.frames = Paths.getSparrowAtlas('menus/titleEnter');
 	titleText.animation.addByPrefix('idle', "Press Enter to Begin", 24);
@@ -167,20 +178,22 @@ function onLoad() {
 	titleText.animation.play('idle');
 	titleText.updateHitbox();
 	titleText.visible = false;
+	titleText.zIndex = 4;
 	add(titleText);
-
+	
 	bgColor = new FlxSprite().makeGraphic(1280, 720, 0xFFaa11fc);
 	bgColor.alpha = 0;
 	add(bgColor);
-
+	
 	bgDoodles = new FlxSprite().loadGraphic(Paths.image('menus/doodles'));
 	bgDoodles.scale.set(0.75, 0.75);
 	bgDoodles.updateHitbox();
 	bgDoodles.screenCenter();
 	bgDoodles.color = 0xFFf6ccff;
 	bgDoodles.alpha = 0;
+	bgDoodles.zIndex = 0;
 	add(bgDoodles);
-
+	
 	introTxt = new FlxText();
 	introTxt.setFormat(Paths.font('Pixim.otf'), 60, FlxColor.WHITE, FlxTextAlign.CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 	introTxt.text = 'TEST';
@@ -188,8 +201,9 @@ function onLoad() {
 	introTxt.antialiasing = true;
 	introTxt.screenCenter();
 	introTxt.visible = false;
+	introTxt.zIndex = 2;
 	add(introTxt);
-
+	
 	var songtxt = PluginsManager.callPluginFunc('Utils', 'menuIntroCard', ["Gettin' Freaky", 'Philiplol, selora789', [24, 7]]);
 	add(songtxt);
 }
@@ -200,7 +214,8 @@ var entered = false;
  * [onEnter()]
  * Handles what happens when the player presses enter
  */
-function onEnter() {
+function onEnter()
+{
 	ScriptedTransition.setTransition('SimpleSticker');
 	viz.color = 0xFFaa11fc;
 	entered = true;
@@ -216,33 +231,33 @@ function onEnter() {
 }
 
 /**
- * [onUpdate(elapsed)]
- * Run on every frame update.
- 
- * @param elapsed
- * Floating-point value that holds the second-value between the last frame update of the game.
- * Also known as a frame-delta.
-  
- * In this script
- *  sets Conductor's songPosition variable.
- *  handles object positioning
- *  handles inputs
-*/
-function onUpdate(elapsed) {
-	if (FlxG.sound.music != null && FlxG.sound.music.playing)
-		Conductor.songPosition = FlxG.sound.music.time;
+	* [onUpdate(elapsed)]
+	* Run on every frame update.
 
-	if (controls.ACCEPT || FlxG.mouse.justPressed) {
-		if (!skippedIntro)
-			skipIntro();
-		else if (!entered)
-			onEnter();
+	* @param elapsed
+	* Floating-point value that holds the second-value between the last frame update of the game.
+	* Also known as a frame-delta.
+	 
+	* In this script
+	*  sets Conductor's songPosition variable.
+	*  handles object positioning
+	*  handles inputs
+ */
+function onUpdate(elapsed)
+{
+	if (FlxG.sound.music != null && FlxG.sound.music.playing) Conductor.songPosition = FlxG.sound.music.time;
+	
+	if (controls.ACCEPT || FlxG.mouse.justPressed)
+	{
+		if (!skippedIntro) skipIntro();
+		else if (!entered) onEnter();
 	}
-	if (bg != null) {
+	if (bg != null)
+	{
 		bg.x += 2.5 * (elapsed * 60);
 		bg.y += 2.5 * (elapsed * 60);
 	}
-
+	
 	FlxG.camera.zoom = MathUtil.decayLerp(FlxG.camera.zoom, 1, 6.25, elapsed);
 }
 
@@ -252,7 +267,8 @@ function onUpdate(elapsed) {
  * @param text 
  * String value of the text you want displayed
  */
-function changeTxt(text:String) {
+function changeTxt(text:String)
+{
 	introTxt.text = text;
 	introTxt.screenCenter();
 }
@@ -267,11 +283,14 @@ var curBeat = 0;
  *  runs the dance function on the character object
  *  handles the title sequence based on the current beat
  */
-function onBeatHit() {
+function onBeatHit()
+{
 	curBeat += 1;
-
-	if (!skippedIntro) {
-		switch (curBeat) {
+	
+	if (!skippedIntro)
+	{
+		switch (curBeat)
+		{
 			case 1:
 				changeTxt('DastardlyDeacon\nFifLeo\nEllisBros\nDuskieWhy\n ');
 				introTxt.visible = true;
@@ -304,10 +323,10 @@ function onBeatHit() {
 				skipIntro();
 		}
 	}
-
-	if (dance != null)
-		dance.animation.play('bump', true);
-	if (logo != null) {
+	
+	if (dance != null) dance.animation.play('bump', true);
+	if (logo != null)
+	{
 		logo.scale.set(0.325, 0.325);
 		FlxTween.tween(logo.scale, {x: 0.3, y: 0.3}, 0.3, {ease: FlxEase.expoOut});
 	}
@@ -317,19 +336,21 @@ function onBeatHit() {
  * [skipIntro()]
  * handles skipping the intro sequence
  */
-function skipIntro() {
-	if (!skippedIntro) {
+function skipIntro()
+{
+	if (!skippedIntro)
+	{
 		skippedIntro = true;
 		FlxTween.cancelTweensOf(FlxG.camera);
 		FlxG.camera.zoom = 1;
 		viz.color = 0xFF1fcd4d;
-
+		
 		FlxTween.cancelTweensOf(bgColor);
 		FlxTween.cancelTweensOf(bgDoodles);
 		bgColor.alpha = 0;
 		bgDoodles.alpha = 0;
 		introTxt.alpha = 0;
-
+		
 		FlxG.camera.flash(FlxColor.WHITE, 1);
 		dance.visible = true;
 		logo.visible = true;

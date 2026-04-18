@@ -7820,7 +7820,7 @@
 		"keys": 4,
 		"song": "Lore",
 		"validScore": true,
-		"arrowSkin": "ourple",
+		"arrowSkins": ["ourple", "default"],
 		"lanes": 2,
 		"speed": 2.6,
 		"sectionLengths": [],

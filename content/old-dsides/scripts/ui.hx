@@ -76,7 +76,7 @@ function onCreatePost() {
 		scoreText.cameras = [camHUD];
 		add(scoreText);
 
-		opponentStrums.playAnims = false;
+		getFieldFromID(1).playAnims = false;
 
 		for (m in [boyfriendGroup, dadGroup]) {
 			for (f in m.members) {
@@ -85,8 +85,11 @@ function onCreatePost() {
 			}
 		}
 
-		for (i in 0...4)
-			script_SUSTAINENDOffsets[i].y += 50;
+		for(field in playFields.members)
+		{
+			for(i in 0...4)
+				field._skin.susEndOffsets[i].y += 40 * (ClientPrefs.downScroll ? -1 : 1);
+		}
 	} else {
 		playHUD.timeBar.setColors(dad.healthColour, FlxColor.BLACK);
 	}

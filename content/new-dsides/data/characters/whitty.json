@@ -1,69 +1,68 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "idle",
-			"indices": [],
-			"name": "Whitty/WhittyIdle"
+			"fps": 24,
+			"name": "Whitty/WhittyIdle",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				232,
 				-74
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "Whitty/WhittyLeft"
+			"fps": 24,
+			"name": "Whitty/WhittyLeft",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				131,
 				-218
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "Whitty/WhittyDown"
+			"fps": 24,
+			"name": "Whitty/WhittyDown",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				122,
 				16
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUP",
-			"indices": [],
-			"name": "Whitty/WhittyUp"
+			"fps": 24,
+			"name": "Whitty/WhittyUp",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-99,
 				-88
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "Whitty/WhittyRight"
+			"fps": 24,
+			"name": "Whitty/WhittyRight",
+			"indices": []
 		},
 		{
-			"loop": true,
 			"offsets": [
 				0,
 				0
 			],
-			"anim": "idle-loop",
+			"loop": true,
 			"fps": 24,
-			"name": "Whitty/WhittyIdle",
+			"anim": "idle-loop",
 			"indices": [
 				10,
 				11,
@@ -75,7 +74,8 @@
 				17,
 				18,
 				19
-			]
+			],
+			"name": "Whitty/WhittyIdle"
 		}
 	],
 	"no_antialiasing": false,
@@ -90,11 +90,12 @@
 	"gameover_confirm_sound": null,
 	"healthicon": "whitty",
 	"gameover_character": null,
+	"vslice_sustains": false,
 	"flip_x": false,
 	"healthbar_colour": -5308416,
 	"camera_position": [
-		-302,
-		29
+		-255,
+		18
 	],
 	"gameover_loop_sound": null,
 	"sing_duration": 4,

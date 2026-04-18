@@ -2,73 +2,85 @@
 	"animations": [
 		{
 			"loop": false,
+			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
 			"anim": "idle",
 			"fps": 24,
-			"name": "spoinky_idle",
-			"indices": []
+			"name": "IDLEKYBOINKY",
+			"indices": [],
+			"flipX": false
 		},
 		{
 			"loop": false,
-			"offsets": [
-				90,
-				-20
-			],
-			"anim": "singLEFT",
-			"fps": 24,
-			"name": "spoinky_left",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-60,
-				10
-			],
-			"anim": "singRIGHT",
-			"fps": 24,
-			"name": "spoinky_right",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-30,
-				83
-			],
-			"anim": "singUP",
-			"fps": 24,
-			"name": "spoinky_up",
-			"indices": []
-		},
-		{
-			"loop": false,
+			"flipY": false,
 			"offsets": [
 				-40,
 				66
 			],
 			"anim": "singDOWN",
 			"fps": 24,
-			"name": "spoinky_down",
-			"indices": []
+			"name": "DOWNKYBOINKY",
+			"indices": [],
+			"flipX": false
 		},
 		{
 			"loop": false,
+			"flipY": false,
 			"offsets": [
-				540,
-				501
+				90,
+				-20
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "LEFTKYBOINKY",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				-61,
+				10
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "RIGHTKYBOINKY",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				-30,
+				83
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "UPKYBOINKY",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				1037,
+				366
 			],
 			"anim": "bonk",
 			"fps": 24,
-			"name": "spoinky_bonk",
-			"indices": []
+			"name": "BOINKYBOINKY",
+			"indices": [],
+			"flipX": false
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/and/spoinky_boingy",
+	"image": "characters/and/SPOINKY",
 	"position": [
 		10,
 		520
@@ -83,8 +95,8 @@
 	"flip_x": false,
 	"healthbar_colour": -4008487,
 	"camera_position": [
-		-319,
-		-294
+		-603,
+		-240
 	],
 	"gameover_loop_sound": null,
 	"sing_duration": 6.1,

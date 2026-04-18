@@ -1,80 +1,80 @@
 {
 	"animations": [
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				166,
 				95
 			],
-			"flipY": false,
-			"loop": false,
-			"fps": 24,
 			"anim": "idle-tricky",
-			"flipX": false,
+			"fps": 24,
+			"name": "TrickyIdle",
 			"indices": [],
-			"name": "TrickyIdle"
+			"flipX": false
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				167,
 				71
 			],
-			"flipY": false,
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFT",
-			"flipX": false,
+			"fps": 24,
+			"name": "TrickyLeft",
 			"indices": [],
-			"name": "TrickyLeft"
+			"flipX": false
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				36,
 				44
 			],
-			"flipY": false,
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHT",
-			"flipX": false,
+			"fps": 24,
+			"name": "TrickyRight",
 			"indices": [],
-			"name": "TrickyRight"
+			"flipX": false
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				21,
 				174
 			],
-			"flipY": false,
-			"loop": false,
-			"fps": 24,
 			"anim": "singUP",
-			"flipX": false,
+			"fps": 24,
+			"name": "TrickyUp",
 			"indices": [],
-			"name": "TrickyUp"
+			"flipX": false
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				92,
 				-43
 			],
-			"flipY": false,
-			"loop": false,
-			"fps": 24,
 			"anim": "singDOWN",
-			"flipX": false,
+			"fps": 24,
+			"name": "TrickyDown",
 			"indices": [],
-			"name": "TrickyDown"
+			"flipX": false
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				1,
 				-9
 			],
-			"anim": "danceLeft",
+			"flipY": false,
+			"loop": false,
 			"fps": 24,
-			"name": "GruntGFidle",
+			"anim": "danceLeft",
+			"flipX": false,
 			"indices": [
 				0,
 				1,
@@ -89,18 +89,18 @@
 				10,
 				11
 			],
-			"flipX": false
+			"name": "GruntGFidle"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				1,
 				-9
 			],
-			"anim": "danceRight",
+			"flipY": false,
+			"loop": false,
 			"fps": 24,
-			"name": "GruntGFidle",
+			"anim": "danceRight",
+			"flipX": false,
 			"indices": [
 				12,
 				13,
@@ -114,72 +114,72 @@
 				21,
 				22
 			],
-			"flipX": false
+			"name": "GruntGFidle"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				191,
 				1355
 			],
-			"anim": "scene",
+			"flipY": false,
+			"loop": false,
 			"fps": 24,
-			"name": "TrickyEntrance",
+			"anim": "scene",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "TrickyEntrance"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				-440,
 				764
 			],
-			"anim": "dieGF",
+			"flipY": false,
+			"loop": false,
 			"fps": 24,
-			"name": "gfDIES",
+			"anim": "dieGF",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "gfDIES"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				156,
 				174
 			],
-			"anim": "dieTRICK-1",
+			"flipY": false,
+			"loop": false,
 			"fps": 24,
-			"name": "TrickyDeathBack",
+			"anim": "dieTRICK-1",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "TrickyDeathBack"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				316,
 				202
 			],
-			"anim": "dieTRICK-2",
+			"flipY": false,
+			"loop": false,
 			"fps": 24,
-			"name": "TrickyDeathFront",
+			"anim": "dieTRICK-2",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "TrickyDeathFront"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				60,
 				61
 			],
-			"anim": "idle-deimos",
+			"flipY": false,
+			"loop": false,
 			"fps": 24,
-			"name": "DeimosIdle",
+			"anim": "idle-deimos",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "DeimosIdle"
 		}
 	],
 	"no_antialiasing": false,
@@ -198,8 +198,8 @@
 	"flip_x": false,
 	"healthbar_colour": -5963699,
 	"camera_position": [
-		-725,
-		-2186
+		-394,
+		-1230
 	],
 	"gameover_loop_sound": null,
 	"sing_duration": 3.8,

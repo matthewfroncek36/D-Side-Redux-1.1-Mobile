@@ -8797,7 +8797,7 @@
 		"player3": null,
 		"keys": 4,
 		"song": "dguy",
-		"arrowSkin": "ourple",
+		"arrowSkins": ["ourple", "ourple"],
 		"stage": "feddy",
 		"needsVoices": true,
 		"validScore": true,

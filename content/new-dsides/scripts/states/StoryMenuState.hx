@@ -1,9 +1,9 @@
-
 /**
  * [StoryMenuState.hx]
  * State that shows full levels the player can choose between
  */
- import funkin.Mods;
+
+import funkin.Mods;
 import funkin.data.Highscore;
 import funkin.backend.Difficulty;
 import funkin.backend.PlayerSettings;
@@ -23,14 +23,41 @@ var controls = PlayerSettings.player1.controls;
 typedef Week = {
 	title:String,
 	songs:Array<String>,
+	file:String,
 	char:Array<Dynamic>
 }
 
 var weeks = [
-	{title: "It's in the name!", songs: ['tutorial'], char: ''},
-	{title: "Is this thing on...?", songs: ["bopeebo", "fresh", "dad battle"], char: ['dd', 500, 65]},
-	{title: "Spooky Scary Skeletons!", songs: ["spookeez", "south", "ghastly", "monster"], char: ['sp', 420, 75]},
-	{title: "You have a debt to pay...", songs: ["pico", "philly-nice", "blammed"], char: ['pico', 500, 165]}
+	{
+		title: "It's in the name!",
+		songs: ['tutorial'],
+		file: 'tutorial',
+		char: ''
+	},
+	{
+		title: "Is this thing on...?",
+		songs: ["bopeebo", "fresh", "dad battle"],
+		file: 'week1',
+		char: ['dd', 500, 65]
+	},
+	{
+		title: "Spooky Scary Skeletons!",
+		songs: ["spookeez", "south", "ghastly", "monster"],
+		file: 'week2',
+		char: ['sp', 420, 75]
+	},
+	{
+		title: "You have a debt to pay...",
+		songs: ["pico", "philly-nice", "blammed"],
+		file: 'week3',
+		char: ['pico', 500, 165]
+	}
+	{
+		title: "Pasta Power!",
+		songs: ['spaghetti'],
+		file: 'shit',
+		char: ''
+	}
 ];
 
 var curWeek = 0;
@@ -55,7 +82,7 @@ var oppGrp:FlxSpriteGroup;
  *  Creates all graphics shown in the menu.
  *  Changes the discord status. 
  *  If the player hasn't seen this menu, marks this sequence as completed in the save data.
-*/
+ */
 function onLoad() {
 	persistentUpdate = true;
 
@@ -97,7 +124,7 @@ function onLoad() {
 
 	for (i in 0...weeks.length) {
 		// its (i + 1) for now, itll be just i when we add week 0 in the future
-		var spr = new FlxSprite(35).loadGraphic(Paths.image('menus/story/weeks/week' + (i + 1)));
+		var spr = new FlxSprite(35).loadGraphic(Paths.image('menus/story/weeks/' + weeks[i].file));
 		spr.ID = i;
 		spr.antialiasing = true;
 		weekGrp.add(spr);
@@ -136,7 +163,7 @@ function onLoad() {
 	tracks = new FlxText(545, 545, '');
 	tracks.setFormat(Paths.font('vcr.ttf'), 38, FlxColor.PURPLE, FlxTextAlign.CENTER);
 	add(tracks);
-	
+
 	difficultySelectors = new FlxSpriteGroup();
 	add(difficultySelectors);
 
@@ -174,8 +201,8 @@ function onLoad() {
 	rightArrow.color = FlxColor.PINK;
 	difficultySelectors.add(rightArrow);
 
-	xButton = new FlxSprite(1280,20).loadGraphic(Paths.image('UI/window/x'));
-	xButton.scale.set(0.5,0.5);
+	xButton = new FlxSprite(1280, 20).loadGraphic(Paths.image('UI/window/x'));
+	xButton.scale.set(0.5, 0.5);
 	xButton.updateHitbox();
 	xButton.x = 1280 - xButton.width - 10;
 	add(xButton);
@@ -187,28 +214,26 @@ function onLoad() {
 	PluginsManager.callPluginFunc('Utils', 'saveFix', []);
 
 	var save = FlxG.save.data.completedMenuShit.get('story');
-    if(save == false || save == null){
-        FlxG.save.data.completedMenuShit.set('story', true);
-        FlxG.save.data.completionPercent += 1.4;
-
-        FlxG.save.flush();
-    }
+	if (save == false || save == null) {
+		FlxG.save.data.completedMenuShit.set('story', true);
+		FlxG.save.flush();
+	}
 }
 
 var controlled = true;
 
 /**
- * [onUpdate(elapsed)]
- * Run on every frame update.
- 
- * @param elapsed
- * Floating-point value that holds the second-value between the last frame update of the game.
- * Also known as a frame-delta.
-  
- * In this script
- *  sets Conductor's songPosition variable.
- *  handles object positioning
- *  handles inputs
+	* [onUpdate(elapsed)]
+	* Run on every frame update.
+
+	* @param elapsed
+	* Floating-point value that holds the second-value between the last frame update of the game.
+	* Also known as a frame-delta.
+	 
+	* In this script
+	*  sets Conductor's songPosition variable.
+	*  handles object positioning
+	*  handles inputs
  */
 function onUpdate(elapsed) {
 	updateText();
@@ -238,17 +263,17 @@ function onUpdate(elapsed) {
 			FlxG.save.data.loading = false;
 			FlxG.save.flush();
 			FlxG.sound.play(Paths.sound("cancelMenu"));
-	
+
 			FlxG.switchState(() -> new MainMenuState());
 		}
 
-		if(FlxG.mouse.overlaps(xButton))
+		if (FlxG.mouse.overlaps(xButton))
 			xButton.loadGraphic(Paths.image("UI/window/x2"));
 		else
 			xButton.loadGraphic(Paths.image("UI/window/x"));
 
 		if (FlxG.mouse.justPressed) {
-			if (FlxG.mouse.overlaps(xButton)){
+			if (FlxG.mouse.overlaps(xButton)) {
 				FlxG.sound.play(Paths.sound("cancelMenu"));
 				FlxG.save.data.loading = false;
 				FlxG.save.flush();
@@ -259,7 +284,7 @@ function onUpdate(elapsed) {
 				changeDiff(-1);
 			if (FlxG.mouse.overlaps(rightArrow))
 				changeDiff(1);
-	
+
 			if (FlxG.mouse.overlaps(getCurrentWeekBox()))
 				flashingCheck();
 			if (curWeek != weeks.length - 1 && FlxG.mouse.overlaps(getSpecificWeekBox(curWeek + 1)))
@@ -308,11 +333,11 @@ function getCurrentWeekBox() {
 }
 
 /**
- * [getSpecificWeekBox()]
- * Returns the object of a specific week
+	* [getSpecificWeekBox()]
+	* Returns the object of a specific week
 
- @param id
- * Integer value of the intended week's index
+	@param id
+	* Integer value of the intended week's index
  */
 function getSpecificWeekBox(id) {
 	for (i in weekGrp) {
@@ -322,7 +347,6 @@ function getSpecificWeekBox(id) {
 }
 
 var curBeat = 0;
-
 
 /**
  * [onBeatHit()]
@@ -345,11 +369,11 @@ function onBeatHit() {
 }
 
 /**
- * [changeWeek()]
- * used for changing the currently selected week.
+	* [changeWeek()]
+	* used for changing the currently selected week.
 
- * @param change 
- * Integer value for how far in the weeks array the current is being shifted.
+	* @param change 
+	* Integer value for how far in the weeks array the current is being shifted.
  */
 function changeWeek(change) {
 	FlxG.sound.play(Paths.sound('scrollMenu'));
@@ -383,7 +407,7 @@ function changeDiff(change:Int = 0) {
 
 	var diff:String = Difficulty.difficulties[curDif];
 
-	var newImage:FlxGraphic = Paths.image('UI/game/menudifficulties/' + Difficulty.difficulties[curDif].toLowerCase());
+	var newImage:FlxGraphic = Paths.image('UI/game/menudifficulties/' + Difficulty.difficulties[curDif]);
 	if (sprDifficulty.graphic != newImage) {
 		sprDifficulty.loadGraphic(newImage);
 		sprDifficulty.x = leftArrow.x + 60;
@@ -425,28 +449,25 @@ var flashCheck = false;
  * [flashingCheck()]
  * Checks to see if a flashing lights warning should open before the week opens.
  */
-function flashingCheck()
-{
+function flashingCheck() {
 	// trace((curWeek == 1 || curWeek == 2));
-	if((curWeek == 1 || curWeek == 2) && !flashCheck)
-	{
+	if ((curWeek == 1 || curWeek == 2) && !flashCheck) {
 		flashCheck = true;
 		persistentUpdate = false;
 		openSubState(new ScriptedSubstate('Flashing'));
-	} else 
+	} else
 		loadWeek();
 }
 
 /**
- * [onCloseSubstate()]
- * Run when a substate is closed.
+	* [onCloseSubstate()]
+	* Run when a substate is closed.
 
- * In this script:
- * loads a week after closing the flashing menu substate
+	* In this script:
+	* loads a week after closing the flashing menu substate
  */
-function onCloseSubstate()
-{
-	if(flashCheck)
+function onCloseSubstate() {
+	if (flashCheck)
 		loadWeek();
 }
 
@@ -477,7 +498,6 @@ function loadWeek() {
 
 	PlayState.prepareForSong(PlayState.storyMeta.playlist[0].toLowerCase(), curDif, true);
 
-
 	FlxTween.tween(FlxG.sound.music, {pitch: 0, volume: 0}, 1.25, {
 		startDelay: 0.5,
 		onComplete: () -> {
@@ -503,7 +523,7 @@ function loadWeek() {
  */
 function getScoreShit() {
 	intendedScore = 0;
-	for (i in 0...weeks[curWeek].songs.length){
+	for (i in 0...weeks[curWeek].songs.length) {
 		var num = Highscore.getScore(weeks[curWeek].songs[i], curDif);
 		intendedScore += num;
 	}

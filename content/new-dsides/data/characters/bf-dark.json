@@ -1,184 +1,184 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				53,
 				36
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "Boyfriend/BFLeft"
+			"fps": 24,
+			"name": "Boyfriend/BFLeft",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-2,
 				-20
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "Boyfriend/BFDown"
+			"fps": 24,
+			"name": "Boyfriend/BFDown",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-34,
 				118
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUP",
-			"indices": [],
-			"name": "Boyfriend/BfUp"
+			"fps": 24,
+			"name": "Boyfriend/BfUp",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-12,
 				12
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "Boyfriend/BFRight"
+			"fps": 24,
+			"name": "Boyfriend/BFRight",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-33,
 				117
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUPmiss",
-			"indices": [],
-			"name": "Boyfriend/BFMissUp"
+			"fps": 24,
+			"name": "Boyfriend/BFMissUp",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-13,
 				12
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHTmiss",
-			"indices": [],
-			"name": "Boyfriend/BFMissRight"
+			"fps": 24,
+			"name": "Boyfriend/BFMissRight",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				38,
 				-1
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "hey",
-			"indices": [],
-			"name": "Boyfriend/BfHey!"
+			"fps": 24,
+			"name": "Boyfriend/BfHey!",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-10,
 				12
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "scared",
-			"indices": [],
-			"name": "Boyfriend/BFScared"
+			"fps": 24,
+			"name": "Boyfriend/BFScared",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-4,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "idle",
-			"indices": [],
-			"name": "Boyfriend/BFIdle"
+			"fps": 24,
+			"name": "Boyfriend/BFIdle",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				116,
 				-16
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "sing_dodgeLEFT",
-			"indices": [],
-			"name": "Boyfriend/BFDodgeLeft"
+			"fps": 24,
+			"name": "Boyfriend/BFDodgeLeft",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				3,
 				-6
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "sing_dodgeDOWN",
-			"indices": [],
-			"name": "Boyfriend/BFDodgeDown"
+			"fps": 24,
+			"name": "Boyfriend/BFDodgeDown",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-31,
 				58
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "sing_dodgeUP",
-			"indices": [],
-			"name": "Boyfriend/BFDodgeUp"
+			"fps": 24,
+			"name": "Boyfriend/BFDodgeUp",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-33,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "sing_dodgeRIGHT",
-			"indices": [],
-			"name": "Boyfriend/BFDodgeRight"
+			"fps": 24,
+			"name": "Boyfriend/BFDodgeRight",
+			"indices": []
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				-1,
 				-24
 			],
-			"anim": "singDOWNmiss",
+			"flipY": false,
+			"loop": false,
 			"fps": 24,
-			"name": "Boyfriend/BFMissDown",
+			"anim": "singDOWNmiss",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "Boyfriend/BFMissDown"
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				55,
 				36
 			],
-			"anim": "singLEFTmiss",
+			"flipY": false,
+			"loop": false,
 			"fps": 24,
-			"name": "Boyfriend/BFMissLeft",
+			"anim": "singLEFTmiss",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "Boyfriend/BFMissLeft"
 		},
 		{
+			"loop": true,
+			"flipY": false,
 			"offsets": [
 				57,
 				46
 			],
-			"flipY": false,
-			"loop": true,
-			"fps": 24,
 			"anim": "laugh-loop",
-			"flipX": false,
+			"fps": 24,
+			"name": "Boyfriend/BFLaugh",
 			"indices": [
 				29,
 				30,
@@ -188,20 +188,20 @@
 				34,
 				35
 			],
-			"name": "Boyfriend/BFLaugh"
+			"flipX": false
 		},
 		{
-			"loop": false,
-			"flipY": false,
 			"offsets": [
 				57,
 				46
 			],
-			"anim": "laugh",
+			"flipY": false,
+			"loop": false,
 			"fps": 24,
-			"name": "Boyfriend/BFLaugh",
+			"anim": "laugh",
+			"flipX": false,
 			"indices": [],
-			"flipX": false
+			"name": "Boyfriend/BFLaugh"
 		}
 	],
 	"no_antialiasing": false,
@@ -220,8 +220,8 @@
 	"flip_x": true,
 	"healthbar_colour": -1813032,
 	"camera_position": [
-		209,
-		-88
+		371,
+		-192
 	],
 	"gameover_loop_sound": null,
 	"sing_duration": 4,

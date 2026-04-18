@@ -1,5 +1,5 @@
 {
-	"extraSkin": "pixelUI/NOTE_assets",
+	"noteTexture": "pixelUI/pixel_NOTE_assets",
 	"singAnimations": [
 		"singLEFT",
 		"singDOWN",
@@ -7,7 +7,7 @@
 		"singRIGHT"
 	],
 	"splashesEnabled": false,
-	"playerSkin": "pixelUI/NOTE_assets",
+	"playerSkin": "pixelUI/pixel_NOTE_assets",
 	"receptorAnimations": [
 		[
 			{
@@ -186,7 +186,7 @@
 					0,
 					0
 				],
-				"xmlName": "pruple end hold",
+				"xmlName": "purple hold end",
 				"anim": "holdend0"
 			}
 		],
@@ -282,12 +282,11 @@
 		4,
 		5
 	],
-	"noteSplashSkin": "noteSplashes",
-	"globalSkin": "pixelUI/NOTE_assets",
+	"splashTexture": "noteSplashes",
+	"globalSkin": "pixelUI/pixel_NOTE_assets",
 	"antialiasing": false,
 	"inGameColoring": false,
-	"isPixel": true,
-	"opponentSkin": "pixelUI/NOTE_assets",
-	"scale": 4.5,
-	"sustainSuffix": "ENDS"
+	"receptorScale": 4.5,
+	"noteScale": 4.5,
+    "susSplashesEnabled": false
 }

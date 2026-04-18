@@ -5405,7 +5405,7 @@
 				"mustHitSection": true
 			}
 		],
-		"arrowSkin": "pixel",
+		"arrowSkins": ["pixel", "pixel"],
 		"gfVersion": "gf-pixel",
 		"player3": null,
 		"song": "roses",

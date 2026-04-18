@@ -15,8 +15,8 @@
 		},
 		{
 			"offsets": [
-				177,
-				-62
+				141,
+				-59
 			],
 			"flipY": false,
 			"loop": false,
@@ -28,8 +28,8 @@
 		},
 		{
 			"offsets": [
-				217,
-				-59
+				177,
+				-52
 			],
 			"flipY": false,
 			"loop": false,
@@ -41,8 +41,8 @@
 		},
 		{
 			"offsets": [
-				-198,
-				108
+				-172,
+				113
 			],
 			"flipY": false,
 			"loop": false,
@@ -54,8 +54,8 @@
 		},
 		{
 			"offsets": [
-				-69,
-				120
+				-79,
+				126
 			],
 			"flipY": false,
 			"loop": false,
@@ -67,8 +67,8 @@
 		},
 		{
 			"offsets": [
-				151,
-				332
+				181,
+				338
 			],
 			"flipY": false,
 			"loop": false,
@@ -83,7 +83,7 @@
 	"image": "characters/and/Cumlord",
 	"position": [
 		-110,
-		-30
+		-60
 	],
 	"dance_every": 2,
 	"gameover_intial_sound": null,
@@ -95,8 +95,8 @@
 	"flip_x": false,
 	"healthbar_colour": -7861291,
 	"camera_position": [
-		-310,
-		-40
+		-158,
+		-30
 	],
 	"gameover_loop_sound": null,
 	"sing_duration": 4.2,

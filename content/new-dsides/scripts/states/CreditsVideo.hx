@@ -44,7 +44,7 @@ var credits= [
     {name: "TheWAHBox", description: "Composer"},
     {name: "Cloverderus", description: "Composer, Charter"},
     {name: "Biddle3", description: "Composer"},
-    {name: "Clappers64", description: "Guest Composer"},
+    {name: "Clappers46", description: "Guest Composer"},
 	{name: "Gojira Darko", description: "Guest Composer"},
     {name: "qodax", description: "Legacy Composer"},
     {name: "gc", description: "Legacy Composer"},
@@ -59,21 +59,26 @@ var credits= [
 
     {name: "CONTRIBUTORS"},
     {name: "Data5", description: "Programming Help"},
+	{name: "MaybeMaru", description: "Texture Atlas Help"},
     {name: "Peakjuggler, NebulaZorua & AshStat", description: "Programming Help (pre-redux)"},
     {name: "FredrickFunny", description: "Tutorial, Bopeebo, Blammed Charts & general chart touchups, Camera events"},
     {name: "Srife5", description: "Pico Chart"},
     {name: "lemonaid_", description: "??? Chart"},
     {name: "moxxie", description: "Newgrounds Logo"},
     {name: "Blackberri, Rareblin", description: "Composers (pre-redux)"},
+	{name: "Winter", description: "And Assets"},
+	{name: "lossarquo", description: "Phone Dude Assets"},
     {name: "LacExists, BenzBt, Greenstranger", description: "Miscellaneous Menu/Character Art"},
-    {name: "SrPelo", description: "Voice Actor"},
+	{name: "Komica", description: "Voice Actor (Dusk)"},
+    {name: "SrPelo", description: "Voice Actor (Spooky Kids)"},
     {name: "Beethovenus, RecD", description: "Voice Actors (pre-redux)"},
     {name: "JcJack", description: "Menu Design Help"},
-    {name: "Corven_03", description: "Writing Help"},
+    {name: "CorvenCarrion", description: "Writing Help & Character Design"},
     
-    {name: "Playtesters", description: "Special thanks to Data5, Niffirg, shelby, FredrickFunny, Decoy, ashstat, Clowfoe, Lethrial, Dawn, loggo, Halographic, Corven03, Ito Saihara, __far0__, Paige, PurpleKav, Iceptual, Srife5, lemlem_mew, ari_the_when, vortexgottaken, CommandoDev, Kreagato & TheGrandestGoon for helping play test and find bugs!"},
+
+    {name: "Playtesters", description: "Special thanks to Data5, Niffirg, shelby, FredrickFunny, Decoy, ashstat, Clowfoe, Lethrial, Dawn, loggo, Halographic, CorvenCarrion, Ito Saihara, __far0__, Paige, PurpleKav, Iceptual, Srife5, lemlem_mew, ari_the_when, vortexgottaken, CommandoDev, Kreagato, FazieFunbear, Snoot & TheGrandestGoon for helping play test and find bugs!"},
     {name: "Loading Screen Artists", description: "Thank you to gojira_darko, fredrickfunny, lemlem_mew, purplekav, funkybunny, sssprite, smoothmars, scopsilk, benzbt, novasaur, __far0__, marco antonio, valeriousval, jamlikesgranola, morathefox, thatgoofyguy, lexxiemeow, smoothdedede, ito saihara, abysmalcha0s, biviuure, brickztyler, mat_doesstuff, samulakz, xyy, molten_prod, moonlight2095, funbletoken, d4rkz1a, Leafohyeah, FidgetyAttic, DDP_2007, SeanicGames, g-wave, Ashz, Agente R, XHam, StrPointless, DusterBuster, LeoThM, Roquefort, EL_BRUNO_27, Meep, Marron_er, SonicSalvy, Robotist, JeffriesArtz, SosoM4966342951, MrFazdude, Ch1ckenfr, the_osacat, SkiddyBobard & NefariousPrisma for drawing the various loading screens seen throughout the mod!"},
-    {name: "Special Thanks", description: "Thank you to Goop Troop, Purples Hub World, Studio Hopscotch, Marios Madness, Funkin at Freddys, Popeyes Discord Server, Funhouse Discord Server, Inverted Fate, Penkaru, Nowhereman, Clappers64, Ratto, TheWinterReaper, Nitr0cyti, and any/all friends of the D-Sides team! Thank you for supporting us through development through all these years!"}
+    {name: "Special Thanks", description: "Thank you to Goop Troop, Purples Hub World, Studio Hopscotch, Marios Madness, Funkin at Freddys, Popeyes Discord Server, Funhouse Discord Server, Inverted Fate, Penkaru, Nowhereman, Clappers46, Ratto, TheWinterReaper, Nitr0cyti, and any/all friends of the D-Sides team! Thank you for supporting us through development through all these years!"}
 ];
 
 // array of all the icons that appear to dance on screen
@@ -98,8 +103,6 @@ function onCreate()
     var save = FlxG.save.data.completedMenuShit.get('funky');
     if(save == false || save == null){
         FlxG.save.data.completedMenuShit.set('funky', true);
-        FlxG.save.data.completionPercent += 7;
-
         FlxG.save.flush();
     }
 

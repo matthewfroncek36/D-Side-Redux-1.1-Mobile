@@ -1,6 +1,6 @@
 {
 	"song": {
-		"arrowSkin": "ourple",
+		"arrowSkins": ["ourple", "default"],
 		"player1": "vedplayable",
 		"sectionLengths": [],
 		"events": [],

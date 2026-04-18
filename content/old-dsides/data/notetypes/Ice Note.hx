@@ -4,7 +4,6 @@ import funkin.backend.PlayerSettings;
 var snowgrave:Bopper;
 var iceReceptors:Array<FlxSprite> = [];
 var frozenCounter = 0;
-
 var controls = PlayerSettings.player1.controls;
 var iceshake:Int = 0;
 var randomx:Int = 0;
@@ -20,16 +19,16 @@ var rightReceptor;
 function onCreatePost() {
 	frozenBF = new FlxSprite(boyfriend.x - 40, boyfriend.y - 105);
 	frozenBF.frames = Paths.getSparrowAtlas("snowgrave");
-	frozenBF.animation.addByPrefix("idle","Idle_Frozen",24);
-	frozenBF.animation.addByPrefix("0","1",24,false);
-	frozenBF.animation.addByPrefix("1","2",24,false);
-	frozenBF.animation.addByPrefix("2","3",24,false);
-	frozenBF.animation.addByPrefix("3","4",24,false);
-	frozenBF.animation.addByPrefix("4","4",24,false); // breakout anim
-	frozenBF.antialiasing=true;
-	frozenBF.visible=false;
+	frozenBF.animation.addByPrefix("idle", "Idle_Frozen", 24);
+	frozenBF.animation.addByPrefix("0", "1", 24, false);
+	frozenBF.animation.addByPrefix("1", "2", 24, false);
+	frozenBF.animation.addByPrefix("2", "3", 24, false);
+	frozenBF.animation.addByPrefix("3", "4", 24, false);
+	frozenBF.animation.addByPrefix("4", "4", 24, false); // breakout anim
+	frozenBF.antialiasing = true;
+	frozenBF.visible = false;
 	frozenBF.scrollFactor.set(0.95, 0.95);
-	frozenBF.animation.play("idle",true);
+	frozenBF.animation.play("idle", true);
 	frozenBF.centerOffsets();
 	add(frozenBF);
 
@@ -71,14 +70,16 @@ function onCreatePost() {
 function setupNote(note) {
 	note.reloadNote('ice');
 	note.noAnimation = true;
-	note.hitCausesMiss = true;
-	note.rgbShader.setColors([0xFFFF0000, 0xFF00FF00, 0xFF0000FF]);
+	note.canMiss = true;
+	note.rgbEnabled = false;
+	note.setCustomColor([0xFF1c5d8b, 0xFFcdf9f4, 0xFF1c5d8b]);
+	// note.noteType = 'Ice Note';
 }
 
 var isFrozen = false;
 
-function goodNoteHit(note) {
-	if (note.noteType == 'Ice Note' && !isFrozen) {
+function hit(note) {
+	if (!isFrozen) {
 		keycooldown = 10;
 		isFrozen = true;
 		frozenCounter = 0;
@@ -87,7 +88,7 @@ function goodNoteHit(note) {
 		frozenBF.visible = true;
 		frozenBF.animation.play('idle');
 
-		playerStrums.inControl = false;
+		getFieldFromID(0).inControl = false;
 		black.alpha = 0.75;
 		for (i in iceReceptors)
 			i.visible = true;
@@ -114,7 +115,7 @@ function breakout() {
 	boyfriend.visible = true;
 	boyfriend.dance();
 
-	playerStrums.inControl = true;
+	getFieldFromID(0).inControl = true;
 	black.alpha = 0;
 	for (i in iceReceptors)
 		i.visible = false;
@@ -140,9 +141,9 @@ function onUpdate(elapsed) {
 
 function onKeyPress(key) {
 	if (isFrozen && keycooldown == 0) {
-		if (frozenCounter % 2 == 0 && (controls.NOTE_LEFT_P || hitbox.buttonLeft.justPressed))
+		if (frozenCounter % 2 == 0 && controls.NOTE_LEFT_P)
 			struggle();
-		else if (controls.NOTE_RIGHT_P || hitbox.buttonRight.justPressed)
+		else if (controls.NOTE_RIGHT_P)
 			struggle();
 
 		leftReceptor.color = frozenCounter % 2 == 0 ? FlxColor.WHITE : 0xFF4a4a4a;
@@ -150,7 +151,7 @@ function onKeyPress(key) {
 
 		if (frozenCounter >= 5)
 			breakout();
-		else 
+		else
 			frozenBF.animation.play(frozenCounter - 1);
 	}
 }

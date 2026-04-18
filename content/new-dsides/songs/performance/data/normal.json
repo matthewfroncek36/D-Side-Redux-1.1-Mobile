@@ -1,6 +1,6 @@
 {
 	"song": {
-		"arrowSkin": "ourple",
+		"arrowSkins": ["ourple", "ourple"],
 		"player1": "fox",
 		"player2": "chica",
 		"notes": [

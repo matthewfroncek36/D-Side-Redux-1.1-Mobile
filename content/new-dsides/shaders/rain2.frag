@@ -1,7 +1,5 @@
 #pragma header
 
-precision mediump float;
-
 #define S(a, b, t) smoothstep(a, b, t)
 //#define DEBUG
 
@@ -151,12 +149,6 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
     
     UV = (UV-.5)*(.9)+.5;
     
-    if (bSize <= 0.0001 && rSize <= 0.0001)
-    {
-        fragColor = texture(bitmap, UV);
-        return;
-    }
-
     vec2 c = Rain(uv, t);
 
    	vec2 e = vec2(.001, 0.); //pixel offset
@@ -170,34 +162,30 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
         float Pi = 6.28318530718; // Pi*2
     
         // GAUSSIAN BLUR SETTINGS {{{
-        float Directions = clamp(bDir, 2.0, 8.0); // mobile cap for perf
-        float Quality = clamp(bQual, 1.0, 3.0); // mobile cap for perf
-        float Size = max(bSize, 0.0); // BLUR SIZE (Radius)
+        float Directions = bDir; // BLUR DIRECTIONS (Default 16.0 - More is better but slower)
+        float Quality = bQual; // BLUR QUALITY (Default 4.0 - More is better but slower)
+        float Size = bSize; // BLUR SIZE (Radius)
         // GAUSSIAN BLUR SETTINGS }}}
 
         vec2 Radius = Size/iResolution.xy;
 
         vec3 col = texture(bitmap, UV).rgb;
         // Blur calculations
-        if (Size > 0.0001)
+        for( float d=0.0; d<Pi; d+=Pi/Directions)
         {
-            float qStep = 1.0 / Quality;
-            for (float d = 0.0; d < Pi; d += Pi / Directions)
+            for(float i=1.0/Quality; i<=1.0; i+=1.0/Quality)
             {
-                for (float i = qStep; i <= 1.0; i += qStep)
-                {
-                    #ifdef DEBUG
-                    vec3 tex = texture(bitmap, UV + c + vec2(cos(d), sin(d)) * Radius * i).rgb;
-                    #else
-                    vec3 tex = texture(bitmap, UV + n + vec2(cos(d), sin(d)) * Radius * i).rgb;
-                    #endif
+                #ifdef DEBUG
+                vec3 tex = texture( bitmap, UV+c+vec2(cos(d),sin(d))*Radius*i).rgb;
+                #else
+                vec3 tex = texture( bitmap, UV+n+vec2(cos(d),sin(d))*Radius*i).rgb;
+                #endif
 
-                    col += tex;            
-                }
+                col += tex;            
             }
         }
 
-        col /= max(Quality * Directions, 1.0);
+        col /= Quality * Directions - 0.0;
 
         vec3 tex = texture( bitmap, UV+n).rgb;
         c.y = clamp(c.y, 0.0, 1.);

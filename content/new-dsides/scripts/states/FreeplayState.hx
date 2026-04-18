@@ -23,6 +23,7 @@ import funkin.game.shaders.ColorSwap;
 import funkin.objects.Bopper;
 import haxe.Json;
 import openfl.utils.Assets;
+import sys.io.File;
 import funkin.backend.PlayerSettings;
 import funkin.scripting.PluginsManager;
 import funkin.api.DiscordClient;
@@ -43,10 +44,6 @@ typedef SongStuff = {
 var directory = 'menus/freeplay/';
 
 var chicken:Bool = false; // 5% change to see bobos chicken
-var executionIndex:Int; // index to insert Execution after being unlocked
-
-var _THEtimer:FlxTimer;
-var unlocked:Bool = false;
 
 // array of all songs available in freeplay
 var songs:Array<SongStuff> = [
@@ -137,6 +134,14 @@ var songs:Array<SongStuff> = [
 		section: "STORY MODE",
 		bpm: 74.5,
 		label: "Weekend1"
+	},
+	// spaghetti
+	{
+		name: "Spaghetti",
+		icon: "spag",
+		section: "STORY MODE",
+		bpm: 140,
+		label: "Shitstop"
 	}
 	// bonus
 	{
@@ -225,6 +230,13 @@ var songs:Array<SongStuff> = [
 		bpm: 80,
 		label: "EXE"
 	},
+	{
+		name: "Execution",
+		icon: "lordx",
+		section: "BONUS",
+		bpm: 150,
+		label: "Execution"
+	}
 	// OG
 	{
 		name: "Test",
@@ -417,6 +429,13 @@ var songs:Array<SongStuff> = [
 		icon: "feast",
 		section: "ORIGINAL",
 		label: "Legacy"
+	},
+	{
+		name: "soretro",
+		icon: "retro",
+		section: "ORIGINAL",
+		bpm: 82.5,
+		label: "Legacy"
 	}
 ];
 
@@ -469,8 +488,6 @@ var songAhead:Bool = false;
  * In this script:
  *  Creates all graphics shown in the menu.
  *  Changes the discord status. 
- *  inserts secret-unlock songs if unlocked. 
- *  initializes the unlock method for soretro
  *  If the player hasn't seen this menu, marks this sequence as completed in the save data.
 */
 function onLoad() {
@@ -480,13 +497,8 @@ function onLoad() {
 	Difficulty.difficulties = ['Easy', 'Normal', 'Hard'];
 
 	chicken = FlxG.save.data.completedSongs.contains('bobos-chicken') || FlxG.random.bool(5);
-	executionIndex = chicken ? 25 : 24;
 
 	FlxG.camera.bgColor = FlxColor.WHITE;
-
-	if (FlxG.save.data.execution == null)
-		FlxG.save.data.execution = false;
-	FlxG.save.flush();
 
 	camNew = new FlxCamera();
 	camNew.bgColor = 0x0;
@@ -527,6 +539,7 @@ function onLoad() {
 	faces.addAnimByPrefix('lordx', 'lordx', 24, false);
 	faces.addAnimByPrefix('retro', 'retro', 24, false);
 	faces.addAnimByPrefix('question', 'questionmark', 24, false);
+	faces.addAnimByPrefix('spag', 'spag', 24, false);
 	faces.scale.set(0.75, 0.75);
 	faces.updateHitbox();
 	faces.blend = BlendMode.MULTIPLY;
@@ -598,13 +611,6 @@ function onLoad() {
 	cassettesBonus = new FlxSpriteGroup();
 	cassettesOld = new FlxSpriteGroup();
 
-	if(FlxG.save.data.unlockedHim == null){
-		FlxG.save.data.unlockedHim = false;
-		FlxG.save.flush();
-	}
-
-	unlocked = FlxG.save.data.unlockedHim;
-	
 	if (chicken)
 		songs.insert(4, {
 			name: "Bobos Chicken",
@@ -613,16 +619,6 @@ function onLoad() {
 			bpm: 100.5,
 			label: "Bobos"
 		});
-	if (FlxG.save.data.execution)
-		songs.insert(executionIndex, {
-			name: "Execution",
-			icon: "lordx",
-			section: "BONUS",
-			bpm: 150,
-			label: "Execution"
-		});
-	if(unlocked)
-		songs.push({name: "soretro", icon: "retro", section: "ORIGINAL", bpm: 82.5, label: "Legacy"});
 
 	var nums = [-1, -1, -1];
 	var id = -1;
@@ -794,83 +790,12 @@ function onLoad() {
 	xButton.updateHitbox();
 	xButton.x = 1280 - xButton.width - 10;
 	add(xButton);
-
-	if(!unlocked){
-		_THEtimer = new FlxTimer().start(2, ()->{
-			FlxG.save.data.unlockedHim = true;
-			FlxG.save.flush();
-			
-			canSelect = false;
-
-			var path = Paths.findFileWithExts('music/11', ['ogg'], null, true);
-			var streamedSong = FunkinAssets.getVorbisSound(path);
-
-			FunkinSound.playMusic(streamedSong);
-
-
-			mosaic = newShader('mosaic');
-			mosaic.setFloatArray('uBlocksize', [0.00001, 0.00001]);
-			FlxG.camera.addShader(mosaic);
-
-			barrel = newShader('barrel');
-			barrel.setFloat('dis1', 0);
-			barrel.setFloat('dis2', 0);
-			FlxG.camera.addShader(barrel);
-
-			FlxTween.num(0, 1, 4, {ease: FlxEase.quadInOut, onUpdate: (t)->{
-				barrel.setFloat('dis1', t.value);
-			}});
-
-			FlxTween.num(0.0001, 5, 4, {ease: FlxEase.quadInOut, onUpdate: (t)->{
-				mosaic.setFloatArray('uBlocksize', [t.value, t.value]);
-			}});
-
-			FlxTimer.wait(6, ()->{
-				for(i in curSection...2)
-					FlxTimer.wait(0.5 * i, ()->{changeSection(true);});
-
-				FlxTimer.wait(1.5, ()->{
-					for(i in 0...31){
-						FlxTimer.wait(0.25 * i, ()->{changeSelection(1, true);});
-					}
-
-					FlxTimer.wait(0.25 * 36, ()->{
-						FlxG.sound.play(Paths.sound("reveal"), 0.7);
-						FlxTween.tween(FlxG.sound.music, {pitch: 0, volume: 0}, 6);
-
-						FlxTimer.wait(2.15, ()->{
-							var data = {name: "soretro", icon: "retro", section: "ORIGINAL", bpm: 82.5, label: "Legacy"};
-
-							var casette = makeCasette(data);
-
-							songs.push(data);
-							indSongs[2].push(['soretro', 82.5]);
-							indSongData[2].push(data);
-							cassettesOld.add(casette);
-							casette.ID = cassettesOld.members.length - 1;
-
-							changeSelection(1, false);
-
-							FlxTimer.wait(4, ()->{
-								FlxG.camera.fade(FlxColor.BLACK, 5, false, ()->{
-									realSongLoad();
-									FlxG.camera.visible = false;
-								});
-							});
-						});
-					});    
-				});
-			});
-		});
-	}
 	
 	PluginsManager.callPluginFunc('Utils', 'saveFix', []);
 	
 	var save = FlxG.save.data.completedMenuShit.get('freeplay');
     if(save == false || save == null){
         FlxG.save.data.completedMenuShit.set('freeplay', true);
-        FlxG.save.data.completionPercent += 1.4;
-
         FlxG.save.flush();
     }
 
@@ -1043,10 +968,7 @@ function onUpdate(elapsed) {
 				if (curSelected != (indSongs[curSection].length - 1) && FlxG.mouse.overlaps(getSpecificSongBox(curSelected + 1)))
 					changeSelection(getSpecificSongBox(curSelected + 1).ID - curSelected, true);
 				if (curSelected != 0 && FlxG.mouse.overlaps(getSpecificSongBox(curSelected - 1)))
-					changeSelection(getSpecificSongBox(curSelected - 1).ID - curSelected, true);			
-				if (titles[curSection] == 'BONUS')
-					if (!FlxG.save.data.execution && FlxG.mouse.overlaps(sprDifficulty))
-						unlockExecution();
+					changeSelection(getSpecificSongBox(curSelected - 1).ID - curSelected, true);
 			}
 		}
 
@@ -1113,34 +1035,6 @@ function checkSongAhead()
 	}
 }
 
-function unlockExecution() {
-	if (!FlxG.save.data.execution && indSongs[1][indSongs[1].length - 1][0] != 'execution') {
-		canSelect = false;
-
-		var data = {
-			name: "Execution",
-			icon: "lordx",
-			section: "BONUS",
-			bpm: 150,
-			label: "Execution"
-		};
-
-		var casette = makeCasette(data);
-
-		songs.insert(executionIndex, data);
-		indSongs[1].push(['execution', 150]);
-		indSongData[1].push(data);
-		cassettesBonus.add(casette);
-		casette.ID = cassettesBonus.members.length - 1;
-
-		FlxG.save.data.execution = true;
-		FlxG.save.flush();
-
-		canSelect = true;
-		curSelected = getCurrentSectionGrp().length - 1;
-	}
-}
-
 /**
  * [changeSelection()]
  * used for changing the currently selected song.
@@ -1150,9 +1044,7 @@ function unlockExecution() {
  * @param sound 
  * Boolean value that determines whether or not to play a scroll sound effect
  */
-function changeSelection(change, sound) {
-	resetTimer();
-	
+function changeSelection(change, sound) {	
 	if (getCurrentSectionGrp().length > 1) {
 		if (sound)
 			FlxG.sound.play(Paths.sound('scrollMenu'));
@@ -1163,35 +1055,7 @@ function changeSelection(change, sound) {
 			songAhead = false;
 		} 
 		
-		if (curSelected < 0) {
-			if (titles[curSection] == 'BONUS') {
-				if (!FlxG.save.data.execution && indSongs[1][indSongs[1].length - 1][0] != 'execution') {
-					canSelect = false;
-
-					var data = {
-						name: "Execution",
-						icon: "lordx",
-						section: "BONUS",
-						bpm: 150,
-						label: "Execution"
-					};
-
-					var casette = makeCasette(data);
-
-					songs.insert(executionIndex, data);
-					indSongs[1].push(['execution', 150]);
-					indSongData[1].push(data);
-					cassettesBonus.add(casette);
-					casette.ID = cassettesBonus.members.length - 1;
-
-					FlxG.save.data.execution = true;
-					FlxG.save.flush();
-
-					canSelect = true;
-				}
-			}
-			curSelected = getCurrentSectionGrp().length - 1;
-		}
+		if (curSelected < 0) curSelected = getCurrentSectionGrp().length - 1;
 
 		if(isSongUnlocked(indSongData[curSection][curSelected]))
 			changeFace(indSongData[curSection][curSelected].icon);
@@ -1211,8 +1075,6 @@ function changeSelection(change, sound) {
  * Boolean value that determines whether or not to play a scroll sound effect
  */
 function changeSection(sound) {
-	resetTimer();
-
 	if (sound)
 		FlxG.sound.play(Paths.sound('cancelMenu'));
 	for (m in getEveryGroupButCurrent())
@@ -1279,8 +1141,6 @@ var diffs = ['easy', 'normal', 'hard'];
  * Integer value for how far in the difficulties array the current is being shifted.
  */
 function changeDiff(change:Int = 0) {
-	resetTimer();
-
 	curDifficulty += change;
 
 	if (curDifficulty < 0)
@@ -1289,7 +1149,7 @@ function changeDiff(change:Int = 0) {
 		curDifficulty = 0;
 
 	var diff:String = Difficulty.difficulties[curDifficulty];
-	var newImage:FlxGraphic = Paths.image('menus/freeplay/freeplay_' + diff.toLowerCase());
+	var newImage:FlxGraphic = Paths.image('menus/freeplay/freeplay_' + diff);
 	if (sprDifficulty.graphic != newImage) {
 		sprDifficulty.loadGraphic(newImage);
 		sprDifficulty.x = leftArrow.x + 60;
@@ -1388,10 +1248,12 @@ function realSongLoad() {
 	}
 
 	var dir = titles[curSection] == 'ORIGINAL' && song != 'soretro' ? 'old-dsides' : 'new-dsides';
-	if (Mods.currentModDirectory != dir || Paths.currentModDirectory != dir)
-		PluginsManager.callPluginFunc('Utils', 'setDirectory', [dir]);
-	if (dir == 'new-dsides')
-		ScriptedTransition.setTransition('Sticker');
+	if (Mods.currentModDirectory == 'new-dsides') {
+		if (dir == 'old-dsides')
+			PluginsManager.callPluginFunc('Utils', 'setDirectory', ['old-dsides']);
+		else
+			ScriptedTransition.setTransition('Sticker');
+	}
 	// var songLowercase:String = Paths.formatToSongPath(song);
 
 	PlayState.prepareForSong(song, curDifficulty, false);
@@ -1529,16 +1391,6 @@ function makeCasette(song) {
 	c.add(icon);
 
 	return c;
-}
-
-/**
- * [resetTimer()]
- * Resets the timer that handles the unlock of soretro
- */
-function resetTimer()
-{
-	if(_THEtimer != null)
-		_THEtimer.reset(20);
 }
 
 var timer = 0;

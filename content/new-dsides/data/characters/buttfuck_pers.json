@@ -1,110 +1,128 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "idle",
-			"fps": 24,
-			"name": "pbuttfuck idle",
-			"indices": []
+			"flipX": false,
+			"indices": [],
+			"name": "ANIMATIONS/BF/POV/pbuttfuck idle"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				40,
-				73
+				92,
+				42
 			],
-			"anim": "singLEFT",
+			"flipY": false,
+			"loop": false,
 			"fps": 24,
-			"name": "pbuttfuck left",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				73,
-				57
-			],
 			"anim": "singDOWN",
-			"fps": 24,
-			"name": "pbuttfuck down",
-			"indices": []
+			"flipX": false,
+			"indices": [],
+			"name": "ANIMATIONS/BF/POV/pbuttfuck down"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				40,
-				190
+				125,
+				26
 			],
-			"anim": "singUP",
+			"flipY": false,
+			"loop": false,
 			"fps": 24,
-			"name": "pbuttfuck up",
-			"indices": []
+			"anim": "singLEFT",
+			"flipX": false,
+			"indices": [],
+			"name": "ANIMATIONS/BF/POV/pbuttfuck left"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				-44,
-				-1
+				-162,
+				-8
 			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
 			"anim": "singRIGHT",
-			"fps": 24,
-			"name": "pbuttfuck right",
-			"indices": []
+			"flipX": false,
+			"indices": [],
+			"name": "ANIMATIONS/BF/POV/pbuttfuck right"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				53,
-				64
+				-96,
+				150
 			],
-			"anim": "singLEFTmiss",
+			"flipY": false,
+			"loop": false,
 			"fps": 24,
-			"name": "pbuttfuck miss left",
-			"indices": []
+			"anim": "singUP",
+			"flipX": false,
+			"indices": [],
+			"name": "ANIMATIONS/BF/POV/pbuttfuck up"
 		},
 		{
 			"loop": false,
+			"flipY": false,
 			"offsets": [
-				68,
-				44
+				75,
+				-57
 			],
 			"anim": "singDOWNmiss",
 			"fps": 24,
-			"name": "pbuttfuck miss down",
-			"indices": []
+			"name": "ANIMATIONS/BF/POVMISS/pbuttfuck miss down",
+			"indices": [],
+			"flipX": false
 		},
 		{
 			"loop": false,
+			"flipY": false,
 			"offsets": [
-				47,
-				229
+				125,
+				27
 			],
-			"anim": "singUPmiss",
+			"anim": "singLEFTmiss",
 			"fps": 24,
-			"name": "pbuttfuck miss up",
-			"indices": []
+			"name": "ANIMATIONS/BF/POVMISS/pbuttfuck miss left",
+			"indices": [],
+			"flipX": false
 		},
 		{
 			"loop": false,
+			"flipY": false,
 			"offsets": [
-				-50,
-				-2
+				-162,
+				-10
 			],
 			"anim": "singRIGHTmiss",
 			"fps": 24,
-			"name": "pbuttfuck miss right",
-			"indices": []
+			"name": "ANIMATIONS/BF/POVMISS/pbuttfuck miss right",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				-118,
+				191
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "ANIMATIONS/BF/POVMISS/pbuttfuck miss up",
+			"indices": [],
+			"flipX": false
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/BF/Butt/P_Buttfuck",
 	"position": [
 		-10,
-		830
+		790
 	],
 	"dance_every": 2,
 	"gameover_intial_sound": null,
@@ -116,8 +134,8 @@
 	"flip_x": true,
 	"healthbar_colour": -1746734,
 	"camera_position": [
-		420,
-		-383
+		417,
+		-315
 	],
 	"gameover_loop_sound": null,
 	"sing_duration": 6.1,

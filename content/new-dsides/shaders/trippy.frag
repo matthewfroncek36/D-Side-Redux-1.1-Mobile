@@ -1,5 +1,6 @@
 #pragma header
 
+vec2 iResolution = openfl_TextureSize;
 uniform float iTime;
 
 uniform float darkness;
@@ -36,11 +37,6 @@ float noise(vec2 p) {
 
 void main() {
   vec2 uv = openfl_TextureCoordv;
-  if (intensity <= 0.0001)
-  {
-    gl_FragColor = texture2D(bitmap, uv);
-    return;
-  }
     
     vec4 color = texture2D(bitmap, uv);
     float speed = 1.6;

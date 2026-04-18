@@ -1,5 +1,5 @@
 import haxe.Json;
-import funkin.FunkinAssets;
+import sys.io.File;
 import funkin.utils.CameraUtil;
 import flixel.text.FlxText;
 import flixel.addons.text.FlxTypeText;
@@ -14,9 +14,6 @@ import funkin.states.options.OptionsState;
 import funkin.utils.CoolUtil;
 import funkin.scripting.PluginsManager;
 import flixel.addons.transition.FlxTransitionableState;
-
-import mobile.controls.MobileDPadMode;
-import mobile.controls.MobileActionMode;
 
 var controls = PlayerSettings.player1.controls;
 
@@ -159,16 +156,6 @@ function onCreate() {
 	port.setPosition(FlxG.width, 325);
 	add(port);
 	FlxTween.tween(port, {x: (FlxG.width - port.width)}, 0.5, {ease: FlxEase.quintOut});
-	
-	addVirtualPad(MobileDPadMode.UP_DOWN, MobileActionMode.A_B);
-	virtualPad.buttonUp.x = virtualPad.buttonDown.x -= 200;
-	virtualPad.buttonUp.y = virtualPad.buttonDown.y -= 350;
-	virtualPad.buttonA.x = virtualPad.buttonB.x += FlxG.width;
-	//virtualPad.buttonA.y = virtualPad.buttonB.y += 325;
-	FlxTween.tween(virtualPad.buttonUp, {alpha: 0.5, x: 0, y: FlxG.height - 255}, 0.3, {ease: FlxEase.quintOut, startDelay: (0.05 * 1)});
-	FlxTween.tween(virtualPad.buttonDown, {alpha: 0.5, x: 0, y: FlxG.height - 135}, 0.3, {ease: FlxEase.quintOut, startDelay: (0.05 * 2)});
-	FlxTween.tween(virtualPad.buttonA, {x: FlxG.width - 132}, 0.5, {ease: FlxEase.quintOut, startDelay: (0.05 * 1)});
-	FlxTween.tween(virtualPad.buttonB, {x: FlxG.width - 258}, 0.5, {ease: FlxEase.quintOut, startDelay: (0.05 * 2)});
 
 	FlxTimer.wait(0.5, () -> {
 		changeSelection(0);
@@ -183,7 +170,6 @@ function onCreate() {
 
 	songtxt = PluginsManager.callPluginFunc('Utils', 'menuIntroCard', ["Breakfast", 'selora789', [32, 0]]);
 	add(songtxt);
-	addVirtualPadCamera();
 }
 
 function onUpdate(elapsed) {
@@ -197,14 +183,14 @@ function onUpdate(elapsed) {
 	}
 
 	if (allowControls) {
-		if (FlxG.keys.justPressed.ESCAPE || virtualPad.buttonB.justPressed)
+		if (FlxG.keys.justPressed.ESCAPE)
 			close();
 
-		if (controls.UI_DOWN_P || virtualPad.buttonDown.justPressed)
+		if (controls.UI_DOWN_P)
 			changeSelection(1);
-		if (controls.UI_UP_P || virtualPad.buttonUp.justPressed)
+		if (controls.UI_UP_P)
 			changeSelection(-1);
-		if (controls.ACCEPT || virtualPad.buttonA.justPressed)
+		if (controls.ACCEPT)
 			choose();
 	}
 }
@@ -286,11 +272,7 @@ function visualDeath() {
 	FlxTween.tween(bBox, {x: -bBox.width}, 0.5, {ease: FlxEase.quintIn});
 	FlxTween.tween(tBox, {x: 1280}, 0.5, {ease: FlxEase.quintIn});
 	for (i in buttons.members)
-		FlxTween.tween(i, {x: i.x - i.width * 4}, 0.3, {ease: FlxEase.quintIn, startDelay: 0.05 * i.ID});	
-	FlxTween.tween(virtualPad.buttonUp, {x: virtualPad.buttonUp.x - virtualPad.buttonUp.width * 4}, 0.3, {ease: FlxEase.quintIn, startDelay: 0.05 * 1});
-	FlxTween.tween(virtualPad.buttonDown, {x: virtualPad.buttonDown.x - virtualPad.buttonDown.width * 4}, 0.3, {ease: FlxEase.quintIn, startDelay: 0.05 * 2});
-	FlxTween.tween(virtualPad.buttonA, {x: (FlxG.width)}, 0.5, {ease: FlxEase.quintIn});
-	FlxTween.tween(virtualPad.buttonB, {x: (FlxG.width)}, 0.5, {ease: FlxEase.quintIn});
+		FlxTween.tween(i, {x: i.x - i.width * 4}, 0.3, {ease: FlxEase.quintIn, startDelay: 0.05 * i.ID});
 	FlxTween.tween(p, {y: -p.height}, 0.5, {ease: FlxEase.quartIn});
 	bTxt.resetText('');
 	FlxTween.tween(tTxt, {x: tBox.width}, 0.5, {ease: FlxEase.quintIn});
@@ -310,7 +292,7 @@ function end() {
 }
 
 function loadJson() {
-	var rawJson = FunkinAssets.getContent(Paths.modFolders(StringTools.replace('songs/' + PlayState.SONG.song.toLowerCase() + '/metadata.json', ' ', '-')));
+	var rawJson = File.getContent(Paths.modFolders(StringTools.replace('songs/' + PlayState.SONG.song.toLowerCase() + '/metadata.json', ' ', '-')));
 	var data = Json.parse(rawJson);
 	return data;
 }

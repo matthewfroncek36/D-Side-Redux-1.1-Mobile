@@ -1,6 +1,6 @@
 {
 "AN": {
-"N": "AND_ASSETS",
+"N": "AND_ASSETS_REVISION(WINTER)",
 "SN": "P_Buttfuck",
 "TL": {
 "L": [
@@ -13,7 +13,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck idle",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck idle",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -50,7 +50,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck idle",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck idle",
 "IN": "",
 "ST": "G",
 "FF": 1,
@@ -87,7 +87,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck idle",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck idle",
 "IN": "",
 "ST": "G",
 "FF": 2,
@@ -124,7 +124,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck idle",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck idle",
 "IN": "",
 "ST": "G",
 "FF": 3,
@@ -161,7 +161,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck idle",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck idle",
 "IN": "",
 "ST": "G",
 "FF": 4,
@@ -198,7 +198,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck idle",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck idle",
 "IN": "",
 "ST": "G",
 "FF": 5,
@@ -235,7 +235,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck idle",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck idle",
 "IN": "",
 "ST": "G",
 "FF": 6,
@@ -272,7 +272,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck idle",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck idle",
 "IN": "",
 "ST": "G",
 "FF": 7,
@@ -309,7 +309,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck idle",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck idle",
 "IN": "",
 "ST": "G",
 "FF": 8,
@@ -346,7 +346,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck idle",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck idle",
 "IN": "",
 "ST": "G",
 "FF": 9,
@@ -383,7 +383,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck idle",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck idle",
 "IN": "",
 "ST": "G",
 "FF": 10,
@@ -420,7 +420,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck idle",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck idle",
 "IN": "",
 "ST": "G",
 "FF": 11,
@@ -457,7 +457,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck idle",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck idle",
 "IN": "",
 "ST": "G",
 "FF": 12,
@@ -494,7 +494,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck idle",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck idle",
 "IN": "",
 "ST": "G",
 "FF": 13,
@@ -531,7 +531,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck left",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck left",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -568,7 +568,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck left",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck left",
 "IN": "",
 "ST": "G",
 "FF": 1,
@@ -605,7 +605,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck left",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck left",
 "IN": "",
 "ST": "G",
 "FF": 2,
@@ -642,7 +642,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck left",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck left",
 "IN": "",
 "ST": "G",
 "FF": 3,
@@ -679,7 +679,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck left",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck left",
 "IN": "",
 "ST": "G",
 "FF": 4,
@@ -716,7 +716,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck left",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck left",
 "IN": "",
 "ST": "G",
 "FF": 5,
@@ -753,7 +753,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck left",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck left",
 "IN": "",
 "ST": "G",
 "FF": 6,
@@ -790,7 +790,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck left",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck left",
 "IN": "",
 "ST": "G",
 "FF": 7,
@@ -827,7 +827,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck left",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck left",
 "IN": "",
 "ST": "G",
 "FF": 8,
@@ -864,7 +864,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck left",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck left",
 "IN": "",
 "ST": "G",
 "FF": 9,
@@ -901,7 +901,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck left",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck left",
 "IN": "",
 "ST": "G",
 "FF": 10,
@@ -938,7 +938,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck left",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck left",
 "IN": "",
 "ST": "G",
 "FF": 11,
@@ -975,7 +975,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck left",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck left",
 "IN": "",
 "ST": "G",
 "FF": 12,
@@ -1012,7 +1012,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck left",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck left",
 "IN": "",
 "ST": "G",
 "FF": 13,
@@ -1049,7 +1049,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck down",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck down",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -1086,7 +1086,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck down",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck down",
 "IN": "",
 "ST": "G",
 "FF": 1,
@@ -1123,7 +1123,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck down",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck down",
 "IN": "",
 "ST": "G",
 "FF": 2,
@@ -1160,7 +1160,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck down",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck down",
 "IN": "",
 "ST": "G",
 "FF": 3,
@@ -1197,7 +1197,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck down",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck down",
 "IN": "",
 "ST": "G",
 "FF": 4,
@@ -1234,7 +1234,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck down",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck down",
 "IN": "",
 "ST": "G",
 "FF": 5,
@@ -1271,7 +1271,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck down",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck down",
 "IN": "",
 "ST": "G",
 "FF": 6,
@@ -1308,7 +1308,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck down",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck down",
 "IN": "",
 "ST": "G",
 "FF": 7,
@@ -1345,7 +1345,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck down",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck down",
 "IN": "",
 "ST": "G",
 "FF": 8,
@@ -1382,7 +1382,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck down",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck down",
 "IN": "",
 "ST": "G",
 "FF": 9,
@@ -1419,7 +1419,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck down",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck down",
 "IN": "",
 "ST": "G",
 "FF": 10,
@@ -1456,7 +1456,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck down",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck down",
 "IN": "",
 "ST": "G",
 "FF": 11,
@@ -1493,7 +1493,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck down",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck down",
 "IN": "",
 "ST": "G",
 "FF": 12,
@@ -1530,7 +1530,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck down",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck down",
 "IN": "",
 "ST": "G",
 "FF": 13,
@@ -1567,7 +1567,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck up",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck up",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -1604,7 +1604,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck up",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck up",
 "IN": "",
 "ST": "G",
 "FF": 1,
@@ -1641,7 +1641,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck up",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck up",
 "IN": "",
 "ST": "G",
 "FF": 2,
@@ -1678,7 +1678,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck up",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck up",
 "IN": "",
 "ST": "G",
 "FF": 3,
@@ -1715,7 +1715,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck up",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck up",
 "IN": "",
 "ST": "G",
 "FF": 4,
@@ -1752,7 +1752,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck up",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck up",
 "IN": "",
 "ST": "G",
 "FF": 5,
@@ -1789,7 +1789,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck up",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck up",
 "IN": "",
 "ST": "G",
 "FF": 6,
@@ -1826,7 +1826,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck up",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck up",
 "IN": "",
 "ST": "G",
 "FF": 7,
@@ -1863,7 +1863,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck up",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck up",
 "IN": "",
 "ST": "G",
 "FF": 8,
@@ -1900,7 +1900,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck up",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck up",
 "IN": "",
 "ST": "G",
 "FF": 9,
@@ -1937,7 +1937,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck up",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck up",
 "IN": "",
 "ST": "G",
 "FF": 10,
@@ -1974,7 +1974,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck up",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck up",
 "IN": "",
 "ST": "G",
 "FF": 11,
@@ -2011,7 +2011,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck up",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck up",
 "IN": "",
 "ST": "G",
 "FF": 12,
@@ -2048,7 +2048,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck up",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck up",
 "IN": "",
 "ST": "G",
 "FF": 13,
@@ -2085,7 +2085,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck right",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck right",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -2122,7 +2122,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck right",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck right",
 "IN": "",
 "ST": "G",
 "FF": 1,
@@ -2159,7 +2159,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck right",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck right",
 "IN": "",
 "ST": "G",
 "FF": 2,
@@ -2196,7 +2196,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck right",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck right",
 "IN": "",
 "ST": "G",
 "FF": 3,
@@ -2233,7 +2233,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck right",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck right",
 "IN": "",
 "ST": "G",
 "FF": 4,
@@ -2270,7 +2270,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck right",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck right",
 "IN": "",
 "ST": "G",
 "FF": 5,
@@ -2307,7 +2307,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck right",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck right",
 "IN": "",
 "ST": "G",
 "FF": 6,
@@ -2344,7 +2344,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck right",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck right",
 "IN": "",
 "ST": "G",
 "FF": 7,
@@ -2381,7 +2381,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck right",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck right",
 "IN": "",
 "ST": "G",
 "FF": 8,
@@ -2418,7 +2418,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck right",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck right",
 "IN": "",
 "ST": "G",
 "FF": 9,
@@ -2455,7 +2455,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck right",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck right",
 "IN": "",
 "ST": "G",
 "FF": 10,
@@ -2492,7 +2492,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck right",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck right",
 "IN": "",
 "ST": "G",
 "FF": 11,
@@ -2529,7 +2529,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck right",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck right",
 "IN": "",
 "ST": "G",
 "FF": 12,
@@ -2566,7 +2566,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck right",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck right",
 "IN": "",
 "ST": "G",
 "FF": 13,
@@ -2603,7 +2603,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss left",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss left",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -2640,7 +2640,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss left",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss left",
 "IN": "",
 "ST": "G",
 "FF": 1,
@@ -2677,7 +2677,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss left",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss left",
 "IN": "",
 "ST": "G",
 "FF": 2,
@@ -2714,7 +2714,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss left",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss left",
 "IN": "",
 "ST": "G",
 "FF": 3,
@@ -2751,7 +2751,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss left",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss left",
 "IN": "",
 "ST": "G",
 "FF": 4,
@@ -2788,7 +2788,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss left",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss left",
 "IN": "",
 "ST": "G",
 "FF": 5,
@@ -2825,7 +2825,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss left",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss left",
 "IN": "",
 "ST": "G",
 "FF": 6,
@@ -2862,7 +2862,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss left",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss left",
 "IN": "",
 "ST": "G",
 "FF": 7,
@@ -2899,7 +2899,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss left",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss left",
 "IN": "",
 "ST": "G",
 "FF": 8,
@@ -2936,7 +2936,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss left",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss left",
 "IN": "",
 "ST": "G",
 "FF": 9,
@@ -2973,7 +2973,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss left",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss left",
 "IN": "",
 "ST": "G",
 "FF": 10,
@@ -3010,7 +3010,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss left",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss left",
 "IN": "",
 "ST": "G",
 "FF": 11,
@@ -3047,7 +3047,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss left",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss left",
 "IN": "",
 "ST": "G",
 "FF": 12,
@@ -3084,7 +3084,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss left",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss left",
 "IN": "",
 "ST": "G",
 "FF": 13,
@@ -3121,7 +3121,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss down",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss down",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -3158,7 +3158,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss down",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss down",
 "IN": "",
 "ST": "G",
 "FF": 1,
@@ -3195,7 +3195,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss down",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss down",
 "IN": "",
 "ST": "G",
 "FF": 2,
@@ -3232,7 +3232,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss down",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss down",
 "IN": "",
 "ST": "G",
 "FF": 3,
@@ -3269,7 +3269,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss down",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss down",
 "IN": "",
 "ST": "G",
 "FF": 4,
@@ -3306,7 +3306,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss down",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss down",
 "IN": "",
 "ST": "G",
 "FF": 5,
@@ -3343,7 +3343,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss down",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss down",
 "IN": "",
 "ST": "G",
 "FF": 6,
@@ -3380,7 +3380,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss down",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss down",
 "IN": "",
 "ST": "G",
 "FF": 7,
@@ -3417,7 +3417,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss down",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss down",
 "IN": "",
 "ST": "G",
 "FF": 8,
@@ -3454,7 +3454,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss down",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss down",
 "IN": "",
 "ST": "G",
 "FF": 9,
@@ -3491,7 +3491,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss down",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss down",
 "IN": "",
 "ST": "G",
 "FF": 10,
@@ -3528,7 +3528,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss down",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss down",
 "IN": "",
 "ST": "G",
 "FF": 11,
@@ -3565,7 +3565,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss down",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss down",
 "IN": "",
 "ST": "G",
 "FF": 12,
@@ -3602,7 +3602,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss down",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss down",
 "IN": "",
 "ST": "G",
 "FF": 13,
@@ -3639,7 +3639,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss up",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss up",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -3676,7 +3676,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss up",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss up",
 "IN": "",
 "ST": "G",
 "FF": 1,
@@ -3713,7 +3713,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss up",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss up",
 "IN": "",
 "ST": "G",
 "FF": 2,
@@ -3750,7 +3750,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss up",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss up",
 "IN": "",
 "ST": "G",
 "FF": 3,
@@ -3787,7 +3787,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss up",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss up",
 "IN": "",
 "ST": "G",
 "FF": 4,
@@ -3824,7 +3824,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss up",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss up",
 "IN": "",
 "ST": "G",
 "FF": 5,
@@ -3861,7 +3861,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss up",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss up",
 "IN": "",
 "ST": "G",
 "FF": 6,
@@ -3898,7 +3898,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss up",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss up",
 "IN": "",
 "ST": "G",
 "FF": 7,
@@ -3935,7 +3935,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss up",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss up",
 "IN": "",
 "ST": "G",
 "FF": 8,
@@ -3972,7 +3972,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss up",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss up",
 "IN": "",
 "ST": "G",
 "FF": 9,
@@ -4009,7 +4009,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss up",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss up",
 "IN": "",
 "ST": "G",
 "FF": 10,
@@ -4046,7 +4046,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss up",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss up",
 "IN": "",
 "ST": "G",
 "FF": 11,
@@ -4083,7 +4083,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss up",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss up",
 "IN": "",
 "ST": "G",
 "FF": 12,
@@ -4120,7 +4120,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss up",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss up",
 "IN": "",
 "ST": "G",
 "FF": 13,
@@ -4157,7 +4157,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss right",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss right",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -4194,7 +4194,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss right",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss right",
 "IN": "",
 "ST": "G",
 "FF": 1,
@@ -4231,7 +4231,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss right",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss right",
 "IN": "",
 "ST": "G",
 "FF": 2,
@@ -4268,7 +4268,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss right",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss right",
 "IN": "",
 "ST": "G",
 "FF": 3,
@@ -4305,7 +4305,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss right",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss right",
 "IN": "",
 "ST": "G",
 "FF": 4,
@@ -4342,7 +4342,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss right",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss right",
 "IN": "",
 "ST": "G",
 "FF": 5,
@@ -4379,7 +4379,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss right",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss right",
 "IN": "",
 "ST": "G",
 "FF": 6,
@@ -4416,7 +4416,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss right",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss right",
 "IN": "",
 "ST": "G",
 "FF": 7,
@@ -4453,7 +4453,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss right",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss right",
 "IN": "",
 "ST": "G",
 "FF": 8,
@@ -4490,7 +4490,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss right",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss right",
 "IN": "",
 "ST": "G",
 "FF": 9,
@@ -4527,7 +4527,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss right",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss right",
 "IN": "",
 "ST": "G",
 "FF": 10,
@@ -4564,7 +4564,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss right",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss right",
 "IN": "",
 "ST": "G",
 "FF": 11,
@@ -4601,7 +4601,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss right",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss right",
 "IN": "",
 "ST": "G",
 "FF": 12,
@@ -4638,7 +4638,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck miss right",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss right",
 "IN": "",
 "ST": "G",
 "FF": 13,
@@ -4677,9 +4677,199 @@
 "SD": {
 "S": [
 {
-"SN": "pbuttfuck idle",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck idle",
 "TL": {
 "L": [
+{
+"LN": "Layer_6",
+"FR": [
+{
+"I": 0,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck fg arm",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 46.85,
+"y": 1.95
+},
+"M3D": [
+0.976837158203125,
+0.0,
+0.0,
+0.0,
+-0.016143798828125,
+1.020599365234375,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+793.75,
+380.45,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 2,
+"DU": 3,
+"E": [
+{
+"SI": {
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck fg arm",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 46.900000000000009,
+"y": 2.05
+},
+"M3D": [
+0.971954345703125,
+0.0,
+0.0,
+0.0,
+-0.01605224609375,
+1.0276336669921876,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+793.3,
+378.7,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 5,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck fg arm",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 115.35000000000001,
+"y": 120.2
+},
+"M3D": [
+1.0084228515625,
+0.0,
+0.0,
+0.0,
+-0.014556884765625,
+0.9879150390625,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+790.6,
+372.1,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 7,
+"DU": 4,
+"E": [
+{
+"SI": {
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck fg arm",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 115.35000000000001,
+"y": 120.10000000000001
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+792.5,
+369.3,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 11,
+"DU": 3,
+"E": [
+{
+"SI": {
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck fg arm",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 115.35000000000001,
+"y": 120.15
+},
+"M3D": [
+0.9974212646484375,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0025634765625,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+792.3,
+368.65,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+},
 {
 "LN": "Layer_1",
 "FR": [
@@ -4689,7 +4879,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck mic hand",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck mic hand",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -4726,7 +4916,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck mic hand",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck mic hand",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -4763,7 +4953,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck mic hand",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck mic hand",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -4800,7 +4990,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck mic hand",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck mic hand",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -4837,7 +5027,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck mic hand",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck mic hand",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -4859,8 +5049,8 @@
 0.0,
 1.0,
 0.0,
-343.1,
-253.8,
+340.5,
+251.2,
 0.0,
 1.0
 ]
@@ -4879,7 +5069,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck head",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck head",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -4910,7 +5100,7 @@
 },
 {
 "SI": {
-"SN": "pbuttfuck face alt",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck face alt",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -4947,7 +5137,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck head",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck head",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -4978,7 +5168,7 @@
 },
 {
 "SI": {
-"SN": "pbuttfuck face",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck face",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -5015,7 +5205,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck head",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck head",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -5046,7 +5236,7 @@
 },
 {
 "SI": {
-"SN": "pbuttfuck face",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck face",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -5083,7 +5273,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck head",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck head",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -5114,7 +5304,7 @@
 },
 {
 "SI": {
-"SN": "pbuttfuck face",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck face",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -5151,7 +5341,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck head",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck head",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -5182,7 +5372,7 @@
 },
 {
 "SI": {
-"SN": "pbuttfuck face",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck face",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -5224,7 +5414,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck body",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck body",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -5252,37 +5442,6 @@
 1.0
 ]
 }
-},
-{
-"SI": {
-"SN": "pbuttfuck fg arm",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 46.85,
-"y": 1.95
-},
-"M3D": [
-0.976837158203125,
-0.0,
-0.0,
-0.0,
--0.016143798828125,
-1.020599365234375,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-793.75,
-380.45,
-0.0,
-1.0
-]
-}
 }
 ]
 },
@@ -5292,7 +5451,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck body",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck body",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -5320,37 +5479,6 @@
 1.0
 ]
 }
-},
-{
-"SI": {
-"SN": "pbuttfuck fg arm",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 46.900000000000009,
-"y": 2.05
-},
-"M3D": [
-0.971954345703125,
-0.0,
-0.0,
-0.0,
--0.01605224609375,
-1.0276336669921876,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-793.3,
-378.7,
-0.0,
-1.0
-]
-}
 }
 ]
 },
@@ -5360,7 +5488,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck body",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck body",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -5388,37 +5516,6 @@
 1.0
 ]
 }
-},
-{
-"SI": {
-"SN": "pbuttfuck fg arm",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 115.35000000000001,
-"y": 120.2
-},
-"M3D": [
-1.0084228515625,
-0.0,
-0.0,
-0.0,
--0.014556884765625,
-0.9879150390625,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-790.6,
-372.1,
-0.0,
-1.0
-]
-}
 }
 ]
 },
@@ -5428,7 +5525,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck body",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck body",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -5456,37 +5553,6 @@
 1.0
 ]
 }
-},
-{
-"SI": {
-"SN": "pbuttfuck fg arm",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 115.35000000000001,
-"y": 120.10000000000001
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-792.5,
-369.3,
-0.0,
-1.0
-]
-}
 }
 ]
 },
@@ -5496,7 +5562,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck body",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck body",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -5524,37 +5590,6 @@
 1.0
 ]
 }
-},
-{
-"SI": {
-"SN": "pbuttfuck fg arm",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 115.35000000000001,
-"y": 120.15
-},
-"M3D": [
-0.9974212646484375,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0025634765625,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-792.3,
-368.65,
-0.0,
-1.0
-]
-}
 }
 ]
 }
@@ -5569,7 +5604,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck bg arm",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck bg arm",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -5606,7 +5641,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck bg arm",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck bg arm",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -5643,7 +5678,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck bg arm",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck bg arm",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -5680,11 +5715,11 @@
 }
 },
 {
-"SN": "pbuttfuck mic hand",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck fg arm",
 "TL": {
 "L": [
 {
-"LN": "Layer_2",
+"LN": "Layer_3",
 "FR": [
 {
 "I": 0,
@@ -5694,20 +5729,20 @@
 "ASI": {
 "N": "0000",
 "M3D": [
-0.9801788330078125,
+0.972991943359375,
 0.0,
 0.0,
 0.0,
 0.0,
-0.9801788330078125,
+0.972991943359375,
 0.0,
 0.0,
 0.0,
 0.0,
 1.0,
 0.0,
-0.0,
-0.0,
+-73.25,
+-34.3,
 0.0,
 1.0
 ]
@@ -5721,11 +5756,11 @@
 }
 },
 {
-"SN": "pbuttfuck head",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck mic hand",
 "TL": {
 "L": [
 {
-"LN": "Layer_2",
+"LN": "Layer_4",
 "FR": [
 {
 "I": 0,
@@ -5735,20 +5770,20 @@
 "ASI": {
 "N": "0001",
 "M3D": [
-0.9812774658203125,
+0.9999847412109375,
 0.0,
 0.0,
 0.0,
 0.0,
-0.9812774658203125,
+0.9999847412109375,
 0.0,
 0.0,
 0.0,
 0.0,
 1.0,
 0.0,
-0.0,
-0.0,
+-90.1,
+52.25,
 0.0,
 1.0
 ]
@@ -5762,11 +5797,11 @@
 }
 },
 {
-"SN": "pbuttfuck face alt",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck head",
 "TL": {
 "L": [
 {
-"LN": "Layer_2",
+"LN": "Layer_3",
 "FR": [
 {
 "I": 0,
@@ -5776,20 +5811,20 @@
 "ASI": {
 "N": "0002",
 "M3D": [
-0.9937591552734375,
+0.9874420166015625,
 0.0,
 0.0,
 0.0,
 0.0,
-0.9937591552734375,
+0.9874420166015625,
 0.0,
 0.0,
 0.0,
 0.0,
 1.0,
 0.0,
-0.0,
--26.8,
+68.65,
+6.85,
 0.0,
 1.0
 ]
@@ -5803,7 +5838,7 @@
 }
 },
 {
-"SN": "pbuttfuck face",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck face alt",
 "TL": {
 "L": [
 {
@@ -5817,20 +5852,20 @@
 "ASI": {
 "N": "0003",
 "M3D": [
-0.97467041015625,
+0.9937591552734375,
 0.0,
 0.0,
 0.0,
 0.0,
-0.97467041015625,
+0.9937591552734375,
 0.0,
 0.0,
 0.0,
 0.0,
 1.0,
 0.0,
--3.85,
--26.3,
+-37.3,
+-45.55,
 0.0,
 1.0
 ]
@@ -5844,7 +5879,7 @@
 }
 },
 {
-"SN": "pbuttfuck body",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck face",
 "TL": {
 "L": [
 {
@@ -5858,20 +5893,20 @@
 "ASI": {
 "N": "0004",
 "M3D": [
-0.975067138671875,
+0.97467041015625,
 0.0,
 0.0,
 0.0,
 0.0,
-0.975067138671875,
+0.97467041015625,
 0.0,
 0.0,
 0.0,
 0.0,
 1.0,
 0.0,
-0.0,
-0.0,
+-35.25,
+-45.3,
 0.0,
 1.0
 ]
@@ -5885,11 +5920,11 @@
 }
 },
 {
-"SN": "pbuttfuck fg arm",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck body",
 "TL": {
 "L": [
 {
-"LN": "Layer_2",
+"LN": "Layer_3",
 "FR": [
 {
 "I": 0,
@@ -5899,20 +5934,20 @@
 "ASI": {
 "N": "0005",
 "M3D": [
-0.972991943359375,
+0.975067138671875,
 0.0,
 0.0,
 0.0,
 0.0,
-0.972991943359375,
+0.975067138671875,
 0.0,
 0.0,
 0.0,
 0.0,
 1.0,
 0.0,
-0.0,
-0.0,
+11.95,
+-6.1,
 0.0,
 1.0
 ]
@@ -5926,11 +5961,11 @@
 }
 },
 {
-"SN": "pbuttfuck bg arm",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck bg arm",
 "TL": {
 "L": [
 {
-"LN": "Layer_2",
+"LN": "Layer_3",
 "FR": [
 {
 "I": 0,
@@ -5940,20 +5975,20 @@
 "ASI": {
 "N": "0006",
 "M3D": [
-0.9914703369140625,
+0.99859619140625,
 0.0,
 0.0,
 0.0,
 0.0,
-0.9914703369140625,
+0.99859619140625,
 0.0,
 0.0,
 0.0,
 0.0,
 1.0,
 0.0,
-0.0,
-0.0,
+-68.75,
+-5.05,
 0.0,
 1.0
 ]
@@ -5967,7 +6002,7 @@
 }
 },
 {
-"SN": "pbuttfuck left",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck left",
 "TL": {
 "L": [
 {
@@ -5979,7 +6014,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck fg arm left",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck fg arm left",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -6001,8 +6036,8 @@
 0.0,
 1.0,
 0.0,
-725.2,
--157.0,
+717.35,
+-160.15,
 0.0,
 1.0
 ]
@@ -6016,7 +6051,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck fg arm left",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck fg arm left",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -6057,31 +6092,23 @@
 "DU": 2,
 "E": [
 {
-"SI": {
-"SN": "pbuttfuck head left",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 406.40000000000006,
-"y": 281.05
-},
+"ASI": {
+"N": "0008",
 "M3D": [
-1.0007476806640626,
-0.0438232421875,
-0.0,
-0.0,
--0.0091705322265625,
-0.998779296875,
+1.0,
 0.0,
 0.0,
 0.0,
 0.0,
 1.0,
 0.0,
-287.3,
--389.25,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+242.0,
+-352.7,
 0.0,
 1.0
 ]
@@ -6089,7 +6116,7 @@
 },
 {
 "SI": {
-"SN": "pbuttfuck face left alt",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck face left alt",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -6099,7 +6126,7 @@
 "y": 75.4
 },
 "M3D": [
-1.0007476806640626,
+1.000732421875,
 0.0438232421875,
 0.0,
 0.0,
@@ -6126,7 +6153,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck head left",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck head left",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -6157,7 +6184,7 @@
 },
 {
 "SI": {
-"SN": "pbuttfuck face left",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck face left",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -6199,7 +6226,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck body left",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck body left",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -6209,7 +6236,7 @@
 "y": 299.15000000000006
 },
 "M3D": [
-1.0003814697265626,
+1.0003662109375,
 0.0055999755859375,
 0.0,
 0.0,
@@ -6236,7 +6263,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck body left",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck body left",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -6278,7 +6305,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck bg arm left",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck bg arm left",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -6315,7 +6342,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck bg arm left",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck bg arm left",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -6352,11 +6379,11 @@
 }
 },
 {
-"SN": "pbuttfuck fg arm left",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck fg arm left",
 "TL": {
 "L": [
 {
-"LN": "Layer_2",
+"LN": "Layer_3",
 "FR": [
 {
 "I": 0,
@@ -6378,49 +6405,8 @@
 0.0,
 1.0,
 0.0,
-0.0,
-0.0,
-0.0,
-1.0
-]
-}
-}
-]
-}
-]
-}
-]
-}
-},
-{
-"SN": "pbuttfuck head left",
-"TL": {
-"L": [
-{
-"LN": "Layer_2",
-"FR": [
-{
-"I": 0,
-"DU": 1,
-"E": [
-{
-"ASI": {
-"N": "0008",
-"M3D": [
-0.9982757568359375,
-0.0,
-0.0,
-0.0,
-0.0,
-0.9982757568359375,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
+15.4,
+187.85,
 0.0,
 1.0
 ]
@@ -6434,7 +6420,7 @@
 }
 },
 {
-"SN": "pbuttfuck face left alt",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck face left alt",
 "TL": {
 "L": [
 {
@@ -6448,20 +6434,20 @@
 "ASI": {
 "N": "0009",
 "M3D": [
-0.9982757568359375,
+0.998291015625,
 0.0,
 0.0,
 0.0,
 0.0,
-0.9982757568359375,
+0.998291015625,
 0.0,
 0.0,
 0.0,
 0.0,
 1.0,
 0.0,
-0.0,
-0.0,
+-70.6,
+8.25,
 0.0,
 1.0
 ]
@@ -6475,7 +6461,7 @@
 }
 },
 {
-"SN": "pbuttfuck face left",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck head left",
 "TL": {
 "L": [
 {
@@ -6501,8 +6487,8 @@
 0.0,
 1.0,
 0.0,
-0.0,
-0.0,
+-72.65,
+21.95,
 0.0,
 1.0
 ]
@@ -6516,7 +6502,7 @@
 }
 },
 {
-"SN": "pbuttfuck body left",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck face left",
 "TL": {
 "L": [
 {
@@ -6530,12 +6516,7 @@
 "ASI": {
 "N": "0011",
 "M3D": [
-0.99774169921875,
-0.0,
-0.0,
-0.0,
-0.0,
-0.99774169921875,
+1.0,
 0.0,
 0.0,
 0.0,
@@ -6544,6 +6525,11 @@
 0.0,
 0.0,
 0.0,
+0.0,
+1.0,
+0.0,
+-46.55,
+8.35,
 0.0,
 1.0
 ]
@@ -6557,11 +6543,11 @@
 }
 },
 {
-"SN": "pbuttfuck bg arm left",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck body left",
 "TL": {
 "L": [
 {
-"LN": "Layer_2",
+"LN": "Layer_3",
 "FR": [
 {
 "I": 0,
@@ -6570,6 +6556,47 @@
 {
 "ASI": {
 "N": "0012",
+"M3D": [
+0.99774169921875,
+0.0,
+0.0,
+0.0,
+0.0,
+0.99774169921875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-18.45,
+-8.45,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+}
+]
+}
+},
+{
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck bg arm left",
+"TL": {
+"L": [
+{
+"LN": "Layer_3",
+"FR": [
+{
+"I": 0,
+"DU": 1,
+"E": [
+{
+"ASI": {
+"N": "0013",
 "M3D": [
 1.0,
 0.0,
@@ -6583,8 +6610,8 @@
 0.0,
 1.0,
 0.0,
-0.0,
-14.0,
+-147.45,
+26.5,
 0.0,
 1.0
 ]
@@ -6598,9 +6625,88 @@
 }
 },
 {
-"SN": "pbuttfuck down",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck down",
 "TL": {
 "L": [
+{
+"LN": "Layer_6",
+"FR": [
+{
+"I": 0,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck fg arm down",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": -6.75,
+"y": 98.9
+},
+"M3D": [
+1.03564453125,
+0.10247802734375,
+0.0,
+0.0,
+-0.0992889404296875,
+0.965301513671875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+811.95,
+217.5,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 2,
+"DU": 12,
+"E": [
+{
+"SI": {
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck fg arm down",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 278.2,
+"y": 108.80000000000001
+},
+"M3D": [
+0.98968505859375,
+0.1428680419921875,
+0.0,
+0.0,
+-0.1428680419921875,
+0.98968505859375,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+812.4,
+206.65,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+},
 {
 "LN": "Layer_5",
 "FR": [
@@ -6610,7 +6716,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck mic hand",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck mic hand copy",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -6647,7 +6753,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck mic hand",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck mic hand copy",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -6688,31 +6794,23 @@
 "DU": 2,
 "E": [
 {
-"SI": {
-"SN": "pbuttfuck head",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 451.1,
-"y": 241.20000000000003
-},
+"ASI": {
+"N": "0016",
 "M3D": [
-0.958160400390625,
-0.308837890625,
-0.0,
-0.0,
--0.314849853515625,
-0.93988037109375,
+1.0,
 0.0,
 0.0,
 0.0,
 0.0,
 1.0,
 0.0,
-315.3,
--125.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+284.25,
+-19.35,
 0.0,
 1.0
 ]
@@ -6720,7 +6818,7 @@
 },
 {
 "SI": {
-"SN": "pbuttfuck face down alt",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck face down alt",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -6757,7 +6855,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck head",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck head",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -6788,7 +6886,7 @@
 },
 {
 "SI": {
-"SN": "pbuttfuck face down",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck face down",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -6829,31 +6927,54 @@
 "DU": 2,
 "E": [
 {
-"SI": {
-"SN": "pbuttfuck fg arm down",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": -6.75,
-"y": 98.9
-},
+"ASI": {
+"N": "0019",
 "M3D": [
-1.03564453125,
-0.10247802734375,
-0.0,
-0.0,
--0.0992889404296875,
-0.965301513671875,
+1.0,
 0.0,
 0.0,
 0.0,
 0.0,
 1.0,
 0.0,
-802.75,
-216.5,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+1000.3,
+388.3,
+0.0,
+1.0
+]
+}
+},
+{
+"SI": {
+"SN": "ASSETS/GF ASSETS/pov/Symbol 1",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 40.95,
+"y": 62.65
+},
+"M3D": [
+1.0573883056640626,
+0.0,
+0.0,
+0.0,
+-0.2227783203125,
+0.888885498046875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+877.1,
+348.25,
 0.0,
 1.0
 ]
@@ -6867,30 +6988,30 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck fg arm down",
+"SN": "ASSETS/GF ASSETS/pov/Symbol 1",
 "IN": "",
 "ST": "G",
 "FF": 0,
 "LP": "LP",
 "TRP": {
-"x": 278.2,
-"y": 108.80000000000001
+"x": 119.25,
+"y": 46.85
 },
 "M3D": [
-0.98968505859375,
-0.1428680419921875,
-0.0,
-0.0,
--0.1428680419921875,
-0.98968505859375,
+1.0,
 0.0,
 0.0,
 0.0,
 0.0,
 1.0,
 0.0,
-812.4,
-206.65,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+865.4,
+341.25,
 0.0,
 1.0
 ]
@@ -6909,7 +7030,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck body down",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck body down",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -6946,7 +7067,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck body down",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck body down",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -6988,7 +7109,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck bg arm",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck bg arm copy",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -7025,7 +7146,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck bg arm",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck bg arm copy",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -7062,48 +7183,7 @@
 }
 },
 {
-"SN": "pbuttfuck face down alt",
-"TL": {
-"L": [
-{
-"LN": "Layer_2",
-"FR": [
-{
-"I": 0,
-"DU": 1,
-"E": [
-{
-"ASI": {
-"N": "0013",
-"M3D": [
-0.9914398193359375,
-0.0,
-0.0,
-0.0,
-0.0,
-0.9914398193359375,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--8.9,
--19.8,
-0.0,
-1.0
-]
-}
-}
-]
-}
-]
-}
-]
-}
-},
-{
-"SN": "pbuttfuck face down",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck fg arm down",
 "TL": {
 "L": [
 {
@@ -7117,20 +7197,20 @@
 "ASI": {
 "N": "0014",
 "M3D": [
-1.0,
+0.96087646484375,
+0.0,
+0.0,
+0.0,
+0.0,
+0.96087646484375,
 0.0,
 0.0,
 0.0,
 0.0,
 1.0,
 0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--7.0,
--18.0,
+78.45,
+140.25,
 0.0,
 1.0
 ]
@@ -7144,7 +7224,7 @@
 }
 },
 {
-"SN": "pbuttfuck fg arm down",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck mic hand copy",
 "TL": {
 "L": [
 {
@@ -7158,20 +7238,20 @@
 "ASI": {
 "N": "0015",
 "M3D": [
-0.96087646484375,
+0.980224609375,
 0.0,
 0.0,
 0.0,
 0.0,
-0.96087646484375,
+0.980224609375,
 0.0,
 0.0,
 0.0,
 0.0,
 1.0,
 0.0,
-0.0,
-0.0,
+-4.85,
+63.85,
 0.0,
 1.0
 ]
@@ -7185,7 +7265,7 @@
 }
 },
 {
-"SN": "pbuttfuck body down",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck face down alt",
 "TL": {
 "L": [
 {
@@ -7197,21 +7277,103 @@
 "E": [
 {
 "ASI": {
-"N": "0016",
+"N": "0017",
 "M3D": [
-0.966400146484375,
+0.9914398193359375,
 0.0,
 0.0,
 0.0,
 0.0,
-0.966400146484375,
+0.9914398193359375,
 0.0,
 0.0,
 0.0,
 0.0,
 1.0,
 0.0,
--3.85,
+-24.25,
+-37.8,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+}
+]
+}
+},
+{
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck face down",
+"TL": {
+"L": [
+{
+"LN": "Layer_3",
+"FR": [
+{
+"I": 0,
+"DU": 1,
+"E": [
+{
+"ASI": {
+"N": "0018",
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-26.45,
+-37.8,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+}
+]
+}
+},
+{
+"SN": "ASSETS/GF ASSETS/pov/Symbol 1",
+"TL": {
+"L": [
+{
+"LN": "Layer_2",
+"FR": [
+{
+"I": 0,
+"DU": 1,
+"E": [
+{
+"ASI": {
+"N": "0020",
+"M3D": [
+0.9457244873046875,
+0.0,
+0.0,
+0.0,
+0.0,
+0.9457244873046875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
 0.0,
 0.0,
 1.0
@@ -7226,7 +7388,89 @@
 }
 },
 {
-"SN": "pbuttfuck up",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck body down",
+"TL": {
+"L": [
+{
+"LN": "Layer_3",
+"FR": [
+{
+"I": 0,
+"DU": 1,
+"E": [
+{
+"ASI": {
+"N": "0021",
+"M3D": [
+0.966400146484375,
+0.0,
+0.0,
+0.0,
+0.0,
+0.966400146484375,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+49.55,
+-27.15,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+}
+]
+}
+},
+{
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck bg arm copy",
+"TL": {
+"L": [
+{
+"LN": "Layer_3",
+"FR": [
+{
+"I": 0,
+"DU": 1,
+"E": [
+{
+"ASI": {
+"N": "0022",
+"M3D": [
+0.9914703369140625,
+0.0,
+0.0,
+0.0,
+0.0,
+0.9914703369140625,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-86.1,
+94.0,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+}
+]
+}
+},
+{
+"SN": "ANIMATIONS/BF/POV/pbuttfuck up",
 "TL": {
 "L": [
 {
@@ -7238,30 +7482,30 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck mic hand",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck mic hand copy",
 "IN": "",
 "ST": "G",
 "FF": 0,
 "LP": "LP",
 "TRP": {
-"x": 131.6,
-"y": 69.60000000000001
+"x": 131.65,
+"y": 69.65
 },
 "M3D": [
-0.342193603515625,
-0.9611053466796875,
+0.960174560546875,
+0.3447265625,
 0.0,
 0.0,
--0.9349365234375,
-0.306640625,
+-0.355621337890625,
+0.917388916015625,
 0.0,
 0.0,
 0.0,
 0.0,
 1.0,
 0.0,
-621.9,
-206.25,
+485.35,
+200.35,
 0.0,
 1.0
 ]
@@ -7275,30 +7519,30 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck mic hand",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck mic hand copy",
 "IN": "",
 "ST": "G",
 "FF": 0,
 "LP": "LP",
 "TRP": {
-"x": 131.45,
+"x": 131.70000000000003,
 "y": 69.65
 },
 "M3D": [
-0.2471160888671875,
-0.9806976318359375,
+0.9132537841796875,
+0.45465087890625,
 0.0,
 0.0,
--0.970306396484375,
-0.194854736328125,
+-0.460479736328125,
+0.869476318359375,
 0.0,
 0.0,
 0.0,
 0.0,
 1.0,
 0.0,
-630.1,
-223.5,
+495.55,
+197.45,
 0.0,
 1.0
 ]
@@ -7316,31 +7560,23 @@
 "DU": 2,
 "E": [
 {
-"SI": {
-"SN": "pbuttfuck head",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 451.3,
-"y": 241.3
-},
+"ASI": {
+"N": "0023",
 "M3D": [
-0.95001220703125,
--0.261383056640625,
-0.0,
-0.0,
-0.298095703125,
-0.9744873046875,
+1.0,
 0.0,
 0.0,
 0.0,
 0.0,
 1.0,
 0.0,
-186.75,
--7.1,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+346.25,
+-135.8,
 0.0,
 1.0
 ]
@@ -7348,7 +7584,7 @@
 },
 {
 "SI": {
-"SN": "pbuttfuck face up alt",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck face up alt",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -7385,7 +7621,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck head",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck head",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -7395,7 +7631,7 @@
 "y": 241.35
 },
 "M3D": [
-0.96337890625,
+0.9633636474609375,
 -0.221160888671875,
 0.0,
 0.0,
@@ -7416,7 +7652,7 @@
 },
 {
 "SI": {
-"SN": "pbuttfuck face up",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck face up",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -7458,7 +7694,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck body up",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck body up",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -7489,7 +7725,7 @@
 },
 {
 "SI": {
-"SN": "pbuttfuck fg arm up",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck fg arm up",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -7526,7 +7762,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck body up",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck body up",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -7557,7 +7793,7 @@
 },
 {
 "SI": {
-"SN": "pbuttfuck fg arm up",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck fg arm up",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -7594,7 +7830,7 @@
 }
 },
 {
-"SN": "pbuttfuck face up alt",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck face up alt",
 "TL": {
 "L": [
 {
@@ -7606,7 +7842,7 @@
 "E": [
 {
 "ASI": {
-"N": "0017",
+"N": "0024",
 "M3D": [
 0.959686279296875,
 0.0,
@@ -7620,8 +7856,8 @@
 0.0,
 1.0,
 0.0,
-0.0,
-0.0,
+-40.2,
+12.8,
 0.0,
 1.0
 ]
@@ -7635,7 +7871,7 @@
 }
 },
 {
-"SN": "pbuttfuck face up",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck face up",
 "TL": {
 "L": [
 {
@@ -7647,7 +7883,7 @@
 "E": [
 {
 "ASI": {
-"N": "0018",
+"N": "0025",
 "M3D": [
 0.998565673828125,
 0.0,
@@ -7661,8 +7897,8 @@
 0.0,
 1.0,
 0.0,
-0.0,
-0.0,
+-35.95,
+-7.45,
 0.0,
 1.0
 ]
@@ -7676,7 +7912,7 @@
 }
 },
 {
-"SN": "pbuttfuck body up",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck body up",
 "TL": {
 "L": [
 {
@@ -7688,7 +7924,7 @@
 "E": [
 {
 "ASI": {
-"N": "0019",
+"N": "0026",
 "M3D": [
 0.948577880859375,
 0.0,
@@ -7702,8 +7938,8 @@
 0.0,
 1.0,
 0.0,
-0.0,
-0.0,
+85.65,
+-9.35,
 0.0,
 1.0
 ]
@@ -7717,7 +7953,7 @@
 }
 },
 {
-"SN": "pbuttfuck fg arm up",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck fg arm up",
 "TL": {
 "L": [
 {
@@ -7729,7 +7965,7 @@
 "E": [
 {
 "ASI": {
-"N": "0020",
+"N": "0027",
 "M3D": [
 0.947509765625,
 0.0,
@@ -7743,8 +7979,8 @@
 0.0,
 1.0,
 0.0,
-0.0,
--72.0,
+-24.3,
+-54.15,
 0.0,
 1.0
 ]
@@ -7758,7 +7994,7 @@
 }
 },
 {
-"SN": "pbuttfuck right",
+"SN": "ANIMATIONS/BF/POV/pbuttfuck right",
 "TL": {
 "L": [
 {
@@ -7770,7 +8006,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck mic hand right",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck mic hand right",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -7807,7 +8043,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck mic hand right",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck mic hand right",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -7848,31 +8084,23 @@
 "DU": 2,
 "E": [
 {
-"SI": {
-"SN": "pbuttfuck head right",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 443.20000000000007,
-"y": 234.95000000000003
-},
+"ASI": {
+"N": "0029",
 "M3D": [
-1.0087890625,
--0.051025390625,
-0.0,
-0.0,
-0.03363037109375,
-1.0079345703125,
+1.0,
 0.0,
 0.0,
 0.0,
 0.0,
 1.0,
 0.0,
-573.65,
-24.1,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+659.7,
+0.7,
 0.0,
 1.0
 ]
@@ -7880,7 +8108,7 @@
 },
 {
 "SI": {
-"SN": "pbuttfuck face right alt",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck face right alt",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -7917,7 +8145,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck head right",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck head right",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -7948,7 +8176,7 @@
 },
 {
 "SI": {
-"SN": "pbuttfuck face right",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck face right",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -7990,7 +8218,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck fg arm right",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck fg arm right",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -8027,7 +8255,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck fg arm right",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck fg arm right",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -8069,7 +8297,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck body",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck body",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -8106,7 +8334,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck body",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck body",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -8143,11 +8371,11 @@
 }
 },
 {
-"SN": "pbuttfuck mic hand right",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck mic hand right",
 "TL": {
 "L": [
 {
-"LN": "Layer_2",
+"LN": "Layer_4",
 "FR": [
 {
 "I": 0,
@@ -8155,7 +8383,7 @@
 "E": [
 {
 "ASI": {
-"N": "0021",
+"N": "0028",
 "M3D": [
 0.97662353515625,
 0.0,
@@ -8169,8 +8397,8 @@
 0.0,
 1.0,
 0.0,
-0.0,
-0.0,
+-8.4,
+-11.2,
 0.0,
 1.0
 ]
@@ -8184,7 +8412,7 @@
 }
 },
 {
-"SN": "pbuttfuck head right",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck face right alt",
 "TL": {
 "L": [
 {
@@ -8196,7 +8424,7 @@
 "E": [
 {
 "ASI": {
-"N": "0022",
+"N": "0030",
 "M3D": [
 0.989990234375,
 0.0,
@@ -8210,8 +8438,8 @@
 0.0,
 1.0,
 0.0,
-32.65,
-0.0,
+-0.75,
+7.1,
 0.0,
 1.0
 ]
@@ -8225,7 +8453,7 @@
 }
 },
 {
-"SN": "pbuttfuck face right alt",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck head right",
 "TL": {
 "L": [
 {
@@ -8237,22 +8465,22 @@
 "E": [
 {
 "ASI": {
-"N": "0023",
+"N": "0031",
 "M3D": [
-0.989990234375,
-0.0,
-0.0,
-0.0,
-0.0,
-0.989990234375,
+1.0,
 0.0,
 0.0,
 0.0,
 0.0,
 1.0,
 0.0,
--5.9,
--11.85,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+97.65,
+-4.1,
 0.0,
 1.0
 ]
@@ -8266,7 +8494,7 @@
 }
 },
 {
-"SN": "pbuttfuck face right",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck face right",
 "TL": {
 "L": [
 {
@@ -8278,7 +8506,7 @@
 "E": [
 {
 "ASI": {
-"N": "0024",
+"N": "0032",
 "M3D": [
 1.0,
 0.0,
@@ -8292,8 +8520,8 @@
 0.0,
 1.0,
 0.0,
-0.0,
--10.0,
+0.75,
+14.15,
 0.0,
 1.0
 ]
@@ -8307,11 +8535,11 @@
 }
 },
 {
-"SN": "pbuttfuck fg arm right",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck fg arm right",
 "TL": {
 "L": [
 {
-"LN": "Layer_2",
+"LN": "Layer_3",
 "FR": [
 {
 "I": 0,
@@ -8319,7 +8547,7 @@
 "E": [
 {
 "ASI": {
-"N": "0025",
+"N": "0033",
 "M3D": [
 0.99542236328125,
 0.0,
@@ -8333,8 +8561,8 @@
 0.0,
 1.0,
 0.0,
-0.0,
-0.0,
+-7.65,
+7.3,
 0.0,
 1.0
 ]
@@ -8348,79 +8576,11 @@
 }
 },
 {
-"SN": "pbuttfuck miss left",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss left",
 "TL": {
 "L": [
 {
 "LN": "Layer_3",
-"FR": [
-{
-"I": 0,
-"DU": 1,
-"E": []
-},
-{
-"I": 1,
-"DU": 2,
-"E": [
-{
-"ASI": {
-"N": "0026",
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-564.0,
--11.0,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 3,
-"DU": 11,
-"E": [
-{
-"ASI": {
-"N": "0027",
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-560.0,
--11.0,
-0.0,
-1.0
-]
-}
-}
-]
-}
-]
-},
-{
-"LN": "Layer_6",
 "FR": [
 {
 "I": 0,
@@ -8428,7 +8588,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck fg arm left",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck fg arm left",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -8450,8 +8610,8 @@
 0.0,
 1.0,
 0.0,
-725.2,
--157.0,
+717.35,
+-160.15,
 0.0,
 1.0
 ]
@@ -8461,66 +8621,13 @@
 },
 {
 "I": 1,
-"DU": 2,
-"E": [
-{
-"ASI": {
-"N": "0028",
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-738.0,
--155.0,
-0.0,
-1.0
-]
-}
+"DU": 13,
+"E": []
 }
 ]
 },
 {
-"I": 3,
-"DU": 11,
-"E": [
-{
-"ASI": {
-"N": "0029",
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-733.0,
--155.0,
-0.0,
-1.0
-]
-}
-}
-]
-}
-]
-},
-{
-"LN": "Layer_2",
+"LN": "Layer_6",
 "FR": [
 {
 "I": 0,
@@ -8528,38 +8635,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck head left",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 406.40000000000006,
-"y": 281.05
-},
-"M3D": [
-1.000732421875,
-0.0438232421875,
-0.0,
-0.0,
--0.0091705322265625,
-0.998779296875,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-287.3,
--389.25,
-0.0,
-1.0
-]
-}
-},
-{
-"SI": {
-"SN": "pbuttfuck face left alt",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck face left alt",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -8592,11 +8668,21 @@
 },
 {
 "I": 1,
-"DU": 2,
+"DU": 13,
+"E": []
+}
+]
+},
+{
+"LN": "Layer_2",
+"FR": [
+{
+"I": 0,
+"DU": 1,
 "E": [
 {
 "ASI": {
-"N": "0030",
+"N": "0034",
 "M3D": [
 1.0,
 0.0,
@@ -8610,8 +8696,8 @@
 0.0,
 1.0,
 0.0,
-316.0,
--371.0,
+242.0,
+-352.7,
 0.0,
 1.0
 ]
@@ -8620,33 +8706,9 @@
 ]
 },
 {
-"I": 3,
-"DU": 11,
-"E": [
-{
-"ASI": {
-"N": "0031",
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-309.0,
--371.0,
-0.0,
-1.0
-]
-}
-}
-]
+"I": 1,
+"DU": 13,
+"E": []
 }
 ]
 },
@@ -8659,7 +8721,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck body left",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck body left",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -8692,61 +8754,8 @@
 },
 {
 "I": 1,
-"DU": 2,
-"E": [
-{
-"ASI": {
-"N": "0032",
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-481.0,
-91.0,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 3,
-"DU": 11,
-"E": [
-{
-"ASI": {
-"N": "0033",
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-481.0,
-91.0,
-0.0,
-1.0
-]
-}
-}
-]
+"DU": 13,
+"E": []
 }
 ]
 },
@@ -8759,7 +8768,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck bg arm left",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck bg arm left",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -8796,35 +8805,6 @@
 "E": [
 {
 "ASI": {
-"N": "0034",
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-364.0,
-54.0,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 3,
-"DU": 11,
-"E": [
-{
-"ASI": {
 "N": "0035",
 "M3D": [
 1.0,
@@ -8839,35 +8819,18 @@
 0.0,
 1.0,
 0.0,
-361.0,
-54.0,
+215.55,
+-352.05,
 0.0,
 1.0
 ]
 }
 }
 ]
-}
-]
-}
-]
-}
 },
 {
-"SN": "pbuttfuck miss down",
-"TL": {
-"L": [
-{
-"LN": "Layer_6",
-"FR": [
-{
-"I": 0,
-"DU": 1,
-"E": []
-},
-{
-"I": 1,
-"DU": 2,
+"I": 3,
+"DU": 11,
 "E": [
 {
 "ASI": {
@@ -8885,37 +8848,8 @@
 0.0,
 1.0,
 0.0,
-502.0,
-230.0,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 3,
-"DU": 11,
-"E": [
-{
-"ASI": {
-"N": "0037",
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-497.0,
-235.0,
+199.7,
+-352.05,
 0.0,
 1.0
 ]
@@ -8924,9 +8858,16 @@
 ]
 }
 ]
+}
+]
+}
 },
 {
-"LN": "Layer_5",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss down",
+"TL": {
+"L": [
+{
+"LN": "Layer_6",
 "FR": [
 {
 "I": 0,
@@ -8934,7 +8875,38 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck mic hand",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck face down alt",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 115.60000000000001,
+"y": 113.80000000000001
+},
+"M3D": [
+1.0082855224609376,
+0.024993896484375,
+0.0,
+0.0,
+-0.0254974365234375,
+0.98907470703125,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+522.7,
+239.1,
+0.0,
+1.0
+]
+}
+},
+{
+"SI": {
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck mic hand copy",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -8967,66 +8939,13 @@
 },
 {
 "I": 1,
-"DU": 2,
-"E": [
-{
-"ASI": {
-"N": "0038",
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-236.0,
-275.0,
-0.0,
-1.0
-]
-}
+"DU": 13,
+"E": []
 }
 ]
 },
 {
-"I": 3,
-"DU": 11,
-"E": [
-{
-"ASI": {
-"N": "0039",
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-232.0,
-280.0,
-0.0,
-1.0
-]
-}
-}
-]
-}
-]
-},
-{
-"LN": "Layer_4",
+"LN": "Layer_5",
 "FR": [
 {
 "I": 0,
@@ -9034,138 +8953,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck head",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 451.1,
-"y": 241.20000000000003
-},
-"M3D": [
-0.958160400390625,
-0.308837890625,
-0.0,
-0.0,
--0.314849853515625,
-0.93988037109375,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-315.3,
--125.0,
-0.0,
-1.0
-]
-}
-},
-{
-"SI": {
-"SN": "pbuttfuck face down alt",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 115.60000000000001,
-"y": 113.80000000000001
-},
-"M3D": [
-1.0082855224609376,
-0.024993896484375,
-0.0,
-0.0,
--0.0254974365234375,
-0.98907470703125,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-522.7,
-239.1,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 1,
-"DU": 2,
-"E": [
-{
-"ASI": {
-"N": "0040",
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-254.0,
--51.0,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 3,
-"DU": 11,
-"E": [
-{
-"ASI": {
-"N": "0041",
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-246.0,
--42.0,
-0.0,
-1.0
-]
-}
-}
-]
-}
-]
-},
-{
-"LN": "Layer_3",
-"FR": [
-{
-"I": 0,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "pbuttfuck fg arm down",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck fg arm down",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -9187,8 +8975,8 @@
 0.0,
 1.0,
 0.0,
-802.75,
-216.5,
+811.95,
+217.5,
 0.0,
 1.0
 ]
@@ -9198,11 +8986,21 @@
 },
 {
 "I": 1,
-"DU": 2,
+"DU": 13,
+"E": []
+}
+]
+},
+{
+"LN": "Layer_4",
+"FR": [
+{
+"I": 0,
+"DU": 1,
 "E": [
 {
 "ASI": {
-"N": "0042",
+"N": "0016",
 "M3D": [
 1.0,
 0.0,
@@ -9216,8 +9014,8 @@
 0.0,
 1.0,
 0.0,
-788.0,
-264.0,
+284.25,
+-19.35,
 0.0,
 1.0
 ]
@@ -9226,33 +9024,19 @@
 ]
 },
 {
-"I": 3,
-"DU": 11,
-"E": [
+"I": 1,
+"DU": 13,
+"E": []
+}
+]
+},
 {
-"ASI": {
-"N": "0043",
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-786.0,
-269.0,
-0.0,
-1.0
-]
-}
-}
-]
+"LN": "Layer_3",
+"FR": [
+{
+"I": 0,
+"DU": 14,
+"E": []
 }
 ]
 },
@@ -9264,8 +9048,78 @@
 "DU": 1,
 "E": [
 {
+"ASI": {
+"N": "0037",
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+891.15,
+345.6,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 1,
+"DU": 13,
+"E": []
+}
+]
+},
+{
+"LN": "Layer_7",
+"FR": [
+{
+"I": 0,
+"DU": 1,
+"E": [
+{
 "SI": {
-"SN": "pbuttfuck body down",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck bg arm copy",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 154.70000000000003,
+"y": 66.3
+},
+"M3D": [
+1.0079345703125,
+-0.0359039306640625,
+0.0,
+0.0,
+0.03662109375,
+0.98870849609375,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+383.05,
+332.35,
+0.0,
+1.0
+]
+}
+},
+{
+"SI": {
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck body down",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -9302,7 +9156,7 @@
 "E": [
 {
 "ASI": {
-"N": "0044",
+"N": "0038",
 "M3D": [
 1.0,
 0.0,
@@ -9316,8 +9170,8 @@
 0.0,
 1.0,
 0.0,
-409.0,
-372.0,
+147.5,
+6.2,
 0.0,
 1.0
 ]
@@ -9331,7 +9185,7 @@
 "E": [
 {
 "ASI": {
-"N": "0045",
+"N": "0039",
 "M3D": [
 1.0,
 0.0,
@@ -9345,108 +9199,8 @@
 0.0,
 1.0,
 0.0,
-408.0,
-375.0,
-0.0,
-1.0
-]
-}
-}
-]
-}
-]
-},
-{
-"LN": "Layer_7",
-"FR": [
-{
-"I": 0,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "pbuttfuck bg arm",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 154.70000000000003,
-"y": 66.3
-},
-"M3D": [
-1.0079345703125,
--0.0359039306640625,
-0.0,
-0.0,
-0.03662109375,
-0.98870849609375,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-383.05,
-332.35,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 1,
-"DU": 2,
-"E": [
-{
-"ASI": {
-"N": "0046",
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-405.0,
-301.0,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 3,
-"DU": 11,
-"E": [
-{
-"ASI": {
-"N": "0047",
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-401.0,
-305.0,
+164.8,
+-19.35,
 0.0,
 1.0
 ]
@@ -9460,7 +9214,7 @@
 }
 },
 {
-"SN": "pbuttfuck miss up",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss up",
 "TL": {
 "L": [
 {
@@ -9469,340 +9223,10 @@
 {
 "I": 0,
 "DU": 1,
-"E": []
-},
-{
-"I": 1,
-"DU": 2,
-"E": [
-{
-"ASI": {
-"N": "0048",
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-565.0,
-177.0,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 3,
-"DU": 11,
-"E": [
-{
-"ASI": {
-"N": "0049",
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-569.0,
-174.0,
-0.0,
-1.0
-]
-}
-}
-]
-}
-]
-},
-{
-"LN": "Layer_5",
-"FR": [
-{
-"I": 0,
-"DU": 1,
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck mic hand",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 131.6,
-"y": 69.60000000000001
-},
-"M3D": [
-0.342193603515625,
-0.9611053466796875,
-0.0,
-0.0,
--0.9349365234375,
-0.306640625,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-621.9,
-206.25,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 1,
-"DU": 2,
-"E": [
-{
-"ASI": {
-"N": "0050",
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-379.0,
-254.0,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 3,
-"DU": 11,
-"E": [
-{
-"ASI": {
-"N": "0051",
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-385.0,
-251.0,
-0.0,
-1.0
-]
-}
-}
-]
-}
-]
-},
-{
-"LN": "Layer_3",
-"FR": [
-{
-"I": 0,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "pbuttfuck head",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 451.3,
-"y": 241.3
-},
-"M3D": [
-0.95001220703125,
--0.261383056640625,
-0.0,
-0.0,
-0.298095703125,
-0.9744873046875,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-186.75,
--7.1,
-0.0,
-1.0
-]
-}
-},
-{
-"SI": {
-"SN": "pbuttfuck face up alt",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 149.45000000000003,
-"y": 3.0500000000000004
-},
-"M3D": [
-0.9924774169921875,
--0.0393829345703125,
-0.0,
-0.0,
-0.0830535888671875,
-1.0386810302734376,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-560.3,
-133.25,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 1,
-"DU": 2,
-"E": [
-{
-"ASI": {
-"N": "0052",
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-236.0,
--111.0,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 3,
-"DU": 11,
-"E": [
-{
-"ASI": {
-"N": "0053",
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-245.0,
--116.0,
-0.0,
-1.0
-]
-}
-}
-]
-}
-]
-},
-{
-"LN": "Layer_2",
-"FR": [
-{
-"I": 0,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "pbuttfuck body up",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 476.75,
-"y": 324.65000000000006
-},
-"M3D": [
-0.97589111328125,
-0.0,
-0.0,
-0.0,
-0.0436553955078125,
-1.0532684326171876,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-407.6,
-288.6,
-0.0,
-1.0
-]
-}
-},
-{
-"SI": {
-"SN": "pbuttfuck fg arm up",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck fg arm up",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -9830,16 +9254,88 @@
 1.0
 ]
 }
+},
+{
+"SI": {
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck face up alt",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 149.45000000000003,
+"y": 3.0500000000000004
+},
+"M3D": [
+0.9924774169921875,
+-0.0393829345703125,
+0.0,
+0.0,
+0.0830535888671875,
+1.0386810302734376,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+560.3,
+133.25,
+0.0,
+1.0
+]
+}
+},
+{
+"SI": {
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck mic hand copy",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 131.65,
+"y": 69.65
+},
+"M3D": [
+0.960174560546875,
+0.3447265625,
+0.0,
+0.0,
+-0.355621337890625,
+0.917388916015625,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+485.35,
+200.35,
+0.0,
+1.0
+]
+}
 }
 ]
 },
 {
 "I": 1,
-"DU": 2,
+"DU": 13,
+"E": []
+}
+]
+},
+{
+"LN": "Layer_5",
+"FR": [
+{
+"I": 0,
+"DU": 1,
 "E": [
 {
 "ASI": {
-"N": "0054",
+"N": "0023",
 "M3D": [
 1.0,
 0.0,
@@ -9853,8 +9349,84 @@
 0.0,
 1.0,
 0.0,
-406.0,
-310.0,
+346.25,
+-135.8,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 1,
+"DU": 13,
+"E": []
+}
+]
+},
+{
+"LN": "Layer_3",
+"FR": [
+{
+"I": 0,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck body up",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 476.75,
+"y": 324.65000000000006
+},
+"M3D": [
+0.97589111328125,
+0.0,
+0.0,
+0.0,
+0.0436553955078125,
+1.0532684326171876,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+407.6,
+288.6,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 1,
+"DU": 2,
+"E": [
+{
+"ASI": {
+"N": "0040",
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+359.6,
+-172.7,
 0.0,
 1.0
 ]
@@ -9868,7 +9440,7 @@
 "E": [
 {
 "ASI": {
-"N": "0055",
+"N": "0041",
 "M3D": [
 1.0,
 0.0,
@@ -9882,8 +9454,8 @@
 0.0,
 1.0,
 0.0,
-411.0,
-308.0,
+346.25,
+-135.5,
 0.0,
 1.0
 ]
@@ -9897,7 +9469,7 @@
 }
 },
 {
-"SN": "pbuttfuck miss right",
+"SN": "ANIMATIONS/BF/POVMISS/pbuttfuck miss right",
 "TL": {
 "L": [
 {
@@ -9906,78 +9478,10 @@
 {
 "I": 0,
 "DU": 1,
-"E": []
-},
-{
-"I": 1,
-"DU": 2,
-"E": [
-{
-"ASI": {
-"N": "0056",
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-920.0,
-352.0,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 3,
-"DU": 11,
-"E": [
-{
-"ASI": {
-"N": "0057",
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-923.0,
-352.0,
-0.0,
-1.0
-]
-}
-}
-]
-}
-]
-},
-{
-"LN": "Layer_4",
-"FR": [
-{
-"I": 0,
-"DU": 1,
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck mic hand right",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck mic hand right",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -10010,66 +9514,13 @@
 },
 {
 "I": 1,
-"DU": 2,
-"E": [
-{
-"ASI": {
-"N": "0058",
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-1117.0,
-396.0,
-0.0,
-1.0
-]
-}
+"DU": 13,
+"E": []
 }
 ]
 },
 {
-"I": 3,
-"DU": 11,
-"E": [
-{
-"ASI": {
-"N": "0059",
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-1119.0,
-396.0,
-0.0,
-1.0
-]
-}
-}
-]
-}
-]
-},
-{
-"LN": "Layer_2",
+"LN": "Layer_4",
 "FR": [
 {
 "I": 0,
@@ -10077,38 +9528,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck head right",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 443.20000000000007,
-"y": 234.95000000000003
-},
-"M3D": [
-1.0087890625,
--0.051025390625,
-0.0,
-0.0,
-0.03363037109375,
-1.0079345703125,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-573.65,
-24.1,
-0.0,
-1.0
-]
-}
-},
-{
-"SI": {
-"SN": "pbuttfuck face right alt",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck face right alt",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -10141,11 +9561,21 @@
 },
 {
 "I": 1,
-"DU": 2,
+"DU": 13,
+"E": []
+}
+]
+},
+{
+"LN": "Layer_2",
+"FR": [
+{
+"I": 0,
+"DU": 1,
 "E": [
 {
 "ASI": {
-"N": "0060",
+"N": "0029",
 "M3D": [
 1.0,
 0.0,
@@ -10159,8 +9589,8 @@
 0.0,
 1.0,
 0.0,
-601.0,
-3.0,
+659.7,
+0.7,
 0.0,
 1.0
 ]
@@ -10169,33 +9599,9 @@
 ]
 },
 {
-"I": 3,
-"DU": 11,
-"E": [
-{
-"ASI": {
-"N": "0061",
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-606.0,
-3.0,
-0.0,
-1.0
-]
-}
-}
-]
+"I": 1,
+"DU": 13,
+"E": []
 }
 ]
 },
@@ -10208,7 +9614,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck fg arm right",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck fg arm right",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -10241,61 +9647,8 @@
 },
 {
 "I": 1,
-"DU": 2,
-"E": [
-{
-"ASI": {
-"N": "0062",
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-825.0,
-427.0,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 3,
-"DU": 11,
-"E": [
-{
-"ASI": {
-"N": "0063",
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-826.0,
-427.0,
-0.0,
-1.0
-]
-}
-}
-]
+"DU": 13,
+"E": []
 }
 ]
 },
@@ -10308,7 +9661,7 @@
 "E": [
 {
 "SI": {
-"SN": "pbuttfuck body",
+"SN": "ASSETS/BF ASSETS/pov/pbuttfuck body",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -10345,7 +9698,7 @@
 "E": [
 {
 "ASI": {
-"N": "0064",
+"N": "0042",
 "M3D": [
 1.0,
 0.0,
@@ -10359,8 +9712,8 @@
 0.0,
 1.0,
 0.0,
-718.0,
-425.0,
+689.6,
+0.7,
 0.0,
 1.0
 ]
@@ -10374,7 +9727,7 @@
 "E": [
 {
 "ASI": {
-"N": "0065",
+"N": "0043",
 "M3D": [
 1.0,
 0.0,
@@ -10388,8 +9741,8 @@
 0.0,
 1.0,
 0.0,
-718.0,
-425.0,
+659.9,
+0.7,
 0.0,
 1.0
 ]

@@ -3607,7 +3607,7 @@
 		"keys": 4,
 		"song": "Performance",
 		"stage": "feddy_stage",
-		"arrowSkin": "ourple",
+		"arrowSkins": ["ourple", "ourple"],
 		"needsVoices": false,
 		"validScore": true,
 		"bpm": 160,

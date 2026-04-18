@@ -11,9 +11,6 @@ import funkin.states.MainMenuState;
 import funkin.scripting.PluginsManager;
 import funkin.api.DiscordClient;
 
-import mobile.controls.MobileDPadMode;
-import mobile.controls.MobileActionMode;
-
 var controls = PlayerSettings.player1.controls;
 
 // Typedef made to simplify and improve the readability of a user's credit data
@@ -198,7 +195,8 @@ var credits:Array<CredData> = [
 			'Composer of Tutorial',
 			'Composer of Bopeebo',
 			'Composer of Endless',
-			'Composer of Blammed'
+			'Composer of Blammed',
+			'Composer of Spaghetti'
 		],
 		desc: "the Fucking woods",
 		links: ['https://youtube.com/@dasxyyy', 'https://twitter.com/dasxyyy']
@@ -209,6 +207,7 @@ var credits:Array<CredData> = [
 		creds: [
 			'Composer of Dadbattle',
 			'Voice of DD',
+			'Voice of Leslie Serafimini',
 			'Vocal Help for Execution',
 			'Vocalist of Execution',
 			'Dirty Fucking Brit'
@@ -242,12 +241,13 @@ var credits:Array<CredData> = [
 			'Composer of Try Harder',
 			'Vocalist of Game Over',
 			'Vocalist of Stay Funky',
+			'Vocalist of Spaghetti Rap',
 			'Voice of Chester and Pico',
 			'Writer',
 			'Sound Designer'
 		],
 		desc: "i still am the creator of twitter",
-		depth: 120,
+		depth: 150,
 		time: 5,
 		links: ['https://www.youtube.com/@wrathstetic', 'https://twitter.com/wrathstetic']
 	},
@@ -375,6 +375,18 @@ var credits:Array<CredData> = [
 		desc: "slapz my big bellaaaaaaaay ",
 		links: ['https://twitter.com/flyplague']
 	},
+	
+	{
+		icon: "band",
+		user: "Doodle",
+		creds: ['Voice of BF'],
+		desc: "MMM tasty bacon pizza",
+		links: [
+			'https://twitter.com/mr_Wronglane',
+			
+		]
+	},
+	
 	{
 		icon: "skl",
 		user: "SKL (SuperKirbylover)",
@@ -396,38 +408,19 @@ var credits:Array<CredData> = [
 		links: ['https://twitter.com/FunkiestBunny',]
 	},
 	{
-		icon: "creambr",
-		user: "StarNova (Cream.BR)",
-		creds: ['Mobile Port'],
-		desc: "I am someone... I am someone",
-		links: [
-			'https://youtube.com/@creambroficial',
-			'https://twitter.com/StarNovaBR'
-		]
-	},
-	{
-		icon: "fnfbr",
-		user: "FNF BR",
-		creds: ['Mobile Port'],
-		desc: "Brazil BRAZIL LET'S GO!!",
-		links: [
-			'https://youtube.com/@fnf-br'
-		]
-	},
-	{
-		icon: "dechis",
-		user: "Dechis",
-		creds: ['Special Thanks (Mobile Port)'],
-		desc: "Amogus",
-		links: [
-			'https://youtube.com/@deechiss'
-		]
-	},
+		icon: "oat",
+		user: "Oat Gang",
+		creds: ['Marketplier', 'Salesman999', 'Icey131', 'JoggingScout (LECTROA)', 'Gary Gilbenson',  'DuskieWhy', 'FredrickFunny'],
+		desc: "@re_thinkin Yo.\n\nCreators of SORETRO.",
+		depth: 50,
+		time: 2
+	}
 	{
 		icon: "contributors",
 		user: "Contributors",
 		creds: [
 			'Data5',
+			'MaybeMaru',
 			'FredrickFunny',
 			'lemonaid24',
 			'Srife5'
@@ -436,21 +429,25 @@ var credits:Array<CredData> = [
 			'NebulaTheZorua',
 			'Gojira Darko',
 			'Clappers46',
+			'MewMarissa',
 			'blackberri',
 			'Rareblin',
 			'LancExists',
 			'BenzBT',
 			'Greenstranger',
+			'Komica',
 			'SrPelo',
 			'BBPanzu',
+			'Winter',
+			'lossarquo',
 			'Weedeet',
 			'JcJack',
-			'Corven_03',
+			'CorvenCarrion',
 			'Beethovenus',
 			'RecD'
 		],
-		depth: 380,
-		time: 5,
+		depth: 720,
+		time: 2,
 		desc: "Thanks to everybody that contributed to this project!"
 	},
 	{
@@ -587,18 +584,6 @@ function onCreate() {
 	iconGrp = new FlxSpriteGroup(0, 50);
 	add(iconGrp);
 
-	// inserts the oat gang's credits if you unlocked soretro
-	if(FlxG.save.data.unlockedHim){
-		credits.insert(credits.length - 1, {
-		icon: "oat",
-		user: "Oat Gang",
-		creds: ['Marketplier', 'Salesman999', 'Icey131', 'JoggingScout (LECTROA)', 'Gary Gilbenson',  'DuskieWhy', 'FredrickFunny'],
-		desc: "@re_thinkin Yo.\n\nCreators of SORETRO.",
-		depth: 50,
-		time: 2
-	});
-	}
-
 		
 	var rN = -1;
 	var aRN = 0;
@@ -662,17 +647,12 @@ function onCreate() {
     var save = FlxG.save.data.completedMenuShit.get('credits');
     if(save == false || save == null){
         FlxG.save.data.completedMenuShit.set('credits', true);
-        FlxG.save.data.completionPercent += 1.4;
-
         FlxG.save.flush();
     }
-    
-    addVirtualPad(MobileDPadMode.UP_DOWN, MobileActionMode.NONE);
-	addVirtualPadCamera();
 
 }
 
-var limits = [40, -740];
+var limits = [40, -720];
 var timer = 0;
 var dir = 1;
 var depth = 50;
@@ -730,10 +710,10 @@ function onUpdate(elapsed) {
 	}
 
 	ity += (FlxG.mouse.wheel * 25);
-	if (controls.UI_UP || virtualPad.buttonUp.pressed)
+	if (controls.UI_UP)
 		ity += 10 * (60 * elapsed);
 
-	if (controls.UI_DOWN || virtualPad.buttonDown.pressed)
+	if (controls.UI_DOWN)
 		ity -= 10 * (60 * elapsed);
 
 	if (ity >= limits[0])

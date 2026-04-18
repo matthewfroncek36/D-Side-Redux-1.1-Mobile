@@ -5675,7 +5675,7 @@
 				"mustHitSection": true
 			}
 		],
-		"arrowSkin": "pixel",
+		"arrowSkins": ["pixel", "pixel"],
 		"gfVersion": "gf-pixel",
 		"events": [],
 		"player3": null,

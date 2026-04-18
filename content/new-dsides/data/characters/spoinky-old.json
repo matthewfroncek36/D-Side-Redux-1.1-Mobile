@@ -71,7 +71,7 @@
 	"image": "characters/and/SpoinkyBoingy",
 	"position": [
 		260,
-		110
+		80
 	],
 	"healthicon": "spoinky-boingy",
 	"flip_x": false,

@@ -139,10 +139,12 @@ function goodNoteHitPre(note)
             case 'Zeph Feast':
                 boyfriend;
         }
-        playerStrums.owner = poop;
+        getFieldFromID(0).owner = poop;
+        getFieldFromID(0).singers = [poop];
 
     }else{
-        playerStrums.owner = boyfriend;
+        getFieldFromID(0).owner = boyfriend;
+        getFieldFromID(0).singers = [boyfriend];
         
         tenma.playAnim(boyfriend.getAnimName(), true, false, boyfriend.animCurFrame);
         tenma.holdTimer = 0;
@@ -150,7 +152,7 @@ function goodNoteHitPre(note)
         godz.playAnim(boyfriend.getAnimName(), true, false, boyfriend.animCurFrame);
         godz.holdTimer = 0;
     }
-    playHUD.iconP1.changeIcon(playerStrums.owner.healthIcon);
+    playHUD.iconP1.changeIcon(getFieldFromID(0).owner.healthIcon);
 
 }
 
@@ -166,9 +168,11 @@ function opponentNoteHitPre(note)
             case 'Xeno Feast':
                 dad;    
         }
-        opponentStrums.owner = poop;
+        getFieldFromID(1).owner = poop;
+        getFieldFromID(1).singers = [poop];
     } else{
-        opponentStrums.owner = dad;
+        getFieldFromID(1).owner = dad;
+        getFieldFromID(1).singers = [dad];
 
         mazin.playAnim(dad.getAnimName(), true, false, dad.animCurFrame);
         mazin.holdTimer = 0;
@@ -177,7 +181,7 @@ function opponentNoteHitPre(note)
         lordx.holdTimer = 0;
     }
 
-    playHUD.iconP2.changeIcon(opponentStrums.owner.healthIcon);
+    playHUD.iconP2.changeIcon(getFieldFromID(1).owner.healthIcon);
 }
 
 function onEvent(eventName, value1, value2)

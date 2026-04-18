@@ -4800,7 +4800,7 @@
 			}
 		],
 		"gfVersion": "gf-pixel",
-		"arrowSkin": "pixel",
+		"arrowSkins": ["pixel", "pixel"],
 		"player3": null,
 		"song": "roses",
 		"stage": "school",

@@ -2974,7 +2974,7 @@
 		"events": [],
 		"player2": "senpai",
 		"song": "sensei",
-		"arrowSkin": "pixel",
+		"arrowSkins": ["pixel", "pixel"],
 		"needsVoices": true,
 		"stage": "school",
 		"validScore": true,

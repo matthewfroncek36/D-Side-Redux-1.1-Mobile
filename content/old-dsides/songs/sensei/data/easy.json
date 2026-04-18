@@ -2791,7 +2791,7 @@
 		"song": "sensei",
 		"validScore": true,
 		"stage": "school",
-		"arrowSkin": "pixel",
+		"arrowSkins": ["pixel", "pixel"],
 		"needsVoices": true,
 		"speed": 1.8,
 		"bpm": 135

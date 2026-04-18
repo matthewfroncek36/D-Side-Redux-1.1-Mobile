@@ -6591,7 +6591,7 @@
 				"mustHitSection": true
 			}
 		],
-		"arrowSkin": "pixel",
+		"arrowSkins": ["pixel", "pixel"],
 		"player2": "spirit",
 		"player3": null,
 		"song": "Pricked",

@@ -1,41 +1,41 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "firstDeath",
-			"indices": [],
-			"name": "Boyfriend/BFGameOver"
+			"fps": 24,
+			"name": "Boyfriend/BFGameOver",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				25,
 				131
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "deathConfirm",
-			"indices": [],
-			"name": "Boyfriend/BFRetryConfirm"
+			"fps": 24,
+			"name": "Boyfriend/BFRetryConfirm",
+			"indices": []
 		},
 		{
+			"loop": true,
 			"offsets": [
 				-5,
 				-15
 			],
-			"loop": true,
-			"fps": 24,
 			"anim": "deathLoop",
-			"indices": [],
-			"name": "Boyfriend/BFRetryLoop"
+			"fps": 24,
+			"name": "Boyfriend/BFRetryLoop",
+			"indices": []
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/BF/BF_assets",
+	"image": "characters/BF/die",
 	"position": [
 		30,
 		340
