@@ -47,6 +47,9 @@ jobs:
           haxelib git hscript https://github.com/T5mpler/hscript-dnb
           haxelib install hxvlc 2.2.5
           haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
+          haxelib set flixel 5.2.2
+          haxelib set flixel-ui 2.5.0
+          haxelib set flixel-addons 2.11.0
           haxelib install hxpkg --global
           haxelib run hxpkg setup --global
           haxelib run hxpkg install
@@ -66,6 +69,9 @@ jobs:
           haxelib git hscript https://github.com/T5mpler/hscript-dnb
           haxelib install hxvlc 2.2.5
           haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
+          haxelib set flixel 5.2.2
+          haxelib set flixel-ui 2.5.0
+          haxelib set flixel-addons 2.11.0
           haxelib list
       - name: Create Version Tag
         run: echo "${{github.run_id}}" > VERSION
@@ -109,6 +115,9 @@ jobs:
           haxelib git hscript https://github.com/T5mpler/hscript-dnb
           haxelib install hxvlc 2.2.5
           haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
+          haxelib set flixel 5.2.2
+          haxelib set flixel-ui 2.5.0
+          haxelib set flixel-addons 2.11.0
           haxelib install hxpkg --global
           haxelib run hxpkg setup --global
           haxelib run hxpkg install
@@ -128,6 +137,9 @@ jobs:
           haxelib git hscript https://github.com/T5mpler/hscript-dnb
           haxelib install hxvlc 2.2.5
           haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
+          haxelib set flixel 5.2.2
+          haxelib set flixel-ui 2.5.0
+          haxelib set flixel-addons 2.11.0
           haxelib list
       - name: Create Version Tag
         run: echo "${{github.run_id}}" > VERSION
@@ -167,6 +179,9 @@ jobs:
           haxelib git hscript https://github.com/T5mpler/hscript-dnb
           haxelib install hxvlc 2.2.5
           haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
+          haxelib set flixel 5.2.2
+          haxelib set flixel-ui 2.5.0
+          haxelib set flixel-addons 2.11.0
           haxelib install hxpkg --global
           haxelib run hxpkg setup --global
           haxelib run hxpkg install
@@ -186,6 +201,9 @@ jobs:
           haxelib git hscript https://github.com/T5mpler/hscript-dnb
           haxelib install hxvlc 2.2.5
           haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
+          haxelib set flixel 5.2.2
+          haxelib set flixel-ui 2.5.0
+          haxelib set flixel-addons 2.11.0
           haxelib list
       - name: Create Version Tag
         run: echo "${{github.run_id}}" > VERSION
@@ -239,6 +257,9 @@ jobs:
           haxelib git hscript https://github.com/T5mpler/hscript-dnb
           haxelib install hxvlc 2.2.5
           haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
+          haxelib set flixel 5.2.2
+          haxelib set flixel-ui 2.5.0
+          haxelib set flixel-addons 2.11.0
           haxelib install hxpkg --global
           haxelib run hxpkg setup --global
           haxelib run hxpkg install
@@ -260,6 +281,9 @@ jobs:
           haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
           haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
           haxelib git extension-androidtools https://github.com/LimeExtensions/extension-androidtools
+          haxelib set flixel 5.2.2
+          haxelib set flixel-ui 2.5.0
+          haxelib set flixel-addons 2.11.0
           haxelib list
 
       - name: Configure Android
@@ -345,6 +369,9 @@ jobs:
           haxelib git hscript https://github.com/T5mpler/hscript-dnb
           haxelib install hxvlc 2.2.5
           haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
+          haxelib set flixel 5.2.2
+          haxelib set flixel-ui 2.5.0
+          haxelib set flixel-addons 2.11.0
 
       - name: Generate iOS C++
         run: |
