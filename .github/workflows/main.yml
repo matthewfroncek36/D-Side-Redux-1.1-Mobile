@@ -39,7 +39,7 @@ jobs: # FUCK MY LIFE BROOOOO
             - name: Installing a newer lime branch
               run: |
                 haxelib remove lime
-                haxelib git lime https://github.com/FunkinCrew/lime ee20b5ab4eb01a5e6037c72aa8c840f5c32825cb
+                haxelib git lime https://github.com/Psych-Slice/lime-mobile
                 haxelib run lime rebuild windows 
             - name: Compile build
               run: haxelib run lime build windows -D ${{inputs.buildFlags}}
@@ -98,7 +98,7 @@ jobs: # FUCK MY LIFE BROOOOO
             - name: Installing a newer lime branch
               run: |
                 haxelib remove lime
-                haxelib git lime https://github.com/FunkinCrew/lime ee20b5ab4eb01a5e6037c72aa8c840f5c32825cb
+                haxelib git lime https://github.com/Psych-Slice/lime-mobile
                 LIME_GIT_PATH=$(haxelib path lime | head -n 1)
                 mkdir -p "$LIME_GIT_PATH/ndll"
                 cp -R "$RUNNER_TEMP/lime-ndll/." "$LIME_GIT_PATH/ndll"
@@ -140,7 +140,7 @@ jobs: # FUCK MY LIFE BROOOOO
             - name: Installing a newer lime branch
               run: |
                 haxelib remove lime
-                haxelib git lime https://github.com/FunkinCrew/lime ee20b5ab4eb01a5e6037c72aa8c840f5c32825cb
+                haxelib git lime https://github.com/Psych-Slice/lime-mobile
                 LIME_GIT_PATH=$(haxelib path lime | head -n 1)
                 mkdir -p "$LIME_GIT_PATH/ndll"
                 cp -R "$RUNNER_TEMP/lime-ndll/." "$LIME_GIT_PATH/ndll"
@@ -175,7 +175,7 @@ jobs: # FUCK MY LIFE BROOOOO
             - name: Installing a newer lime branch
               run: |
                 haxelib remove lime
-                haxelib git lime https://github.com/FunkinCrew/lime ee20b5ab4eb01a5e6037c72aa8c840f5c32825cb
+                haxelib git lime https://github.com/Psych-Slice/lime-mobile
                 LIME_GIT_PATH=$(haxelib path lime | head -n 1)
                 mkdir -p "$LIME_GIT_PATH/ndll"
                 cp -R "$RUNNER_TEMP/lime-ndll/." "$LIME_GIT_PATH/ndll"
