@@ -69,9 +69,9 @@
     <!--Core engine libraries-->
     <haxelib name="openfl"/>
 
-    <haxelib name="flixel" version="6.0.0"/>
-    <haxelib name="flixel-addons" version="3.3.2"/>
-    <haxelib name="flixel-ui" version="2.6.4"/>
+    <haxelib name="flixel" version="5.2.2"/>
+    <haxelib name="flixel-addons" version="2.11.0"/>
+    <haxelib name="flixel-ui" version="2.5.0"/>
 
     <haxelib name="hscript-iris" version="1.1.3"/>
 
