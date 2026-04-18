@@ -91,10 +91,17 @@ jobs: # FUCK MY LIFE BROOOOO
                 haxelib install hxcpp > /dev/null --quiet
                 haxelib install hxpkg --quiet
                 haxelib run hxpkg install
+            - name: Preserve Lime native binaries
+              run: |
+                LIME_RELEASE_PATH=$(haxelib path lime | head -n 1)
+                cp -R "$LIME_RELEASE_PATH/ndll" "$RUNNER_TEMP/lime-ndll"
             - name: Installing a newer lime branch
               run: |
                 haxelib remove lime
                 haxelib git lime https://github.com/FunkinCrew/lime ee20b5ab4eb01a5e6037c72aa8c840f5c32825cb
+                LIME_GIT_PATH=$(haxelib path lime | head -n 1)
+                mkdir -p "$LIME_GIT_PATH/ndll"
+                cp -R "$RUNNER_TEMP/lime-ndll/." "$LIME_GIT_PATH/ndll"
                 haxelib run lime rebuild cpp
             - name: Compile build
               run: haxelib run lime build Project.xml mac -D ${{inputs.buildFlags}}
@@ -157,10 +164,17 @@ jobs: # FUCK MY LIFE BROOOOO
                 haxelib install hxcpp > /dev/null --quiet
                 haxelib install hxpkg --quiet
                 haxelib run hxpkg install
+            - name: Preserve Lime native binaries
+              run: |
+                LIME_RELEASE_PATH=$(haxelib path lime | head -n 1)
+                cp -R "$LIME_RELEASE_PATH/ndll" "$RUNNER_TEMP/lime-ndll"
             - name: Installing a newer lime branch
               run: |
                 haxelib remove lime
                 haxelib git lime https://github.com/FunkinCrew/lime ee20b5ab4eb01a5e6037c72aa8c840f5c32825cb
+                LIME_GIT_PATH=$(haxelib path lime | head -n 1)
+                mkdir -p "$LIME_GIT_PATH/ndll"
+                cp -R "$RUNNER_TEMP/lime-ndll/." "$LIME_GIT_PATH/ndll"
             - name: Compile build
               run: haxelib run lime build Project.xml ios -simulator -D ${{inputs.buildFlags}}
             - name: Publish artifact
