@@ -168,10 +168,6 @@ jobs: # FUCK MY LIFE BROOOOO
                 haxelib install hxcpp > /dev/null --quiet
                 haxelib install hxpkg --quiet
                 haxelib run hxpkg install
-            - name: Preserve Lime native binaries
-              run: |
-                LIME_RELEASE_PATH=$(haxelib path lime | head -n 1)
-                cp -R "$LIME_RELEASE_PATH/ndll" "$RUNNER_TEMP/lime-ndll"
             - name: Installing a newer lime branch
               run: |
                 haxelib remove lime
