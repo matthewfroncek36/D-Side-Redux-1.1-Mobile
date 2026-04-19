@@ -47,3 +47,23 @@ In a cmd within the project directory, in order run...
 > haxelib run hxpkg install
 
 After that is complete, run `lime test windows` and you should be compiling
+
+## Build targets
+
+Once `haxelib run hxpkg install` has finished, you can build the project for more than just the default Windows target:
+
+- Windows desktop: `haxelib run lime test windows`
+- Linux desktop: `haxelib run lime test linux`
+- macOS desktop: `haxelib run lime test mac`
+- Android APK: `haxelib run lime build android`
+- iOS simulator build: `haxelib run lime build ios -simulator`
+
+## GitHub Actions artifacts
+
+The repo now includes CI build jobs for:
+
+- Windows desktop artifacts on push / pull request
+- Android release APKs on push / pull request
+- iOS simulator artifacts when the workflow is run manually with `workflow_dispatch`
+
+iOS device builds still need Apple signing and provisioning, so the workflow keeps iOS to simulator output by default.
