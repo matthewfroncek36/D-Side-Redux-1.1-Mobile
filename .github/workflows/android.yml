@@ -116,6 +116,7 @@ jobs:
         run: |
           haxelib install hxpkg
           haxelib run hxpkg install
+          haxelib install extension-androidtools
       
       - name: Setup Lime
         run: |
