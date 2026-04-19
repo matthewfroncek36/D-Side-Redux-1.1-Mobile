@@ -25,6 +25,7 @@ jobs:
       - name: Install Haxelib
         run: |
           haxelib install hxpkg
+          haxelib run hxpkg setup
           haxelib run hxpkg install
 
       - name: Compile
@@ -53,6 +54,7 @@ jobs:
       - name: Install Haxelib
         run: |
           haxelib install hxpkg
+          haxelib run hxpkg setup
           haxelib run hxpkg install
 
       - name: Compile
@@ -81,6 +83,7 @@ jobs:
       - name: Install Haxelib
         run: |
           haxelib install hxpkg
+          haxelib run hxpkg setup
           haxelib run hxpkg install
 
       - name: Compile
@@ -115,6 +118,7 @@ jobs:
       - name: Install Haxelib
         run: |
           haxelib install hxpkg
+          haxelib run hxpkg setup
           haxelib run hxpkg install
           haxelib install extension-androidtools
       
@@ -157,6 +161,7 @@ jobs:
       - name: Install Haxelib
         run: |
           haxelib install hxpkg
+          haxelib run hxpkg setup
           haxelib run hxpkg install
       
       - name: Setup Lime
