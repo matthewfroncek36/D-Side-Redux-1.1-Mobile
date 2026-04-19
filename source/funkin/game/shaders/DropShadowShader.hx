@@ -20,7 +20,7 @@ import openfl.display.BitmapData;
 
 	Also has an Adjust Color shader in here so they can work together when needed.
  */
-class DropShadowShader extends FlxShader
+class DropShadowShader extends flixel.graphics.tile.FlxGraphicsShader
 {
 	/*
 		The color of the drop shadow.

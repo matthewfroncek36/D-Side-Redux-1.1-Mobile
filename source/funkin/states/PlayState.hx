@@ -1,5 +1,6 @@
 package funkin.states;
 
+import extensions.flixel.FlxCameraEx;
 import haxe.Timer;
 import haxe.ds.Vector;
 

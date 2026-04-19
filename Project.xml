@@ -96,14 +96,6 @@
 
     <!-- ______________________________ macros _____________________________ -->
 
-    <haxeflag name="--macro" value="addMetadata('@:build(funkin.backend.macro.FlxMacro.buildFlxSprite())', 'flixel.FlxSprite')" />
-    <haxeflag name="--macro" value="addMetadata('@:build(funkin.backend.macro.FlxMacro.buildFlxBasic())', 'flixel.FlxBasic')" />
-    <haxeflag name="--macro" value="addMetadata('@:build(funkin.backend.macro.FlxMacro.buildFlxCamera())', 'flixel.FlxCamera')" />
-
-    <haxeflag name="--macro" value="include('funkin')" />
-    <haxeflag name="--macro" value="include('flixel.addons',true,['flixel.addons.nape.*','flixel.addons.editors.*'])" />
-    <haxeflag name="--macro" value="include('flixel.effects',true)"/>
-
     <haxeflag name="-dce no" />
 
     <!-- ______________________________ Haxedefines _____________________________ -->
@@ -127,6 +119,7 @@
 
     <!--Enable for better crash handling/reporting-->
     <haxedef name="CRASH_HANDLER"/>
+    <haxedef name="FLX_NO_DEBUG"/>
     
     <!-- Mobile Shit -->
     <section if="android">

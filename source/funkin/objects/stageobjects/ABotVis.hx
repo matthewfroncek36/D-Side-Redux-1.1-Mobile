@@ -3,7 +3,7 @@ package funkin.objects.stageobjects;
 import flixel.FlxSprite;
 import flixel.graphics.frames.FlxAtlasFrames;
 import flixel.group.FlxSpriteGroup.FlxTypedSpriteGroup;
-import flixel.system.FlxSound;
+import flixel.sound.FlxSound;
 
 import funkin.vis.dsp.SpectralAnalyzer;
 

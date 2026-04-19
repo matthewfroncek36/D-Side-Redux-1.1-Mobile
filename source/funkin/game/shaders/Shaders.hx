@@ -2,7 +2,7 @@ package funkin.game.shaders;
 
 import flixel.system.FlxAssets.FlxShader;
 
-class ChromaticAberrationShader extends FlxShader
+class ChromaticAberrationShader extends flixel.graphics.tile.FlxGraphicsShader
 {
 	/**
 	 * The red channel offset.
@@ -56,7 +56,7 @@ class ChromaticAberrationShader extends FlxShader
 	}
 }
 
-class ScanlineShader extends FlxShader
+class ScanlineShader extends flixel.graphics.tile.FlxGraphicsShader
 {
 	public var alphaLock(default, set):Bool = false;
 	
@@ -98,7 +98,7 @@ class ScanlineShader extends FlxShader
 	}
 }
 
-class Tiltshift extends FlxShader
+class Tiltshift extends flixel.graphics.tile.FlxGraphicsShader
 {
 	public var center(default, set):Float = 0;
 	
@@ -202,7 +202,7 @@ class Tiltshift extends FlxShader
 	}
 }
 
-class GreyscaleShader extends FlxShader
+class GreyscaleShader extends flixel.graphics.tile.FlxGraphicsShader
 {
 	@:glFragmentSource('
 		#pragma header
@@ -219,7 +219,7 @@ class GreyscaleShader extends FlxShader
 	}
 }
 
-class GrainAndChromaticAbberationShader extends FlxShader
+class GrainAndChromaticAbberationShader extends flixel.graphics.tile.FlxGraphicsShader
 {
 	/**
 	 * The red channel offset.
@@ -444,7 +444,7 @@ class GrainAndChromaticAbberationShader extends FlxShader
 	}
 }
 
-class Grain extends FlxShader
+class Grain extends flixel.graphics.tile.FlxGraphicsShader
 {
 	public var luminance(default, set):Float = 0;
 	
@@ -634,7 +634,7 @@ class Grain extends FlxShader
 	}
 }
 
-class VCRDistortionShader extends FlxShader // https://www.shadertoy.com/view/ldjGzV and https://www.shadertoy.com/view/Ms23DR and https://www.shadertoy.com/view/MsXGD4 and https://www.shadertoy.com/view/Xtccz4
+class VCRDistortionShader extends flixel.graphics.tile.FlxGraphicsShader // https://www.shadertoy.com/view/ldjGzV and https://www.shadertoy.com/view/Ms23DR and https://www.shadertoy.com/view/MsXGD4 and https://www.shadertoy.com/view/Xtccz4
 {
 	public var showVignette(default, set):Bool = false;
 	public var perspective(default, set):Bool = false;
@@ -812,7 +812,7 @@ class VCRDistortionShader extends FlxShader // https://www.shadertoy.com/view/ld
 
 // coding is like hitting on women, you never start with the number
 //               -naether
-class ThreeDShader extends FlxShader
+class ThreeDShader extends flixel.graphics.tile.FlxGraphicsShader
 {
 	public var rotationX(default, set):Float = 0;
 	
@@ -932,7 +932,7 @@ class ThreeDShader extends FlxShader
 }
 
 // Boing! by ThaeHan
-class TriangleShader extends FlxShader
+class TriangleShader extends flixel.graphics.tile.FlxGraphicsShader
 {
 	public var rotationX(default, set):Float = 0;
 	
@@ -1084,7 +1084,7 @@ class TriangleShader extends FlxShader
 	}
 }
 
-class BloomShader extends FlxShader
+class BloomShader extends flixel.graphics.tile.FlxGraphicsShader
 {
 	public var blurDistance(default, set):Float = 0.0;
 	
@@ -1169,7 +1169,7 @@ class BloomShader extends FlxShader
 		
 
  */
-class GlitchShader extends FlxShader
+class GlitchShader extends flixel.graphics.tile.FlxGraphicsShader
 {
 	public var waveSpeed(default, set):Float = 0;
 	public var waveFrequency(default, set):Float = 0;
@@ -1249,7 +1249,7 @@ class GlitchShader extends FlxShader
 	}
 }
 
-class InvertShader extends FlxShader
+class InvertShader extends flixel.graphics.tile.FlxGraphicsShader
 {
 	@:glFragmentSource('
 		#pragma header
@@ -1273,7 +1273,7 @@ class InvertShader extends FlxShader
 	}
 }
 
-class PulseShader extends FlxShader
+class PulseShader extends flixel.graphics.tile.FlxGraphicsShader
 {
 	public var waveSpeed(default, set):Float = 0;
 	public var waveFrequency(default, set):Float = 0;

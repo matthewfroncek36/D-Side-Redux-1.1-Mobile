@@ -1,7 +1,7 @@
 package funkin.audio.visualize;
 
 import flixel.math.FlxMath;
-import flixel.system.FlxSound;
+import flixel.sound.FlxSound;
 
 import funkin.audio.visualize.dsp.FFT;
 

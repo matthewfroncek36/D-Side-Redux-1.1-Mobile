@@ -4,7 +4,7 @@ import flixel.system.FlxAssets.FlxShader;
 
 using StringTools;
 
-class NTSCShader extends FlxShader
+class NTSCShader extends flixel.graphics.tile.FlxGraphicsShader
 {
 	@:glFragmentSource('
 		// Made by HeroEyad.

@@ -1,5 +1,7 @@
 package funkin.backend;
 
+import flixel.addons.system.macros.FlxRuntimeShaderMacro;
+
 /**
  * Modified runtime shader to prevent crashes.
  */
@@ -51,9 +53,8 @@ class FunkinShader extends flixel.graphics.tile.FlxGraphicsShader
 	/**
 		fallback fragment shader to be used in case of error
 	**/
-	static final _templateFrag:String = "
-		#pragma header
-
+	static final _templateFrag:String = FlxRuntimeShaderMacro.retrieveMetadata('glFragmentHeader')
+		+ "
 		void main() 
         {
 			gl_FragColor = flixel_texture2D(bitmap, openfl_TextureCoordv);

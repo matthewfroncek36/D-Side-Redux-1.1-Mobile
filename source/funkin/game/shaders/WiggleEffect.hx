@@ -64,7 +64,7 @@ class WiggleEffect
 	}
 }
 
-class WiggleShader extends FlxShader
+class WiggleShader extends flixel.graphics.tile.FlxGraphicsShader
 {
 	@:glFragmentSource('
 		#pragma header

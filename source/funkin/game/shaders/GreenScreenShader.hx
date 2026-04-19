@@ -3,7 +3,7 @@ package funkin.game.shaders;
 
 import flixel.system.FlxAssets.FlxShader;
 
-class GreenScreenShader extends FlxShader // https://www.shadertoy.com/view/4dX3WN
+class GreenScreenShader extends flixel.graphics.tile.FlxGraphicsShader // https://www.shadertoy.com/view/4dX3WN
 {
 	@:glFragmentSource('
     #pragma header

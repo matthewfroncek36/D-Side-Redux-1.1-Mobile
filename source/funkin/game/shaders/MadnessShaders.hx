@@ -6,7 +6,7 @@ import flixel.system.FlxAssets.FlxShader;
 /**
  * By @Ne_Eo_Twitch, modded a bit by lunar
  */
-class NTSCSFilter extends FlxShader
+class NTSCSFilter extends flixel.graphics.tile.FlxGraphicsShader
 {
 	@:glFragmentSource('
 	#pragma header
@@ -106,7 +106,7 @@ class NTSCSFilter extends FlxShader
 	}
 }
 
-class NTSCGlitch extends FlxShader // stolen from that one popular vhs shader used in ourple guy criminal
+class NTSCGlitch extends flixel.graphics.tile.FlxGraphicsShader // stolen from that one popular vhs shader used in ourple guy criminal
 {
 	@:glFragmentSource('
      #pragma header
@@ -183,7 +183,7 @@ class NTSCGlitch extends FlxShader // stolen from that one popular vhs shader us
 	}
 }
 
-class TVStatic extends FlxShader
+class TVStatic extends flixel.graphics.tile.FlxGraphicsShader
 {
 	@:glFragmentSource('
     #pragma header
@@ -230,7 +230,7 @@ class TVStatic extends FlxShader
 	}
 }
 
-class Abberation extends FlxShader // https://www.shadertoy.com/view/ltByR3
+class Abberation extends flixel.graphics.tile.FlxGraphicsShader // https://www.shadertoy.com/view/ltByR3
 {
 	@:glFragmentSource('
     #pragma header

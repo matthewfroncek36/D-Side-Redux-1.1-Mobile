@@ -1,8 +1,9 @@
 package funkin.audio;
 
+import extensions.flixel.FlxSoundEx;
 import flixel.util.FlxSignal;
 import flixel.group.FlxGroup.FlxTypedGroup;
-import flixel.system.FlxSound;
+import flixel.sound.FlxSound;
 
 import funkin.data.Song.SwagSong;
 
@@ -38,16 +39,16 @@ class SyncedFlxSoundGroup extends FlxTypedGroup<FlxSound>
 	
 	public var songLength(get, never):Float;
 	
-	@:inheritDoc(flixel.system.FlxSound.resume)
+	@:inheritDoc(flixel.sound.FlxSound.resume)
 	public function resume() forEachAlive(snd -> snd.resume());
 	
-	@:inheritDoc(flixel.system.FlxSound.pause)
+	@:inheritDoc(flixel.sound.FlxSound.pause)
 	public function pause() forEachAlive(snd -> snd.pause());
 	
-	@:inheritDoc(flixel.system.FlxSound.play)
+	@:inheritDoc(flixel.sound.FlxSound.play)
 	public function play(forceRestart:Bool = false, startTime:Float = 0.0, ?endTime:Null<Float>) forEachAlive(snd -> snd.play(forceRestart, startTime, endTime));
 	
-	@:inheritDoc(flixel.system.FlxSound.stop)
+	@:inheritDoc(flixel.sound.FlxSound.stop)
 	public function stop() forEachAlive(snd -> snd.stop());
 	
 	public function new()
@@ -172,14 +173,14 @@ class VocalGroup extends SyncedFlxSoundGroup
 		opponentVocals = new SyncedFlxSoundGroup();
 	}
 	
-	public function addOpponentVocals(?sound:flixel.system.FlxSound)
+	public function addOpponentVocals(?sound:flixel.sound.FlxSound)
 	{
 		if (sound == null) return null;
 		opponentVocals.add(sound);
 		return add(sound);
 	}
 	
-	public function addPlayerVocals(?sound:flixel.system.FlxSound)
+	public function addPlayerVocals(?sound:flixel.sound.FlxSound)
 	{
 		if (sound == null) return null;
 		playerVocals.add(sound);

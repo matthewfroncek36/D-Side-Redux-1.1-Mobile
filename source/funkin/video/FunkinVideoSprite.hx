@@ -1,7 +1,7 @@
 package funkin.video;
 
 // sigh rework coming again soon
-#if VIDEOS_ALLOWED
+#if (!macro && VIDEOS_ALLOWED)
 import hxvlc.flixel.FlxVideoSprite;
 import hxvlc.util.Location;
 
@@ -175,4 +175,6 @@ class FunkinVideoSprite extends FlxVideoSprite
 			if (video != null && video.exists && video.alive) func(video);
 	}
 }
+#else
+class FunkinVideoSprite {}
 #end

@@ -65,7 +65,7 @@ class ColorSwap
 	}
 }
 
-class ColorSwapShader extends FlxShader
+class ColorSwapShader extends flixel.graphics.tile.FlxGraphicsShader
 {
 	@:glFragmentSource('
 		#pragma header

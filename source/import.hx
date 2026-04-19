@@ -1,4 +1,3 @@
-#if !macro
 import haxe.io.Path;
 
 // flixel
@@ -13,7 +12,7 @@ import flixel.tweens.FlxEase;
 import flixel.util.FlxTimer;
 import flixel.FlxBasic;
 import flixel.math.FlxPoint;
-import flixel.system.FlxSound;
+import flixel.sound.FlxSound;
 
 #if sys
 import sys.*;
@@ -21,9 +20,11 @@ import sys.*;
 import sys.io.*;
 #end
 
+#if !macro
 import funkin.api.DiscordClient;
+#end
 
-#if VIDEOS_ALLOWED
+#if (!macro && VIDEOS_ALLOWED)
 import hxvlc.flixel.*;
 #end
 
@@ -41,4 +42,3 @@ import funkin.backend.MusicBeatState;
 using flixel.util.FlxArrayUtil;
 
 using StringTools;
-#end

@@ -3,7 +3,7 @@ package funkin.game.shaders;
 import flixel.system.FlxAssets.FlxShader;
 
 // https://www.shadertoy.com/view/MscGzl
-class GlitchShaderA extends FlxShader
+class GlitchShaderA extends flixel.graphics.tile.FlxGraphicsShader
 {
 	@:isVar
 	public var amount(get, set):Float = 0;
@@ -67,7 +67,7 @@ class GlitchShaderA extends FlxShader
 }
 
 // https://www.shadertoy.com/view/4dtGzl
-class GlitchShaderB extends FlxShader
+class GlitchShaderB extends flixel.graphics.tile.FlxGraphicsShader
 {
 	@:isVar
 	public var amount(get, set):Float = 0;
@@ -201,7 +201,7 @@ void main()
 	}
 }
 
-class Fuck extends FlxShader
+class Fuck extends flixel.graphics.tile.FlxGraphicsShader
 {
 	@:isVar
 	public var amount(get, set):Float = 0;
