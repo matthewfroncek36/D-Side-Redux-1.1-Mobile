@@ -1,5 +1,15 @@
 import haxe.io.Path;
 
+#if sys
+import sys.*;
+
+import sys.io.*;
+#end
+
+// `import.hx` is applied package-wide, including macro packages.
+// Keep runtime engine imports out of macro context or HaxeFlixel types
+// such as `FlxGraphicAsset` / `FlxTypedSignal` get resolved while `macro`.
+#if !macro
 // flixel
 import flixel.FlxG;
 import flixel.FlxSprite;
@@ -14,19 +24,9 @@ import flixel.FlxBasic;
 import flixel.math.FlxPoint;
 import flixel.sound.FlxSound;
 
-#if sys
-import sys.*;
-
-import sys.io.*;
-#end
-
-#if !macro
 import funkin.api.DiscordClient;
-#end
 
-#if (!macro && VIDEOS_ALLOWED)
 import hxvlc.flixel.*;
-#end
 
 import Init;
 
@@ -40,5 +40,6 @@ import funkin.objects.BGSprite;
 import funkin.backend.MusicBeatState;
 
 using flixel.util.FlxArrayUtil;
+#end
 
 using StringTools;

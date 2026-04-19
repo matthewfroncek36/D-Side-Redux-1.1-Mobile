@@ -1,11 +1,10 @@
 package funkin;
 
+#if !macro
 import flixel.util.FlxDestroyUtil;
 
-#if !macro
 import extensions.flixel.FlxCameraEx;
 import extensions.flixel.FlxSoundEx;
-#end
 
 import funkin.backend.MusicBeatState;
 import funkin.backend.MusicBeatSubstate;
@@ -13,5 +12,6 @@ import funkin.scripting.ScriptConstants;
 import funkin.audio.FunkinSound;
 import funkin.backend.Logger;
 import funkin.utils.*;
+#end
 
 using haxe.io.Path;
