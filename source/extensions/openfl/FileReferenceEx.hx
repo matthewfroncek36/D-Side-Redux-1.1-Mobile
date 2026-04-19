@@ -3,14 +3,20 @@ package extensions.openfl;
 import haxe.io.Path;
 import haxe.Timer;
 
-import lime.ui.FileDialogType;
-
 import openfl.net.FileFilter;
 import openfl.net.FileReference;
 
+enum abstract BrowseOpenStyle(Int)
+{
+	var OPEN = 0;
+	var SAVE = 1;
+	var OPEN_DIRECTORY = 2;
+	var OPEN_MULTIPLE = 3;
+}
+
 typedef BrowseOptions =
 {
-	openStyle:FileDialogType,
+	openStyle:BrowseOpenStyle,
 	?typeFilter:Array<FileFilter>,
 	?title:String,
 	?defaultSearch:String
@@ -119,7 +125,7 @@ class FileReferenceEx extends FileReference
 		if (browseOptions.openStyle == OPEN_MULTIPLE) openFileDialog.onSelectMultiple.add(openFileDialog_onSelectMultiple);
 		else openFileDialog.onSelect.add(openFileDialog_onSelect);
 		
-		openFileDialog.browse(browseOptions.openStyle, filter, browseOptions.defaultSearch, browseOptions.title);
+		openFileDialog.browse(cast browseOptions.openStyle, filter, browseOptions.defaultSearch, browseOptions.title);
 		return true;
 		#end
 		#elseif (js && html5)
