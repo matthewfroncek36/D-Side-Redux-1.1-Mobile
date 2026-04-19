@@ -4,13 +4,11 @@
         "pkgs": [
             {
                 "name": "flixel",
-                "link": "https://github.com/FunkinCrew/flixel",
-                "branch": "622bb65e7f49f0e1a03826b6593369d3ad5e54fa"
+                "version": "6.0.0"
             },
             {
                 "name": "flixel-addons",
-                "link": "https://github.com/FunkinCrew/flixel-addons",
-                "branch": "187f93b34f93c6a405d634a42913c745e443463a"
+                "version": "3.3.2"
             },
             {
                 "name": "flixel-ui",
@@ -27,8 +25,7 @@
             },
             {
                 "name": "hscript-iris",
-                "link": "https://github.com/pisayesiwsi/hscript-iris",
-                "branch": "dev"
+                "version": "1.1.3"
             },
             {
                 "name": "hxcpp-debug-server",
@@ -36,22 +33,21 @@
             },
             {
                 "name": "hxcpp",
-                "link": "https://github.com/FunkinCrew/hxcpp",
-                "branch": "bfe01edc20cdc54fe7f54f1f2124b8959646144c"
+                "link": "https://github.com/HaxeFoundation/hxcpp",
+                "branch": "8268ef2d518b1e7c8e8494114d0bdf6b5bc4147d"
             },
             {
                 "name": "hxvlc",
-                "version": "2.2.6"
+                "link": "https://github.com/MAJigsaw77/hxvlc",
+                "branch": "a1ac9900248209a91a9a9c1ebc1ae8af5dfdfb86"
             },
             {
                 "name": "lime",
-                "link": "https://github.com/FunkinCrew/lime",
-                "branch": "8d5555df83e208c0bab3877ed89cff6cf8906227"
+                "version": "8.1.3"
             },
             {
                 "name": "openfl",
-                "link": "https://github.com/FunkinCrew/openfl",
-                "branch": "a85b45f21c7e1a4c19663a193bf4ea961faf0dfa"
+                "version": "9.4.1"
             },
             {
                 "name": "hxdiscord_rpc",
@@ -64,8 +60,8 @@
             },
             {
                 "name": "haxeui-core",
-                "link": "https://github.com/FunkinCrew/haxeui-core",
-                "branch": "09f2512564b45e92229e21433e6dd482391f7b7d"
+                "link": "https://github.com/haxeui/haxeui-core",
+                "branch": "99d5d035e7120ce027256b117a25625c53b488dc"
             },
             {
                 "name": "moonchart",
@@ -88,7 +84,8 @@
             },
             {
                 "name": "json2object",
-                "version": "3.11.0"
+                "link": "https://github.com/FunkinCrew/json2object",
+                "branch": "a8c26f18463c98da32f744c214fe02273e1823fa"
             },
             {
                 "name": "hxjsonast",
