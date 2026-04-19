@@ -1,118 +1,118 @@
 {
-	"dependencies": [
-		{
-			"name": "flixel",
-			"url": "https://github.com/FunkinCrew/flixel",
-			"ref": "622bb65e7f49f0e1a03826b6593369d3ad5e54fa",
-			"type": "git",
-			"dir": null
-		},
-		{
-			"name": "flixel-addons",
-			"url": "https://github.com/FunkinCrew/flixel-addons",
-			"ref": "187f93b34f93c6a405d634a42913c745e443463a",
-			"type": "git",
-			"dir": null
-		},
-		{
-			"name": "flixel-ui",
-			"version": "2.6.4",
-			"type": "haxelib"
-		},
-		{
-			"name": "flixel-animate",
-			"url": "https://github.com/MaybeMaru/flixel-animate",
-			"ref": "4fb307acac9379966dfa0b7619b37036fcd39b32",
-			"type": "git",
-			"dir": null
-		},
-		{
-			"name": "hscript",
-			"version": "2.6.0",
-			"type": "haxelib"
-		},
-		{
-			"name": "hscript-iris",
-			"url": "https://github.com/pisayesiwsi/hscript-iris",
-			"ref": "dev",
-			"type": "git",
-			"dir": null
-		},
-		{
-			"name": "hxcpp-debug-server",
-			"version": "1.2.4",
-			"type": "haxelib"
-		},
-		{
-			"name": "hxcpp",
-			"url": "https://github.com/FunkinCrew/hxcpp",
-			"ref": "bfe01edc20cdc54fe7f54f1f2124b8959646144c",
-			"type": "git",
-			"dir": null
-		},
-		{
-			"name": "hxvlc",
-			"version": "2.2.6",
-			"type": "haxelib"
-		},
-		{
-			"name": "lime",
-			"url": "https://github.com/FunkinCrew/lime",
-			"ref": "8d5555df83e208c0bab3877ed89cff6cf8906227",
-			"type": "git",
-			"dir": null
-		},
-		{
-			"name": "openfl",
-			"url": "https://github.com/FunkinCrew/openfl",
-			"ref": "a85b45f21c7e1a4c19663a193bf4ea961faf0dfa",
-			"type": "git",
-			"dir": null
-		},
-		{
-			"name": "hxdiscord_rpc",
-			"version": "1.2.4",
-			"type": "haxelib"
-		},
-		{
-			"name": "haxeui-flixel",
-			"url": "https://github.com/haxeui/haxeui-flixel",
-			"ref": "100f2c96beab619cfe72c567a058c41c71e3e998",
-			"type": "git",
-			"dir": null
-		},
-		{
-			"name": "haxeui-core",
-			"url": "https://github.com/FunkinCrew/haxeui-core",
-			"ref": "09f2512564b45e92229e21433e6dd482391f7b7d",
-			"type": "git",
-			"dir": null
-		},
-		{
-			"name": "moonchart",
-			"url": "https://github.com/MaybeMaru/moonchart",
-			"ref": "8c9d7cfe3280588fa71a8f3c4444c97bc7b63714",
-			"type": "git",
-			"dir": null
-		},
-		{
-			"name": "funkin.vis",
-			"url": "https://github.com/FunkinCrew/funkVis",
-			"ref": "1966f8fbbbc509ed90d4b520f3c49c084fc92fd6",
-			"type": "git",
-			"dir": null
-		},
-		{
-			"name": "grig.audio",
-			"url": "https://github.com/FunkinCrew/grig.audio",
-			"ref": "8567c4dad34cfeaf2ff23fe12c3796f5db80685e",
-			"type": "git",
-			"dir": null
-		},
-		{
-			"name": "json5hx",
-			"version": "1.0.2",
-			"type": "haxelib"
-		}
-	]
+  "dependencies": [
+    {
+      "name": "flixel",
+      "type": "git",
+      "dir": null,
+      "ref": "622bb65e7f49f0e1a03826b6593369d3ad5e54fa",
+      "url": "https://github.com/FunkinCrew/flixel"
+    },
+    {
+      "name": "flixel-addons",
+      "type": "git",
+      "dir": null,
+      "ref": "187f93b34f93c6a405d634a42913c745e443463a",
+      "url": "https://github.com/FunkinCrew/flixel-addons"
+    },
+    {
+      "name": "flixel-animate",
+      "type": "git",
+      "dir": null,
+      "ref": "4fb307acac9379966dfa0b7619b37036fcd39b32",
+      "url": "https://github.com/MaybeMaru/flixel-animate"
+    },
+    {
+      "name": "flixel-ui",
+      "type": "haxelib",
+      "version": "2.6.4"
+    },
+    {
+      "name": "funkin.vis",
+      "type": "git",
+      "dir": null,
+      "ref": "1966f8fbbbc509ed90d4b520f3c49c084fc92fd6",
+      "url": "https://github.com/FunkinCrew/funkVis"
+    },
+    {
+      "name": "grig.audio",
+      "type": "git",
+      "dir": null,
+      "ref": "8567c4dad34cfeaf2ff23fe12c3796f5db80685e",
+      "url": "https://github.com/FunkinCrew/grig.audio"
+    },
+    {
+      "name": "haxeui-core",
+      "type": "git",
+      "dir": null,
+      "ref": "09f2512564b45e92229e21433e6dd482391f7b7d",
+      "url": "https://github.com/FunkinCrew/haxeui-core"
+    },
+    {
+      "name": "haxeui-flixel",
+      "type": "git",
+      "dir": null,
+      "ref": "100f2c96beab619cfe72c567a058c41c71e3e998",
+      "url": "https://github.com/haxeui/haxeui-flixel"
+    },
+    {
+      "name": "hscript",
+      "type": "haxelib",
+      "version": "2.6.0"
+    },
+    {
+      "name": "hscript-iris",
+      "type": "git",
+      "dir": null,
+      "ref": "dev",
+      "url": "https://github.com/pisayesiwsi/hscript-iris"
+    },
+    {
+      "name": "hxcpp",
+      "type": "git",
+      "dir": null,
+      "ref": "bfe01edc20cdc54fe7f54f1f2124b8959646144c",
+      "url": "https://github.com/FunkinCrew/hxcpp"
+    },
+    {
+      "name": "hxcpp-debug-server",
+      "type": "haxelib",
+      "version": "1.2.4"
+    },
+    {
+      "name": "hxdiscord_rpc",
+      "type": "haxelib",
+      "version": "1.2.4"
+    },
+    {
+      "name": "hxvlc",
+      "type": "haxelib",
+      "version": "2.2.6"
+    },
+    {
+      "name": "json5hx",
+      "type": "haxelib",
+      "version": "1.0.2"
+    },
+    {
+      "name": "lime",
+      "type": "git",
+      "dir": null,
+      "ref": "8d5555df83e208c0bab3877ed89cff6cf8906227",
+      "url": "https://github.com/FunkinCrew/lime"
+    },
+    {
+      "name": "moonchart",
+      "type": "git",
+      "dir": null,
+      "ref": "8c9d7cfe3280588fa71a8f3c4444c97bc7b63714",
+      "url": "https://github.com/MaybeMaru/moonchart"
+    },
+    {
+      "name": "openfl",
+      "type": "git",
+      "dir": null,
+      "ref": "a85b45f21c7e1a4c19663a193bf4ea961faf0dfa",
+      "url": "https://github.com/FunkinCrew/openfl"
+    }
+  ]
 }
