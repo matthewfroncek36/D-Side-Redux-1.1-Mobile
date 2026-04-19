@@ -40,9 +40,8 @@ jobs:
       - name: Install libraries
         run: |
           haxelib setup ~/haxelib
-          haxelib install hxcpp > /dev/null
-          haxelib install hxpkg
-          haxelib run hxpkg install
+          haxelib install hmm
+          haxelib run hmm install
       - name: Compile
         run: haxelib run lime build Project.xml linux -D ${{ inputs.buildFlags }}
       - name: Publish Artifact
@@ -64,9 +63,8 @@ jobs:
       - name: Install libraries
         run: |
           haxelib setup C:/haxelib
-          haxelib install hxcpp > nul
-          haxelib install hxpkg
-          haxelib run hxpkg install
+          haxelib install hmm
+          haxelib run hmm install
       - name: Compile
         run: haxelib run lime build windows -D ${{ inputs.buildFlags }}
       - name: Publish Artifact
@@ -88,9 +86,8 @@ jobs:
       - name: Install libraries
         run: |
           haxelib setup ~/haxelib
-          haxelib install hxcpp > /dev/null --quiet
-          haxelib install hxpkg
-          haxelib run hxpkg install
+          haxelib install hmm
+          haxelib run hmm install
       - name: Compile
         run: |
           haxelib run lime build mac -64 -D ${{ inputs.buildFlags || 'commit' }} -D HXCPP_M64
@@ -114,9 +111,8 @@ jobs:
       - name: Install libraries
         run: |
           haxelib setup ~/haxelib
-          haxelib install hxcpp > /dev/null --quiet
-          haxelib install hxpkg
-          haxelib run hxpkg install
+          haxelib install hmm
+          haxelib run hmm install
       - name: Compile
         run: |
           haxelib run lime build mac -arm64 -D ${{ inputs.buildFlags }} -D HXCPP_ARM64
