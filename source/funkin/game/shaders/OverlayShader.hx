@@ -10,7 +10,7 @@ import flixel.system.FlxAssets.FlxShader;
  * @see https://en.wikipedia.org/wiki/Blend_modes#Overlay
  * @author EliteMasterEric
  */
-class OverlayShader extends flixel.graphics.tile.FlxGraphicsShader
+class OverlayShader extends FlxShader
 {
 	@:glFragmentSource('
 		#pragma header

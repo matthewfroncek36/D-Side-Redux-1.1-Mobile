@@ -1,6 +1,5 @@
 package funkin.objects;
 
-import extensions.flixel.FlxTools;
 import funkin.scripts.ScriptGroup;
 import funkin.data.CharacterData.AnimationInfo;
 
@@ -113,7 +112,7 @@ class Stage extends FlxTypedContainer<FlxBasic>
 				if (info.angle != null) obj.angle = info.angle;
 				if (info.flipX != null) obj.flipX = info.flipX;
 				if (info.flipY != null) obj.flipY = info.flipY;
-				if (info.zIndex != null) FlxTools.setZIndex(obj, info.zIndex);
+				if (info.zIndex != null) obj.zIndex = info.zIndex;
 				if (info.antialiasing != null) obj.antialiasing = info.antialiasing == false ? false : ClientPrefs.globalAntialiasing;
 				if (info.blend != null) obj.blend = CoolUtil.getBlendFromString(info.blend);
 				

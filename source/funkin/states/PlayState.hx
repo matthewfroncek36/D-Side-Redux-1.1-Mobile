@@ -1,7 +1,5 @@
 package funkin.states;
 
-import extensions.flixel.FlxCameraEx;
-import extensions.flixel.FlxTools;
 import haxe.Timer;
 import haxe.ds.Vector;
 
@@ -631,9 +629,9 @@ class PlayState extends MusicBeatState
 		gfGroup.x = GF_X;
 		gfGroup.y = GF_Y;
 		
-		FlxTools.setZIndex(boyfriendGroup, file.bfZIndex ?? 0);
-		FlxTools.setZIndex(dadGroup, file.dadZIndex ?? 0);
-		FlxTools.setZIndex(gfGroup, file.gfZIndex ?? 0);
+		boyfriendGroup.zIndex = file.bfZIndex ?? 0;
+		dadGroup.zIndex = file.dadZIndex ?? 0;
+		gfGroup.zIndex = file.gfZIndex ?? 0;
 	}
 	
 	// null checking

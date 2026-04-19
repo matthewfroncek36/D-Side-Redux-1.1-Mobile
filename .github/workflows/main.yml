@@ -1,179 +1,123 @@
-name: Multi-Platform Build
+# This is a basic workflow to help you get started with Actions
 
+name: Build
+
+# Controls when the action will run. 
 on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
+  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+
+  # For release builds
+  workflow_call:
+    inputs:
+      buildFlags:
+        required: false
+        type: string
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  buildWindows:
-    name: buildWindows
-    runs-on: windows-2022
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          submodules: true
-
-      - name: Setup Haxe
-        uses: ShadowEngineTeam/setup-haxe@main
-        with:
-          haxe-version: 4.3.7
-
-      - name: Install Haxelib
-        run: |
-          haxelib install hxpkg
-          haxelib run hxpkg setup
-          haxelib run hxpkg install
-
-      - name: Compile
-        run: haxelib run lime build windows
-
-      - name: Publish Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: buildWindows
-          path: export/release/windows/bin
-
+  # This workflow contains a single job called "build"
   buildLinux:
-    name: buildLinux
+    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          submodules: true
 
-      - name: Setup Haxe
-        uses: ShadowEngineTeam/setup-haxe@main
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      - uses: krdlab/setup-haxe@master
         with:
           haxe-version: 4.3.7
-
-      - name: Install Haxelib
+      # Runs a set of commands using the runners shell
+      - name: install libvlc
         run: |
+            sudo apt-get install vlc libvlc-dev libvlccore-dev vlc-bin
+      - name: Install libraries
+        run: |
+          haxelib setup ~/haxelib
+          haxelib install hxcpp > /dev/null
           haxelib install hxpkg
-          haxelib run hxpkg setup
           haxelib run hxpkg install
-
       - name: Compile
-        run: haxelib run lime build linux
-
+        run: haxelib run lime build Project.xml linux -D ${{ inputs.buildFlags }}
       - name: Publish Artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@main
         with:
-          name: buildLinux
-          path: export/release/linux/bin
+          name: nmv-linux
+          path: 'export/release/linux/bin' 
+  buildWindows:
+    runs-on: windows-latest
+    
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2.3.0
 
-  buildMac:
-    name: buildMac
+      - uses: krdlab/setup-haxe@master
+        with:
+          haxe-version: 4.3.7
+      # Runs a set of commands using the runners shell
+      - name: Install libraries
+        run: |
+          haxelib setup C:/haxelib
+          haxelib install hxcpp > nul
+          haxelib install hxpkg
+          haxelib run hxpkg install
+      - name: Compile
+        run: haxelib run lime build windows -D ${{ inputs.buildFlags }}
+      - name: Publish Artifact
+        uses: actions/upload-artifact@main
+        with:
+          name: nmv-windows
+          path: export/release/windows/bin
+  buildMacIntel:
     runs-on: macos-15
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          submodules: true
 
-      - name: Setup Haxe
-        uses: ShadowEngineTeam/setup-haxe@main
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@main
+
+      - uses: krdlab/setup-haxe@master
         with:
           haxe-version: 4.3.7
-
-      - name: Install Haxelib
+      # Runs a set of commands using the runners shell
+      - name: Install libraries
         run: |
+          haxelib setup ~/haxelib
+          haxelib install hxcpp > /dev/null --quiet
           haxelib install hxpkg
-          haxelib run hxpkg setup
           haxelib run hxpkg install
-
       - name: Compile
-        run: haxelib run lime build mac
-
+        run: |
+          haxelib run lime build mac -64 -D ${{ inputs.buildFlags || 'commit' }} -D HXCPP_M64
       - name: Publish Artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@main
         with:
-          name: buildMac
-          path: export/release/mac/bin
+          name: nmv-macIntel
+          path: export/release/macos/bin
 
-  buildAndroid:
-    name: buildAndroid
+  buildMacArm:
     runs-on: macos-15
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          submodules: true
 
-      - name: Setup Haxe
-        uses: ShadowEngineTeam/setup-haxe@main
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@main
+
+      - uses: krdlab/setup-haxe@master
         with:
           haxe-version: 4.3.7
-
-      - name: Setup Java
-        uses: actions/setup-java@v4
-        with:
-          distribution: temurin
-          java-version: "21"
-      
-      - name: Install Haxelib
+      # Runs a set of commands using the runners shell
+      - name: Install libraries
         run: |
+          haxelib setup ~/haxelib
+          haxelib install hxcpp > /dev/null --quiet
           haxelib install hxpkg
-          haxelib run hxpkg setup
           haxelib run hxpkg install
-          haxelib install extension-androidtools
-      
-      - name: Setup Lime
-        run: |
-          haxelib run lime config ANDROID_SDK $ANDROID_HOME
-          haxelib run lime config ANDROID_NDK_ROOT $ANDROID_NDK_LATEST_HOME
-          haxelib run lime config JAVA_HOME $JAVA_HOME
-          haxelib run lime config ANDROID_SETUP true
-          
       - name: Compile
-        run: haxelib run lime build android
-      
-      - name: Publish Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: buildAndroid
-          path: export/release/android/bin/app/build/outputs/apk/release/*.apk
-
-  buildIos:
-    name: buildIos
-    runs-on: macos-15
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          submodules: true
-
-      - name: Setup Haxe
-        uses: ShadowEngineTeam/setup-haxe@main
-        with:
-          haxe-version: 4.3.7
-
-      - name: Setup Java
-        uses: actions/setup-java@v4
-        with:
-          distribution: temurin
-          java-version: "21"
-      
-      - name: Install Haxelib
         run: |
-          haxelib install hxpkg
-          haxelib run hxpkg setup
-          haxelib run hxpkg install
-      
-      - name: Setup Lime
-        run: |
-          haxelib run lime config JAVA_HOME $JAVA_HOME
-          haxelib run lime config IOS_SETUP true
-
-      - name: Compile
-        run: haxelib run lime build ios
-
+          haxelib run lime build mac -arm64 -D ${{ inputs.buildFlags }} -D HXCPP_ARM64
       - name: Publish Artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@main
         with:
-          name: buildIos
-          path: export/release/ios/bin
+          name: nmv-macArm
+          path: export/release/macos/bin

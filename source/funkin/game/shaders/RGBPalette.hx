@@ -231,7 +231,7 @@ class RGBShaderReference
 	}
 }
 
-class RGBPaletteShader extends flixel.graphics.tile.FlxGraphicsShader
+class RGBPaletteShader extends FlxShader
 {
 	@:glFragmentHeader('
 		#pragma header

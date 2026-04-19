@@ -15,9 +15,7 @@ import funkin.data.Controls.KeyboardScheme;
  * 
  * for better reference on this look at keybinds
  */
-#if !macro
 @:build(funkin.backend.macro.SaveMacro.buildSaveVars('im gonna make this do smth later okay just not rn'))
-#end
 class ClientPrefs
 {
 	// debug ------------------------------------------------------------------------//

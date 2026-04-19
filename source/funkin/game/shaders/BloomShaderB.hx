@@ -2,7 +2,7 @@ package funkin.game.shaders;
 
 import flixel.system.FlxAssets.FlxShader;
 
-class BloomShaderB extends flixel.graphics.tile.FlxGraphicsShader // BLOOM SHADER BY BBPANZU
+class BloomShaderB extends FlxShader // BLOOM SHADER BY BBPANZU
 {
 	@:glFragmentSource('
 	#pragma header

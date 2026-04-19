@@ -1,6 +1,5 @@
 package funkin.states.editors;
 
-import extensions.flixel.FlxTools;
 import extensions.openfl.FileReferenceEx;
 
 import haxe.io.Path;
@@ -1402,7 +1401,7 @@ class CharacterEditorState extends UIState // MUST EXTEND UI STATE needed for ac
 	{
 		if (characterGhost != null)
 		{
-			FlxTools.setZIndex(characterGhost, uiElements.toolBar.ghostInFront.value ? 10 : -1);
+			characterGhost.zIndex = uiElements.toolBar.ghostInFront.value ? 10 : -1;
 		}
 		
 		charLayer.sort(SortUtil.sortByZ, flixel.util.FlxSort.ASCENDING);

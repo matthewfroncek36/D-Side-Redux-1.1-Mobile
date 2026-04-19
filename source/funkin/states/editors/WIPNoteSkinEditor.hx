@@ -1,6 +1,5 @@
 package funkin.states.editors;
 
-import extensions.flixel.FlxTools;
 import haxe.ui.components.Stepper;
 import haxe.Json;
 import haxe.ui.components.popups.ColorPickerPopup;
@@ -220,7 +219,7 @@ class WIPNoteSkinEditor extends UIState
 		}
 		
 		uiElements.toolBar.ghostInFront.onChange = (ui) -> {
-			FlxTools.setZIndex(ghostfields, ui.value.toBool() ? 999 : -1);
+			ghostfields.zIndex = ui.value.toBool() ? 999 : -1;
 			fieldLayering.sort(SortUtil.sortByZ, flixel.util.FlxSort.ASCENDING);
 		}
 		

@@ -3,20 +3,14 @@ package extensions.openfl;
 import haxe.io.Path;
 import haxe.Timer;
 
+import lime.ui.FileDialogType;
+
 import openfl.net.FileFilter;
 import openfl.net.FileReference;
 
-enum abstract BrowseOpenStyle(Int)
-{
-	var OPEN = 0;
-	var SAVE = 1;
-	var OPEN_DIRECTORY = 2;
-	var OPEN_MULTIPLE = 3;
-}
-
 typedef BrowseOptions =
 {
-	openStyle:BrowseOpenStyle,
+	openStyle:FileDialogType,
 	?typeFilter:Array<FileFilter>,
 	?title:String,
 	?defaultSearch:String
@@ -119,53 +113,21 @@ class FileReferenceEx extends FileReference
 		}
 		
 		#if (lime && !macro)
-		var fileDialogClass = Type.resolveClass("lime.ui.FileDialog");
-		if (fileDialogClass != null)
-		{
-			var openFile:Dynamic = Reflect.field(fileDialogClass, "openFile");
-			if (Reflect.isFunction(openFile))
-			{
-				var allowMultiple:Bool = browseOptions.openStyle == OPEN_MULTIPLE;
-				openFile(
-					openfl.Lib.current.stage.window,
-					function(paths:Array<String>, _):Void
-					{
-						if (paths != null && paths.length > 0)
-						{
-							if (allowMultiple) openFileDialog_onSelectMultiple(paths);
-							else openFileDialog_onSelect(paths[0]);
-						}
-						else
-						{
-							openFileDialog_onCancel();
-						}
-					},
-					null,
-					browseOptions.defaultSearch,
-					allowMultiple
-				);
-				return true;
-			}
-			
-			var openFileDialog:Dynamic = Type.createInstance(fileDialogClass, []);
-			if (openFileDialog != null)
-			{
-				openFileDialog.onCancel.add(openFileDialog_onCancel);
-				
-				if (browseOptions.openStyle == OPEN_MULTIPLE) openFileDialog.onSelectMultiple.add(openFileDialog_onSelectMultiple);
-				else openFileDialog.onSelect.add(openFileDialog_onSelect);
-				
-				openFileDialog.browse(cast browseOptions.openStyle, filter, browseOptions.defaultSearch, browseOptions.title);
-				return true;
-			}
-		}
+		var openFileDialog = new lime.ui.FileDialog();
+		openFileDialog.onCancel.add(openFileDialog_onCancel);
+		
+		if (browseOptions.openStyle == OPEN_MULTIPLE) openFileDialog.onSelectMultiple.add(openFileDialog_onSelectMultiple);
+		else openFileDialog.onSelect.add(openFileDialog_onSelect);
+		
+		openFileDialog.browse(browseOptions.openStyle, filter, browseOptions.defaultSearch, browseOptions.title);
+		return true;
 		#end
 		#elseif (js && html5)
 		var filter:String = null;
-		if (browseOptions.typeFilter != null)
+		if (typeFilter != null)
 		{
 			var filters:Array<String> = [];
-			for (type in browseOptions.typeFilter)
+			for (type in typeFilter)
 			{
 				filters.push(StringTools.replace(StringTools.replace(type.extension, "*.", "."), ";", ","));
 			}
