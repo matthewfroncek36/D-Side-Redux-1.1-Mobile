@@ -8,15 +8,19 @@ import haxe.ui.containers.windows.WindowManager;
 import haxe.ui.containers.windows.Window;
 import haxe.ui.components.Button;
 
+#if !macro
 import flixel.graphics.frames.FlxFrame;
 import flixel.graphics.frames.FlxImageFrame;
+#end
 
 import haxe.ui.util.Variant;
 import haxe.ui.components.Image;
 import haxe.ui.core.ItemRenderer;
 import haxe.ui.components.CheckBox;
 
+#if !macro
 import flixel.group.FlxSpriteContainer.FlxTypedSpriteContainer;
+#end
 
 import haxe.ui.containers.HBox;
 import haxe.ui.containers.Panel;
@@ -56,6 +60,7 @@ class MiscInfo extends Panel {}
 ')
 class LegendWindow extends Window {}
 
+#if !macro
 class CharEditorUI extends FlxTypedSpriteContainer<FlxSprite>
 {
 	// the primary components
@@ -141,3 +146,4 @@ class CharEditorUI extends FlxTypedSpriteContainer<FlxSprite>
 	// annoying big ass line so its jhust like suire dude
 	final _legend = MacroUtil.getPrecompliedContent('assets/excluded/ui/charEditor/legend.txt');
 }
+#end

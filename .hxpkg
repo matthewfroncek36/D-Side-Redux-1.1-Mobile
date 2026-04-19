@@ -4,18 +4,15 @@
         "pkgs": [
             {
                 "name": "flixel",
-                "link": "https://github.com/FunkinCrew/flixel",
-                "branch": "622bb65e7f49f0e1a03826b6593369d3ad5e54fa"
+                "version": "6.1.2"
             },
             {
                 "name": "flixel-addons",
-                "link": "https://github.com/FunkinCrew/flixel-addons",
-                "branch": "187f93b34f93c6a405d634a42913c745e443463a"
+                "version": "3.3.2"
             },
             {
                 "name": "flixel-ui",
-                "link": "https://github.com/HaxeFlixel/flixel-ui",
-                "branch": "dev"
+                "version": "2.6.4"
             },
             {
                 "name": "flixel-animate",
