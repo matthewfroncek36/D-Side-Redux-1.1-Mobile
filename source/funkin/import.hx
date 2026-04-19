@@ -12,6 +12,7 @@ import funkin.scripting.ScriptConstants;
 import funkin.audio.FunkinSound;
 import funkin.backend.Logger;
 import funkin.utils.*;
+using extensions.flixel.FlxTools;
 #end
 
 using haxe.io.Path;

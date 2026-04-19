@@ -1,5 +1,6 @@
 package funkin.states.editors;
 
+import extensions.flixel.FlxTools;
 import haxe.Json;
 import haxe.ds.Vector;
 
@@ -187,15 +188,15 @@ class NoteSkinEditor extends MusicBeatState
 		super.create();
 		
 		ghostFields = new FlxTypedGroup<PlayField>();
-		ghostFields.zIndex = 0;
+		FlxTools.setZIndex(ghostFields, 0);
 		add(ghostFields);
 		
 		playFields = new FlxTypedGroup<PlayField>();
-		playFields.zIndex = 1;
+		FlxTools.setZIndex(playFields, 1);
 		add(playFields);
 		
 		noteSplashes = new FlxTypedGroup<NoteSplash>();
-		noteSplashes.zIndex = 2;
+		FlxTools.setZIndex(noteSplashes, 2);
 		add(noteSplashes);
 		
 		notes = [];

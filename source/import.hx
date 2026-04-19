@@ -26,7 +26,9 @@ import flixel.sound.FlxSound;
 
 import funkin.api.DiscordClient;
 
+#if VIDEOS_ALLOWED
 import hxvlc.flixel.*;
+#end
 
 import Init;
 
@@ -40,6 +42,7 @@ import funkin.objects.BGSprite;
 import funkin.backend.MusicBeatState;
 
 using flixel.util.FlxArrayUtil;
+using extensions.flixel.FlxTools;
 #end
 
 using StringTools;
