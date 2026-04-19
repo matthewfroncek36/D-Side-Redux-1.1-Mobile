@@ -133,9 +133,8 @@ jobs:
           name: buildAndroid
           path: export/release/android/bin/app/build/outputs/apk/release/*.apk
 
-  buildIosSimulator:
-    name: buildIosSimulator
-    if: github.event_name == 'workflow_dispatch'
+  buildIos:
+    name: buildIos
     runs-on: macos-15
     steps:
       - name: Checkout
@@ -148,16 +147,27 @@ jobs:
         with:
           haxe-version: 4.3.7
 
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+      
       - name: Install Haxelib
         run: |
           haxelib install hxpkg
           haxelib run hxpkg install
+      
+      - name: Setup Lime
+        run: |
+          haxelib run lime config JAVA_HOME $JAVA_HOME
+          haxelib run lime config IOS_SETUP true
 
       - name: Compile
-        run: haxelib run lime build ios -simulator
+        run: haxelib run lime build ios
 
       - name: Publish Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: buildIosSimulator
+          name: buildIos
           path: export/release/ios/bin
